@@ -41,7 +41,7 @@ function onScroll() {
 
   activateMenuAtCurrentSection(about);
   activateMenuAtCurrentSection(projects);
-  activateMenuAtCurrentSection(knowledge);
+  activateMenuAtCurrentSection(skills);
   activateMenuAtCurrentSection(contact);
 }
 
@@ -117,7 +117,7 @@ ScrollReveal({
   #projects,
   #projects header,
   #projects .card,
-  #knowledge,
+  #skills,
   #knowledg header,
   #knowledg .card,
   #contact,

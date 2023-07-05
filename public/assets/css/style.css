@@ -768,19 +768,19 @@ body.light-mode #home img#notebook-2-white {
   margin: 6rem auto 0;
 }
 
-/*===== KNOWLEDGE ===============================================*/
+/*===== skills ===============================================*/
 
-#knowledge header h2 {
+#skills header h2 {
   margin-bottom: 6rem;
 }
 
-#knowledge .cards {
+#skills .cards {
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
 }
 
-#knowledge .card {
+#skills .card {
   padding: 2.8rem;
   text-align: left;
 
@@ -792,15 +792,15 @@ body.light-mode #home img#notebook-2-white {
   transition: 400ms;
 }
 
-#knowledge .card:hover {
+#skills .card:hover {
   background: var(--third-color);
 }
 
-#knowledge .card h3 {
+#skills .card h3 {
   margin-block: 1.6rem;
 }
 
-#knowledge .card img {
+#skills .card img {
   width: 10rem;
 }
 
@@ -1336,20 +1336,20 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     height: 5rem;
   }
 
-  /*===== KNOWLEDGE =====================================*/
+  /*===== skills =====================================*/
 
-  #knowledge h2 {
+  #skills h2 {
     width: 49.7rem;
     margin-inline: auto;
   }
 
-  #knowledge .cards {
+  #skills .cards {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 4rem;
   }
 
-  #knowledge .card {
+  #skills .card {
     width: 30%;
     flex-grow: 1;
   }
