@@ -150,7 +150,7 @@ section span {
 }
 
 body.light-mode .button,
-body.light-mode #home h4 {
+body.light-mode #intro h4 {
   filter: brightness(0.8);
 }
 
@@ -399,7 +399,7 @@ body.menu-expanded button path {
 
 /*===== HOME ===================================*/
 
-#home {
+#intro {
   height: 100vh;
   min-height: calc(60rem + var(--nav-height));
   padding-block: 0;
@@ -410,7 +410,7 @@ body.menu-expanded button path {
   align-items: center;
 }
 
-#home .wrapper {
+#intro .wrapper {
   height: 53rem;
 
   display: flex;
@@ -422,7 +422,7 @@ body.menu-expanded button path {
   position: relative;
 }
 
-#home h1 {
+#intro h1 {
   font-size: 4.5rem;
   color: var(--headline);
   line-height: 110%;
@@ -430,7 +430,7 @@ body.menu-expanded button path {
   margin-bottom: 1rem;
 }
 
-#home p {
+#intro p {
   display: inline-flex;
 
   font-size: 1.8rem;
@@ -440,13 +440,13 @@ body.menu-expanded button path {
   margin-bottom: 3.2rem;
 }
 
-#home .line {
+#intro .line {
   border-right: 0.2rem solid var(--primary-color);
   white-space: nowrap;
   overflow: hidden;
 }
 
-#home .typing {
+#intro .typing {
   animation: line-typing 500ms steps(40) infinite normal,
     typing 2s steps(40) 1.4s normal backwards;
 }
@@ -469,11 +469,11 @@ body.menu-expanded button path {
   }
 }
 
-#home .button {
+#intro .button {
   margin-inline: auto;
 }
 
-#home .col-b {
+#intro .col-b {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,7 +495,7 @@ body.menu-expanded button path {
   }
 }
 
-#home .wrapper::before {
+#intro .wrapper::before {
   content: "";
   display: block;
 
@@ -512,7 +512,7 @@ body.menu-expanded button path {
   animation: appear 1s 500ms backwards;
 }
 
-#home img {
+#intro img {
   width: 30rem;
   min-width: 14.5rem;
   display: block;
@@ -520,35 +520,35 @@ body.menu-expanded button path {
   filter: contrast(1.2);
 }
 
-#home img#notebook-2-white,
-body.light-mode #home img#notebook-1,
-body.light-mode #home img#notebook-2 {
+#intro img#notebook-2-white,
+body.light-mode #intro img#notebook-1,
+body.light-mode #intro img#notebook-2 {
   visibility: hidden;
   opacity: 0;
   animation: none;
 }
 
-#home img#notebook-1 {
+#intro img#notebook-1 {
   animation: appear 1s 1s backwards;
 }
 
-#home img#notebook-2-white {
+#intro img#notebook-2-white {
   position: absolute;
 }
 
-body.light-mode #home img#notebook-2-white {
+body.light-mode #intro img#notebook-2-white {
   position: absolute;
   visibility: visible;
   opacity: 1;
 }
 
-#home img#notebook-2 {
+#intro img#notebook-2 {
   position: absolute;
   z-index: 90;
   animation: appear 1s 2s backwards;
 }
 
-#home img#glass {
+#intro img#glass {
   position: absolute;
   z-index: 100;
   right: -2rem;
@@ -1244,11 +1244,11 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   /*===== HOME ========================================*/
 
-  #home {
+  #intro {
     padding-top: var(--nav-height);
   }
 
-  #home .wrapper {
+  #intro .wrapper {
     flex-direction: row;
     justify-content: space-between;
 
@@ -1256,24 +1256,24 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     grid-template-areas: "A B";
   }
 
-  #home .col-a {
+  #intro .col-a {
     text-align: left;
     align-self: center;
   }
 
-  #home h1 {
+  #intro h1 {
     font-size: 6rem;
   }
 
-  #home .content p {
+  #intro .content p {
     font-size: 2.5rem;
   }
 
-  #home .button {
+  #intro .button {
     margin: 0;
   }
 
-  #home .wrapper::before {
+  #intro .wrapper::before {
     width: 40rem;
     height: 40rem;
 
@@ -1281,7 +1281,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     bottom: 7rem;
   }
 
-  #home img {
+  #intro img {
     width: 42rem;
   }
 
@@ -1456,11 +1456,11 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   /*===== HOME ==================================*/
 
-  #home h1 {
+  #intro h1 {
     font-size: 3.8rem;
   }
 
-  #home p {
+  #intro p {
     font-size: 1.6rem;
   }
 
@@ -1473,7 +1473,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     }
   }
 
-  #home .wrapper::before {
+  #intro .wrapper::before {
     bottom: -2rem;
   }
 
@@ -1520,7 +1520,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 }
 
 @media (max-width: 410px) {
-  #home .wrapper::before {
+  #intro .wrapper::before {
     width: 24rem;
     height: 24rem;
 
@@ -1537,22 +1537,22 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   /*===== HOME ==================================*/
 
-  #home .wrapper::before {
+  #intro .wrapper::before {
     width: 20rem;
     height: 20rem;
 
     bottom: 2rem;
   }
 
-  #home h1 {
+  #intro h1 {
     font-size: 3.2rem;
   }
 
-  #home p {
+  #intro p {
     font-size: 1.4rem;
   }
 
-  #home .line {
+  #intro .line {
     white-space: initial;
   }
 
@@ -1610,15 +1610,15 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   /*===== HOME ==================================*/
 
-  #home h1 {
+  #intro h1 {
     font-size: 2.9rem;
   }
 
-  #home p {
+  #intro p {
     font-size: 1.2rem;
   }
 
-  #home .wrapper::before {
+  #intro .wrapper::before {
     width: 15rem;
     height: 15rem;
 
