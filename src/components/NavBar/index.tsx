@@ -1,10 +1,12 @@
 import React from 'react'
-import Instragram from '@/components/SocialLinks/Instragram';
-import Github from '../SocialLinks/Github';
-import LinkedIn from '../SocialLinks/LinkedIn';
-import Twitter from '../SocialLinks/Twitter';
+import GithubLink from '../SocialLinks/GithubLink';
+import LinkedInLink from '../SocialLinks/LinkedInLink';
+import TwitterLink from '../SocialLinks/TwitterLink';
 import OpenNavBtn from '../Buttons/OpenNavBtn';
 import CloseNavBtn from '../Buttons/CloseNavBtn';
+import { CrossCloseSvgIcon } from '@/assets/icons/CrossClose';
+import { HamburgerSvgIcon } from '@/assets/icons/Hamburger';
+import InstragramLink from '../SocialLinks/InstragramLink';
 
 const NavBar = () => {
     return (
@@ -32,16 +34,22 @@ const NavBar = () => {
 
                         <ul className="social-links">
                             <li>
-                                <Instragram />
+                                <InstragramLink />
                             </li>
                             <li>
-                                <Github />
+                                <GithubLink />
                             </li>
                             <li>
-                                <LinkedIn />
+                                <LinkedInLink />
                             </li>
                             <li>
-                                <Twitter />
+                                <TwitterLink />
+                            </li>
+                            <li>
+                                <HamburgerSvgIcon />
+                            </li>
+                            <li>
+                                <CrossCloseSvgIcon />
                             </li>
                         </ul>
                         <OpenNavBtn />
