@@ -1,43 +1,43 @@
 import React from 'react'
+import { Skill } from './types'
+import SkillCard from './SkillCard'
+
 
 const Skills = () => {
+
+    const skills: Skill[] = [
+        {
+            name: "HTML5",
+            description: "HTML5 is a hypertext markup language, which we use totag the elements of the page and build it.",
+            src: "./assets/images/html.png",
+            alt: "HTML5 Icon."
+        },
+        {
+            name: "CSS3",
+            description: "CSS3 is a style language used to describe the presentation of page elements by styling them.",
+            src: "./assets/images/css.png",
+            alt: "CSS3 Icon."
+        },
+        {
+            name: "JavaScript",
+            description: "JavaScript is an interpreted programming language used in web development to describe features and page behaviors.",
+            src: "./assets/images/js.png",
+            alt: "Javascript Icon."
+        },
+    ]
     return (
         <>
             <section id="skills">
                 <div className="wrapper">
                     <header>
-                        <h2>Conhecimentos</h2>
+                        <h2>Skills / Knowledge</h2>
                     </header>
                     <div className="content">
                         <div className="cards">
-                            <div className="card">
-                                <img src="./assets/images/html.png" alt="Ícone do HTML5." />
-
-                                <h3>HTML5</h3>
-                                <p>
-                                    HTML5 é uma linguagem de marcação de hipertexto, que usamos para
-                                    marcar os elementos da página e construí-la.
-                                </p>
-                            </div>
-                            <div className="card">
-                                <img src="./assets/images/css.png" alt="Ícone do CSS3." />
-
-                                <h3>CSS3</h3>
-                                <p>
-                                    CSS3 é uma linguagem de estilo usada para descrever a
-                                    apresentação dos elementos da página os estilizando.
-                                </p>
-                            </div>
-                            <div className="card">
-                                <img src="./assets/images/js.png" alt="Ícone do Javascript." />
-
-                                <h3>JavaScript</h3>
-                                <p>
-                                    JavaScript é uma linguagem de programação interpretada usada no
-                                    desenvolvimento web para descrever funcionalidades e
-                                    comportamentos da página.
-                                </p>
-                            </div>
+                            {skills.map((skill, index) => {
+                                return (<SkillCard key={index} src={skill.src} alt={skill.alt} name={skill.name} description={skill.description} />)
+                            })
+                            }
                         </div>
                     </div>
                 </div>
