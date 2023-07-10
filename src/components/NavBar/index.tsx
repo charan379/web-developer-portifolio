@@ -24,8 +24,7 @@ const NavBar = () => {
                                 <a id="projectsNav" className="close" href="#projects">Projects</a>
                             </li>
                             <li>
-                                <a id="skillsNav" className="close" href="#skills"
-                                >skills</a>
+                                <a id="skillsNav" className="close" href="#skills">Skills/Knowledge</a>
                             </li>
                             <li>
                                 <a id="contactNav" className="close" href="#contact">Talk to me</a>
