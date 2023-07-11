@@ -1,5 +1,14 @@
 type Skill = {
-    src: string,
-    alt: string,
     name: string,
-    description: string,}
+    description: string,
+    image: string,
+}
+
+type Project = {
+    name: string,
+    description: string,
+    image: string,
+    technologies: Array<string>,
+    github: string,
+    demo: string,
+}
