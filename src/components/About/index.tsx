@@ -19,7 +19,7 @@ const About = () => {
 
                     <div className="col-b">
                         <img
-                            src="./assets/images/imagem-de-lucyan-vestindo-camisa-social-branca-e-sorrindo-com-plantas-no-fundo.pn"
+                            src="./assets/images/projects/orange-evolution.gif"
                             alt="Profile image"
                         />
                     </div>
