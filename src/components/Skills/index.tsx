@@ -34,7 +34,7 @@ const Skills = () => {
                     <div className="content">
                         <div className="cards">
                             {skills.map((skill, index) => {
-                                return (<SkillCard key={index} src={skill.src} alt={skill.alt} name={skill.name} description={skill.description} />)
+                                return (<SkillCard src={skill.src} alt={skill.alt} name={skill.name} description={skill.description} key={index} />)
                             })
                             }
                         </div>
