@@ -1,6 +1,4 @@
 import React from 'react'
-import { Skill } from '../types'
-
 
 
 const SkillCard = (props: Skill) => {
