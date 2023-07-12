@@ -2,7 +2,7 @@
 
 .backToTopButton {
     position: fixed;
-    bottom: 1.5rem;
+    bottom: 2rem;
     right: 2.5rem;
     opacity: 0;
     visibility: hidden;
