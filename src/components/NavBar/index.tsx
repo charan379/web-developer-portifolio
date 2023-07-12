@@ -60,12 +60,6 @@ const NavBar = () => {
                             <li>
                                 <TwitterLink />
                             </li>
-                            <li>
-                                <HamburgerSvgIcon />
-                            </li>
-                            <li>
-                                <CrossCloseSvgIcon />
-                            </li>
                         </ul>
                         <OpenNavBtn />
                         <CloseNavBtn />
