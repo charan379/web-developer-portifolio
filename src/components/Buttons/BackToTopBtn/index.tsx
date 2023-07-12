@@ -1,8 +1,10 @@
 'use client';
 
+import styles from './BackToTopBtn.module.css';
 import { UpArrowSvgIcon } from '@/assets/icons/UpArrow'
 import { useScroll } from '@/lib/hooks/useScroll';
 import { handleBacktotopOnScroll } from '@/lib/utils/handleBacktotopOnScroll';
+import { scrollToTop } from '@/lib/utils/scrollToTop';
 import React, { useEffect } from 'react'
 
 const BackToTopBtn = () => {
@@ -10,7 +12,7 @@ const BackToTopBtn = () => {
     const scroll = useScroll();
 
     useEffect(() => {
-        handleBacktotopOnScroll("#backToTopButton", scroll.Y)
+        handleBacktotopOnScroll("#backToTop", scroll.Y, styles.show)
 
         return () => {
         }
@@ -20,9 +22,9 @@ const BackToTopBtn = () => {
 
     return (
         <>
-            <a id="backToTopButton" title="Back to the top" href="#home">
+            <button className={styles.backToTopButton} id="backToTop" title="Back to the top" onClick={scrollToTop}>
                 <UpArrowSvgIcon />
-            </a>
+            </button>
         </>
     )
 }

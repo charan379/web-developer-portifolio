@@ -1,8 +1,8 @@
-export function handleBacktotopOnScroll(backToTopButtonId: string, scrollY: number) {
+export function handleBacktotopOnScroll(backToTopButtonId: string, scrollY: number, className: string) {
     const backToTopButton = document.querySelector(backToTopButtonId);
     if (scrollY > 350) {
-        backToTopButton?.classList.add("show");
+        backToTopButton?.classList.add(className);
     } else {
-        backToTopButton?.classList.remove("show");
+        backToTopButton?.classList.remove(className);
     }
 }

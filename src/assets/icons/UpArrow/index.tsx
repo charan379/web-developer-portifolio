@@ -11,7 +11,6 @@ export const UpArrowSvgIcon = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
             >
-                <circle cx="20" cy="20" r="20" fill="#00856F" />
                 <path
                     d="M20 27V13"
                     stroke="white"

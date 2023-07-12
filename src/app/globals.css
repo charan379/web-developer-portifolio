@@ -1010,26 +1010,6 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   transform: translateX(3.8rem);
 }
 
-/*===== BACK TO TOP BUTTON =====================================*/
-
-#backToTopButton {
-  position: fixed;
-  bottom: 1.5rem;
-  right: 2.5rem;
-
-  opacity: 0;
-  visibility: hidden;
-
-  transition: 200ms;
-  transform: translateY(100%);
-}
-
-#backToTopButton.show {
-  opacity: 1;
-  visibility: visible;
-
-  transform: translateY(0);
-}
 
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 

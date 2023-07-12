@@ -1,0 +1,23 @@
+/*===== BACK TO TOP BUTTON =====================================*/
+
+.backToTopButton {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2.5rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 500ms;
+    transform: translateY(100%);
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+}
+
+.backToTopButton.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
