@@ -1,4 +1,6 @@
-import React from 'react'
+'use client';
+
+import React, { useEffect } from 'react'
 import GithubLink from '../SocialLinks/GithubLink';
 import LinkedInLink from '../SocialLinks/LinkedInLink';
 import TwitterLink from '../SocialLinks/TwitterLink';
@@ -7,8 +9,22 @@ import CloseNavBtn from '../Buttons/CloseNavBtn';
 import { CrossCloseSvgIcon } from '@/assets/icons/CrossClose';
 import { HamburgerSvgIcon } from '@/assets/icons/Hamburger';
 import InstragramLink from '../SocialLinks/InstragramLink';
+import { useScroll } from '@/lib/hooks/useScroll';
+import { handleNavbarOnScroll } from '@/lib/utils/handleNavbarOnScroll';
 
 const NavBar = () => {
+
+    const scroll = useScroll();
+
+    useEffect(() => {
+        handleNavbarOnScroll("#navigation", scroll.Y)
+
+        return () => {
+        }
+
+    }, [scroll.Y])
+
+
     return (
         <>
             <nav id="navigation">
