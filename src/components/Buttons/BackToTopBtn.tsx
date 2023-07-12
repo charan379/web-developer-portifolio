@@ -11,7 +11,7 @@ const BackToTopBtn = () => {
 
     useEffect(() => {
         handleBacktotopOnScroll("#backToTopButton", scroll.Y)
-        console.log(scroll.Y)
+
         return () => {
         }
 
