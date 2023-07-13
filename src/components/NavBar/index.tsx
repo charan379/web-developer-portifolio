@@ -6,8 +6,6 @@ import LinkedInLink from '../SocialLinks/LinkedInLink';
 import TwitterLink from '../SocialLinks/TwitterLink';
 import OpenNavBtn from '../Buttons/OpenNavBtn';
 import CloseNavBtn from '../Buttons/CloseNavBtn';
-import { CrossCloseSvgIcon } from '@/assets/icons/CrossClose';
-import { HamburgerSvgIcon } from '@/assets/icons/Hamburger';
 import InstragramLink from '../SocialLinks/InstragramLink';
 import { useScroll } from '@/lib/hooks/useScroll';
 import { handleNavbarOnScroll } from '@/lib/utils/handleNavbarOnScroll';
@@ -61,9 +59,9 @@ const NavBar = () => {
                                 <TwitterLink />
                             </li>
                         </ul>
-                        <OpenNavBtn />
-                        <CloseNavBtn />
                     </div>
+                    <OpenNavBtn />
+                    <CloseNavBtn />
                 </div>
             </nav>
         </>
