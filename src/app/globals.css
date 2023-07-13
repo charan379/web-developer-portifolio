@@ -510,6 +510,7 @@ body.menu-expanded button path {
   z-index: -1;
 
   animation: appear 1s 500ms backwards;
+  z-index: 0;
 }
 
 #intro img {
