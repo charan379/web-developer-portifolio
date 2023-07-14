@@ -1,0 +1,18 @@
+:root {
+  --hue: 90;
+  --primary-color: hsl(var(--hue), 92%, 43%);
+  --primary-hover: hsl(var(--hue), 92%, 33%);
+  --secundary-color: hsl(0, 0%, 5%);
+  --third-color: hsla(0, 0%, 100%, 0.1);
+  --bg-color: hsl(0, 0%, 8%);
+
+  --headline: hsl(0, 0%, 100%);
+  --paragraph: hsla(0, 0%, 100%, 0.658);
+  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+
+  font-size: 62.5%;
+
+  --nav-height: 7.2rem;
+  --nav-bg-scroll: rgba(151, 151, 151, 0.5); /* rgba(0, 0, 0, 0.5); */
+  --nav-color-scroll: #000; /* #fff */
+}

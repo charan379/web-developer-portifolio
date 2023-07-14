@@ -1,0 +1,21 @@
+/* LOGO */
+
+.logo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  opacity: 0.7;
+  color: inherit;
+  font-weight: bold;
+}
+
+body.light-mode .logo {
+  font-weight: bold;
+}
+
+body.menu-expanded .logo {
+    opacity: 1;
+  }
+  
+  body.light-mode .logo {
+    filter: brightness(0.8);
+  }

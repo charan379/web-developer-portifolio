@@ -1,3 +1,5 @@
+@import "./cssroot.css";
+
 /*===== GERAL ===============================================*/
 
 * {
@@ -6,23 +8,6 @@
   box-sizing: border-box;
 
   font-family: "DM Sans", sans-serif;
-}
-
-:root {
-  --hue: 90;
-  --primary-color: hsl(var(--hue), 92%, 43%);
-  --primary-hover: hsl(var(--hue), 92%, 33%);
-  --secundary-color: hsl(0, 0%, 5%);
-  --third-color: hsla(0, 0%, 100%, 0.1);
-  --bg-color: hsl(0, 0%, 8%);
-
-  --headline: hsl(0, 0%, 100%);
-  --paragraph: hsla(0, 0%, 100%, 0.658);
-  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
-
-  font-size: 62.5%;
-
-  --nav-height: 7.2rem;
 }
 
 html {
@@ -248,7 +233,7 @@ body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
 
 /*===== NAVIGATION ===================================*/
 
-nav {
+/* nav {
   width: 100vw;
   height: var(--nav-height);
 
@@ -273,21 +258,21 @@ nav.scroll {
 
 body.light-mode nav.scroll {
   background: rgba(151, 151, 151, 0.5);
-}
+} */
 
 /* LOGO */
 
-a.logo {
+/* a.logo {
   font-family: "Gemunu Libre", sans-serif;
   font-size: 3rem;
   opacity: 0.7;
-}
+} */
 
-nav#navigation a.logo {
+/* nav#navigation a.logo {
   color: var(--primary-color);
-}
+} */
 
-body.light-mode nav#navigation a.logo,
+/* body.light-mode nav#navigation a.logo,
 body.light-mode footer a.logo {
   font-weight: bold;
 }
@@ -310,7 +295,7 @@ body.light-mode nav#navigation a.logo {
 body.light-mode footer a.logo,
 body.light-mode nav#navigation.scroll a.logo {
   color: #000;
-}
+} */
 
 /* == == */
 
@@ -1010,7 +995,6 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 #toggle input:checked + label::before {
   transform: translateX(3.8rem);
 }
-
 
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 

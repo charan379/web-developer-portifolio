@@ -1,8 +1,9 @@
 import React from 'react'
-import InstragramLink from '../SocialLinks/InstragramLink'
-import GithubLink from '../SocialLinks/GithubLink'
-import LinkedInLink from '../SocialLinks/LinkedInLink'
-import TwitterLink from '../SocialLinks/TwitterLink'
+import InstragramLink from '../SocialLinks/Links/InstragramLink'
+import GithubLink from '../SocialLinks/Links/GithubLink'
+import LinkedInLink from '../SocialLinks/Links/LinkedInLink'
+import TwitterLink from '../SocialLinks/Links/TwitterLink'
+import SocialLinks from '../SocialLinks'
 
 const Footer = () => {
     return (
@@ -19,20 +20,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-b">
-                        <ul className="social-links">
-                            <li>
-                                <InstragramLink />
-                            </li>
-                            <li>
-                                <GithubLink />
-                            </li>
-                            <li>
-                                <LinkedInLink />
-                            </li>
-                            <li>
-                                <TwitterLink />
-                            </li>
-                        </ul>
+                        <SocialLinks />
                     </div>
                 </div>
             </footer>

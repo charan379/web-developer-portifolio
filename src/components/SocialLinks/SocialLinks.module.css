@@ -1,0 +1,25 @@
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  color: inherit;
+}
+
+.socialLinks li.socialLink a {
+  opacity: 1;
+}
+
+.socialLinks li.socialLink svg {
+  margin-top: 0.5rem;
+  transition: 300ms;
+}
+
+.socialLinks li.socialLink svg:hover {
+  margin-top: 0;
+  margin-bottom: 0.3rem;
+  color: red;
+}
+
+.socialLinks li.socialLink svg path {
+  transition: 200ms;
+}
