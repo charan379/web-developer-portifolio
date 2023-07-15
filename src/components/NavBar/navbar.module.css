@@ -8,6 +8,7 @@
   top: 0;
   z-index: 100;
   color: var(--primary-color);
+  transition: background 350ms, color 350ms;
 }
 
 .nav .wrapper {
@@ -35,15 +36,4 @@
   color: var(--nav-color-scroll);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
-}
-
-.nav .closeMenu,
-.nav .openMenu {
-  /* display: none; */
-  color: inherit;
-}
-
-.nav .closeMenu svg path,
-.nav .openMenu svg path {
-  stroke: currentColor;
 }

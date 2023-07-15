@@ -43,20 +43,99 @@
   letter-spacing: 0px;
 }
 
-.menu ul.navLinks:nth-child(1) li.navLink a::after {
-  content: "";
-  width: 0%;
-  height: 2px;
-  background-color: currentColor;
-  display: block;
-  position: relative;
-  bottom: -2rem;
-  left: -0.5rem;
-  transition: width 0.2s;
-}
-
 .menu ul.navLinks li.navLink a:hover::after,
 .menu ul.navLinks li.navLink a.active::after {
   padding-inline: 0.8rem;
   width: 100%;
+}
+
+.closeMenu,
+.openMenu {
+  display: none;
+  color: inherit;
+}
+
+.closeMenu {
+  position: fixed;
+}
+
+.closeMenu svg path,
+.openMenu svg path {
+  stroke: currentColor;
+}
+
+@media (min-width: 1240px) {
+  .menu ul.navLinks:nth-child(1) li.navLink a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: currentColor;
+    display: block;
+    position: relative;
+    bottom: -2rem;
+    left: -0.5rem;
+    transition: width 0.2s;
+  }
+}
+
+@media (max-width: 1240px) {
+  .openMenu,
+  .closeMenu {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu ul.navLinks {
+    width: 100%;
+  }
+
+  .menu ul.navLinks li {
+    width: 100% !important;
+    cursor: pointer;
+  }
+
+  .menu ul.navLinks:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 8rem 0 10rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 3.1rem;
+  }
+
+  .menu.expanded {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    width: 100vw;
+    height: 100vh;
+    padding-top: var(--nav-height);
+    padding-bottom: var(--nav-height);
+    transition: transform 300ms;
+    transform: translateX(0);
+    z-index: 101;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .menu.expanded ~ .openMenu {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu.expanded ~ .closeMenu {
+    opacity: 1;
+    visibility: visible;
+  }
 }

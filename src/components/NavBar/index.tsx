@@ -28,8 +28,6 @@ const NavBar = () => {
                 <div className={styles.wrapper}>
                     <AppLogo />
                     <NavMenu />
-                    <OpenNavBtn className={styles.openMenu} name='Open Menu' />
-                    <CloseNavBtn className={styles.closeMenu} name='Close Menu' />
                 </div>
             </nav>
         </>
