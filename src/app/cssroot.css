@@ -15,4 +15,5 @@
   --nav-height: 7.2rem;
   --nav-bg-scroll: rgba(151, 151, 151, 0.5); /* rgba(0, 0, 0, 0.5); */
   --nav-color-scroll: #000; /* #fff */
+  --nav-color-extended: hsl(0, 0%, 100%);
 }

@@ -6,6 +6,7 @@
   opacity: 0.7;
   color: inherit;
   font-weight: bold;
+  z-index: 102;
 }
 
 body.light-mode .logo {

@@ -1,15 +1,21 @@
 import SocialLinks from '@/components/SocialLinks'
 import styles from './NavMenu.module.css'
-import React, { MouseEvent } from 'react'
+import React, { EventHandler, MouseEvent } from 'react'
 import OpenNavBtn from '@/components/Buttons/OpenNavBtn'
 import CloseNavBtn from '@/components/Buttons/CloseNavBtn'
 
 const NavMenu = () => {
 
   // function to open nav menu
-  const openNavMenu = (event: MouseEvent<HTMLElement> | TouchEvent) => {
+  const openNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.add(styles.expanded)
+  }
+
+  // function to close nav menu
+  const closeNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
+    event.preventDefault();
+    document.getElementById("nav-menu")?.classList.remove(styles.expanded)
   }
 
   return (
@@ -33,7 +39,7 @@ const NavMenu = () => {
       </div>
       {/* close & open buttons */}
       <OpenNavBtn className={styles.openMenu} onClick={openNavMenu} name='Open Menu' />
-      <CloseNavBtn className={styles.closeMenu} name='Close Menu' />
+      <CloseNavBtn className={styles.closeMenu} onClick={closeNavMenu} name='Close Menu' />
     </>
   )
 }

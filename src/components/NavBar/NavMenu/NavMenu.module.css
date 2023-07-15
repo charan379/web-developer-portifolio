@@ -53,10 +53,7 @@
 .openMenu {
   display: none;
   color: inherit;
-}
-
-.closeMenu {
-  position: fixed;
+  z-index: 102;
 }
 
 .closeMenu svg path,
@@ -79,9 +76,8 @@
 }
 
 @media (max-width: 1240px) {
-  .openMenu,
-  .closeMenu {
-    display: block;
+  .openMenu {
+    display: inline;
   }
 
   .menu {
@@ -127,15 +123,18 @@
     z-index: 101;
     opacity: 1;
     visibility: visible;
+    color: var(--nav-color-extended);
   }
 
   .menu.expanded ~ .openMenu {
     opacity: 0;
+    display: none;
     visibility: hidden;
   }
 
   .menu.expanded ~ .closeMenu {
     opacity: 1;
+    display: inline;
     visibility: visible;
   }
 }
