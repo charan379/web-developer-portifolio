@@ -1,7 +1,13 @@
 import { CrossCloseSvgIcon } from '@/assets/icons/CrossClose'
 import React, { MouseEvent } from 'react'
 
-const CloseNavBtn = () => {
+interface CloseNavBtnProps {
+    className: string,
+    onClick?: Function,
+    name: string,
+}
+
+const CloseNavBtn = (props: CloseNavBtnProps) => {
 
     const closeNavMenu = (event: MouseEvent<HTMLElement>) => {
         event.preventDefault();
@@ -12,8 +18,8 @@ const CloseNavBtn = () => {
         <>
             <button
                 aria-expanded="true"
-                aria-label="Close menu"
-                className="close-menu open"
+                aria-label={props.name}
+                className={props.className}
                 onClick={closeNavMenu}
             >
                 <CrossCloseSvgIcon />

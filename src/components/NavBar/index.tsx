@@ -1,6 +1,6 @@
 'use client';
 
-import styles from './navbar.module.css';
+import styles from './Navbar.module.css';
 import React, { useEffect } from 'react'
 import OpenNavBtn from '../Buttons/OpenNavBtn';
 import CloseNavBtn from '../Buttons/CloseNavBtn';
@@ -28,8 +28,8 @@ const NavBar = () => {
                 <div className={styles.wrapper}>
                     <AppLogo />
                     <NavMenu />
-                    <OpenNavBtn />
-                    <CloseNavBtn />
+                    <OpenNavBtn className={styles.openMenu} name='Open Menu' />
+                    <CloseNavBtn className={styles.closeMenu} name='Close Menu' />
                 </div>
             </nav>
         </>

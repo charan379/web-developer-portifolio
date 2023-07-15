@@ -1,7 +1,13 @@
 import { HamburgerSvgIcon } from '@/assets/icons/Hamburger'
 import React, { MouseEvent } from 'react'
 
-const OpenNavBtn = () => {
+interface OpenNavBtnProps {
+    className: string,
+    onClick?: Function,
+    name: string,
+}
+
+const OpenNavBtn = (props: OpenNavBtnProps) => {
 
     const openNavMenu = (event: MouseEvent<HTMLElement>) => {
         event.preventDefault();
@@ -12,8 +18,8 @@ const OpenNavBtn = () => {
         <>
             <button
                 aria-expanded="false"
-                aria-label="Open menu"
-                className="open-menu open"
+                aria-label={props.name}
+                className={props.className}
                 onClick={openNavMenu}
             >
                 <HamburgerSvgIcon />
