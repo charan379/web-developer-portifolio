@@ -10,12 +10,14 @@ const NavMenu = () => {
   const openNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.add(styles.expanded)
+    document.body.style.overflow = "hidden";
   }
 
   // function to close nav menu
   const closeNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.remove(styles.expanded)
+    document.body.style.overflow = "auto";
   }
 
   return (
