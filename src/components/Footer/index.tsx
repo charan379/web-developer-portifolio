@@ -1,8 +1,4 @@
 import React from 'react'
-import InstragramLink from '../SocialLinks/Links/InstragramLink'
-import GithubLink from '../SocialLinks/Links/GithubLink'
-import LinkedInLink from '../SocialLinks/Links/LinkedInLink'
-import TwitterLink from '../SocialLinks/Links/TwitterLink'
 import SocialLinks from '../SocialLinks'
 
 const Footer = () => {
