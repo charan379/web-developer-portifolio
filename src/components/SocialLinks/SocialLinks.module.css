@@ -7,17 +7,60 @@
 
 .socialLinks li.socialLink a {
   opacity: 1;
+  color: inherit;
 }
 
 .socialLinks li.socialLink svg {
   margin-top: 0.5rem;
   transition: 300ms;
+  color: inherit;
+  transform: scale(1.1);
 }
+
+.socialLinks li.socialLink svg:hover {
+  transform: scale(1.2);
+}
+
+/* instagram */
+.socialLinks li.socialLink[id="instagram"] svg path {
+  stroke: currentColor;
+}
+
+.socialLinks li.socialLink[id="instagram"] svg:hover path {
+  stroke: #ff377a;
+}
+
+/* github */
+.socialLinks li.socialLink[id="github"] svg path:nth-child(2) {
+  fill: currentColor;
+}
+
+.socialLinks li.socialLink[id="github"] svg:hover path:nth-child(2) {
+  fill: #373e47;
+}
+
+/* linkedin */
+.socialLinks li.socialLink[id="linkedin"] svg path:nth-child(2) {
+  fill: currentColor;
+}
+
+.socialLinks li.socialLink[id="linkedin"] svg:hover path:nth-child(2) {
+  fill: #0a66c2;
+}
+
+/* twitter */
+.socialLinks li.socialLink[id="twitter"] svg path:nth-child(2) {
+  fill: currentColor;
+}
+
+.socialLinks li.socialLink[id="twitter"] svg:hover path:nth-child(2) {
+  fill: #00abf0;
+}
+
 
 .socialLinks li.socialLink svg:hover {
   margin-top: 0;
   margin-bottom: 0.3rem;
-  color: red;
 }
 
 .socialLinks li.socialLink svg path {
