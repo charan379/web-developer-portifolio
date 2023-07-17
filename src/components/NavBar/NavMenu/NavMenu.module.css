@@ -31,9 +31,22 @@
 
 .menu ul.navLinks li.navLink a {
   opacity: 0.7;
+  height: 100%;
   transition: opacity 0.4s;
   color: inherit;
   letter-spacing: 0.5px;
+}
+
+.menu ul.navLinks:nth-child(1) li.navLink a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  display: block;
+  position: relative;
+  bottom: -2rem;
+  left: -0.5rem;
+  transition: width 0.2s;
 }
 
 .menu ul.navLinks li.navLink a:hover,
@@ -61,21 +74,8 @@
   stroke: currentColor;
 }
 
-@media (min-width: 1240px) {
-  .menu ul.navLinks:nth-child(1) li.navLink a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background-color: currentColor;
-    display: block;
-    position: relative;
-    bottom: -2rem;
-    left: -0.5rem;
-    transition: width 0.2s;
-  }
-}
 
-@media (max-width: 1240px) {
+@media (max-width: 1020px) {
   .openMenu {
     display: inline;
   }
@@ -126,15 +126,19 @@
     color: var(--nav-color-extended);
   }
 
-  .menu.expanded ~ .openMenu {
+  .menu.expanded~.openMenu {
     opacity: 0;
     display: none;
     visibility: hidden;
   }
 
-  .menu.expanded ~ .closeMenu {
+  .menu.expanded~.closeMenu {
     opacity: 1;
     display: inline;
     visibility: visible;
+  }
+
+  .menu ul.navLinks:nth-child(1) li.navLink a::after {
+    height: 0px;
   }
 }

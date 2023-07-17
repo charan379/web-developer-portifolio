@@ -2,8 +2,6 @@
 
 import styles from './Navbar.module.css';
 import React, { useEffect } from 'react'
-import OpenNavBtn from '../Buttons/OpenNavBtn';
-import CloseNavBtn from '../Buttons/CloseNavBtn';
 import { useScroll } from '@/lib/hooks/useScroll';
 import { handleNavbarOnScroll } from '@/lib/utils/handleNavbarOnScroll';
 import AppLogo from '../AppLogo';
