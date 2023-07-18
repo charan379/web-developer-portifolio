@@ -67,7 +67,16 @@
   display: none;
   color: inherit;
   z-index: 102;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
+
+.closeMenu svg,
+.openMenu svg {
+  transform: scale(1.4);
+}
+
 
 .closeMenu svg path,
 .openMenu svg path {

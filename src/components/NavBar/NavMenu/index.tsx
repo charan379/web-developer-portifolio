@@ -5,6 +5,7 @@ import OpenNavBtn from '@/components/Buttons/OpenNavBtn'
 import CloseNavBtn from '@/components/Buttons/CloseNavBtn'
 
 const NavMenu = () => {
+  console.log(document.getElementById("navigation"))
 
   // function to open nav menu
   const openNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
