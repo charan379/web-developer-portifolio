@@ -11,6 +11,7 @@ const NavMenu = () => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.add(styles.expanded)
     document.body.style.overflow = "hidden";
+    document.getElementById("navigation")?.setAttribute("data-menu-extended", "true");
   }
 
   // function to close nav menu
@@ -18,6 +19,7 @@ const NavMenu = () => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.remove(styles.expanded)
     document.body.style.overflow = "auto";
+    document.getElementById("navigation")?.setAttribute("data-menu-extended", "false");
   }
 
   return (
