@@ -42,8 +42,8 @@
 
 @media (max-width: 1024px) {
 
-  .nav.scroll {
-    /* background: none; */
+  .nav.scroll[data-menu-extended="true"] {
+    background: none;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
