@@ -1,4 +1,4 @@
-/*===== NAVIGATION ===================================*/
+/*=========================== NAVIGATION ===================================*/
 
 .nav {
   width: 100vw;
@@ -36,4 +36,20 @@
   color: var(--nav-color-scroll);
   backdrop-filter: blur(1rem);
   -webkit-backdrop-filter: blur(1rem);
+}
+
+
+
+@media (max-width: 1024px) {
+
+  .nav.scroll {
+    /* background: none; */
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .nav[data-menu-extended="true"] {
+    color: #fff;
+  }
+
 }
