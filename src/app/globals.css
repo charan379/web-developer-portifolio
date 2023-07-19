@@ -322,7 +322,7 @@ body.menu-expanded button path {
 
 /*===== HOME ===================================*/
 
-#intro {
+/* #intro {
   height: 100vh;
   min-height: calc(60rem + var(--nav-height));
   padding-block: 0;
@@ -499,7 +499,7 @@ body.light-mode #intro img#notebook-2-white {
     right: -2rem;
     opacity: 1;
   }
-}
+} */
 
 /*===== ABOUT =================================================*/
 

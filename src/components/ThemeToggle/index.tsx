@@ -12,6 +12,8 @@ const ThemeToggle = () => {
         // 
         document.body.classList.toggle("light-mode");
         // 
+        document.body.toggleAttribute("data-light-mode", true)
+        // 
         setToogle(toogle === "unchecked" ? "checked" : "unchecked")
     }
 
