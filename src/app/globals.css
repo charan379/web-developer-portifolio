@@ -254,7 +254,7 @@ nav .close-menu {
 
 /*===== MENU-EXPANDED ==========================================*/
 
-body.menu-expanded {
+/* body.menu-expanded {
   overflow: hidden;
 }
 
@@ -318,7 +318,7 @@ body.menu-expanded button {
 
 body.menu-expanded button path {
   stroke: white;
-}
+} */
 
 /*===== HOME ===================================*/
 
