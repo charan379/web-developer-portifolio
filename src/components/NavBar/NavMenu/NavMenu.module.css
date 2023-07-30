@@ -31,9 +31,22 @@
 
 .menu ul.navLinks li.navLink a {
   opacity: 0.7;
+  height: 100%;
   transition: opacity 0.4s;
   color: inherit;
   letter-spacing: 0.5px;
+}
+
+.menu ul.navLinks:nth-child(1) li.navLink a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: currentColor;
+  display: block;
+  position: relative;
+  bottom: -2rem;
+  left: -0.5rem;
+  transition: width 0.2s;
 }
 
 .menu ul.navLinks li.navLink a:hover,
@@ -54,7 +67,16 @@
   display: none;
   color: inherit;
   z-index: 102;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
+
+.closeMenu svg,
+.openMenu svg {
+  transform: scale(1.4);
+}
+
 
 .closeMenu svg path,
 .openMenu svg path {
@@ -111,7 +133,7 @@
   visibility: visible;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 1024px) {
   .openMenu {
     display: inline;
   }

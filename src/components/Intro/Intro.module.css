@@ -1,245 +1,246 @@
 .intro {
-  height: 100vh;
-  min-height: calc(60rem + var(--nav-height));
-  padding-block: 0;
-  background-color: var(--secundary-color);
-  display: flex;
-  align-items: center;
-}
-
-.intro .wrapper {
-  height: 53rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 6rem;
-
-  position: relative;
-}
-
-.intro h4 {
-  font-size: 1.5rem;
-  color: var(--primary-color);
-  line-height: 110%;
-  margin-bottom: 1rem;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.intro h1 {
-  font-size: 4.5rem;
-  color: var(--headline);
-  line-height: 110%;
-  margin-bottom: 1rem;
-}
-
-.intro p {
-  display: inline-flex;
-
-  font-size: 1.8rem;
-  line-height: 150%;
-  font-weight: bold;
-
-  margin-bottom: 3.2rem;
-}
-
-.intro .content {
-  text-align: left;
-  align-self: center;
-}
-
-.intro .line {
-  border-right: 0.2rem solid var(--primary-color);
-  white-space: nowrap;
-  overflow: hidden;
-  color: var(--primary-color);
-}
-
-.intro .typing {
-  animation: line-typing 500ms steps(40) infinite normal,
-    typing 2s steps(40) 1.4s normal backwards;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+    height: 100vh;
+    min-height: calc(60rem + var(--nav-height));
+    padding-block: 0;
+    background-color: var(--secundary-color);
+    display: flex;
+    align-items: center;
   }
-  to {
-    width: 27.5rem;
-  }
-}
-
-@keyframes line-typing {
-  from {
-    border-right-color: var(--primary-color);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-.intro .button {
-  margin-inline: auto;
-}
-
-.intro .colB {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  animation: flutuar 3s infinite backwards;
-  position: relative;
-}
-
-@keyframes flutuar {
-  0% {
-    transform: translateY(2rem);
-  }
-  50% {
-    transform: translateY(-2rem);
-  }
-  100% {
-    transform: translateY(2rem);
-  }
-}
-
-.intro .wrapper::before {
-  content: "";
-  display: block;
-  width: 27rem;
-  height: 27rem;
-  background-color: var(--primary-color);
-  border-radius: 100%;
-  position: absolute;
-  bottom: -3.1rem;
-  z-index: -1;
-  animation: appear 1s 500ms backwards;
-  z-index: 0;
-}
-
-.intro img {
-  width: 30rem;
-  min-width: 14.5rem;
-  display: block;
-  margin-inline: auto;
-  filter: contrast(1.2);
-}
-
-.intro img[id="notebook-2-white"],
-body[data-theme="light"] .intro img[id="notebook-1"],
-body[data-theme="light"] .intro img[id="notebook-2"] {
-  visibility: hidden;
-  opacity: 0;
-  animation: none;
-}
-
-.intro img[id="notebook-1"] {
-  animation: appear 1s 1s backwards;
-}
-
-.intro img[id="notebook-2-white"] {
-  position: absolute;
-}
-
-body[data-theme="light"] .intro img[id="notebook-2-white"] {
-  position: absolute;
-  visibility: visible;
-  opacity: 1;
-  animation: none;
-}
-
-.intro img[id="notebook-2"] {
-  position: absolute;
-  z-index: 90;
-  animation: appear 1s 2s backwards;
-}
-
-body[data-theme="light"] .intro img[id="notebook-2"] {
-  opacity: 0;
-  visibility: hidden;
-  animation: appear 1s 2s forwards;
-}
-
-.intro img[id="glass"] {
-  position: absolute;
-  z-index: 100;
-  right: -2rem;
-  animation: appear-glass 1s 2.3s backwards;
-
-  filter: contrast(5);
-}
-
-@keyframes appear {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes appear-glass {
-  from {
-    right: -4rem;
-    opacity: 0;
-  }
-  to {
-    right: -2rem;
-    opacity: 1;
-  }
-}
-
-/*===== RESPONSIVO (DESKTOP) ====================================*/
-
-@media (min-width: 1024px) {
-  .intro {
-    padding-top: var(--nav-height);
-  }
-
+  
   .intro .wrapper {
-    flex-direction: row;
-    justify-content: space-between;
-
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas: "A B";
+    height: 53rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+  
+    position: relative;
   }
-
-  .intro .colA {
+  
+  .intro h4 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    line-height: 110%;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  
+  .intro h1 {
+    font-size: 4.5rem;
+    color: var(--headline);
+    line-height: 110%;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    display: inline-flex;
+  
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: bold;
+  
+    margin-bottom: 3.2rem;
+  }
+  
+  .intro .content {
     text-align: left;
     align-self: center;
   }
-
-  .intro h1 {
-    font-size: 6rem;
+  
+  .intro .line {
+    border-right: 0.2rem solid var(--primary-color);
+    white-space: nowrap;
+    overflow: hidden;
+    color: var(--primary-color);
   }
-
-  .intro .content p {
-    font-size: 2.5rem;
+  
+  .intro .typing {
+    animation: line-typing 500ms steps(40) infinite normal,
+      typing 2s steps(40) 1.4s normal backwards;
   }
-
-  .intro .button {
-    margin: 0;
-  }
-
-  .intro .wrapper::before {
-    width: 40rem;
-    height: 40rem;
-
-    right: 3rem;
-    bottom: 7rem;
-  }
-
-  .intro img {
-    width: 42rem;
-  }
-
+  
   @keyframes typing {
     from {
       width: 0;
     }
     to {
-      width: 38rem;
+      width: 27.5rem;
     }
   }
-}
+  
+  @keyframes line-typing {
+    from {
+      border-right-color: var(--primary-color);
+    }
+    to {
+      border-right-color: transparent;
+    }
+  }
+  
+  .intro .button {
+    margin-inline: auto;
+  }
+  
+  .intro .colB {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    animation: flutuar 3s infinite backwards;
+    position: relative;
+  }
+  
+  @keyframes flutuar {
+    0% {
+      transform: translateY(2rem);
+    }
+    50% {
+      transform: translateY(-2rem);
+    }
+    100% {
+      transform: translateY(2rem);
+    }
+  }
+  
+  .intro .wrapper::before {
+    content: "";
+    display: block;
+    width: 27rem;
+    height: 27rem;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    position: absolute;
+    bottom: -3.1rem;
+    z-index: -1;
+    animation: appear 1s 500ms backwards;
+    z-index: 0;
+  }
+  
+  .intro img {
+    width: 30rem;
+    min-width: 14.5rem;
+    display: block;
+    margin-inline: auto;
+    filter: contrast(1.2);
+  }
+  
+  .intro img[id="notebook-2-white"],
+  body[data-theme="light"] .intro img[id="notebook-1"],
+  body[data-theme="light"] .intro img[id="notebook-2"] {
+    visibility: hidden;
+    opacity: 0;
+    animation: none;
+  }
+  
+  .intro img[id="notebook-1"] {
+    animation: appear 1s 1s backwards;
+  }
+  
+  .intro img[id="notebook-2-white"] {
+    position: absolute;
+  }
+  
+  body[data-theme="light"] .intro img[id="notebook-2-white"] {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    animation: none;
+  }
+  
+  .intro img[id="notebook-2"] {
+    position: absolute;
+    z-index: 90;
+    animation: appear 1s 2s backwards;
+  }
+  
+  body[data-theme="light"] .intro img[id="notebook-2"] {
+    opacity: 0;
+    visibility: hidden;
+    animation: appear 1s 2s forwards;
+  }
+  
+  .intro img[id="glass"] {
+    position: absolute;
+    z-index: 100;
+    right: -2rem;
+    animation: appear-glass 1s 2.3s backwards;
+  
+    filter: contrast(5);
+  }
+  
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes appear-glass {
+    from {
+      right: -4rem;
+      opacity: 0;
+    }
+    to {
+      right: -2rem;
+      opacity: 1;
+    }
+  }
+  
+  /*===== RESPONSIVO (DESKTOP) ====================================*/
+  
+  @media (min-width: 1024px) {
+    .intro {
+      padding-top: var(--nav-height);
+    }
+  
+    .intro .wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+  
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "A B";
+    }
+  
+    .intro .colA {
+      text-align: left;
+      align-self: center;
+    }
+  
+    .intro h1 {
+      font-size: 6rem;
+    }
+  
+    .intro .content p {
+      font-size: 2.5rem;
+    }
+  
+    .intro .button {
+      margin: 0;
+    }
+  
+    .intro .wrapper::before {
+      width: 40rem;
+      height: 40rem;
+  
+      right: 3rem;
+      bottom: 7rem;
+    }
+  
+    .intro img {
+      width: 42rem;
+    }
+  
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 38rem;
+      }
+    }
+  }
+  
