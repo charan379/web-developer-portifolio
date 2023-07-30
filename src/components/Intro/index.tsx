@@ -1,8 +1,6 @@
 import React from 'react'
 import styles from './Intro.module.css';
 
-import styles from "./Intro.module.css";
-
 const Intro = () => {
     return (
         <>
@@ -13,15 +11,9 @@ const Intro = () => {
                             <h4>Hello world 👋🏾</h4>
                             <h1>I'm Charan,</h1>
                         </header>
-<<<<<<< HEAD
                         <div className={styles.content}>
                             <p className={`${styles.line} ${styles.typing}`}>Front End Web Developer.</p>
                             <a className="button" href="#contact"> Talk to me </a>
-=======
-                        <div className={`${styles.content} content`}>
-                            <p className={`${styles.line} ${styles.typing}`}> Front End Web Developer.</p>
-                            <a className={`${styles.button} button`} href="#contact"> Talk to me </a>
->>>>>>> 0d0fdcea3ff1a0a5d63bbed130ecf6825a744634
                         </div>
                     </div>
 
