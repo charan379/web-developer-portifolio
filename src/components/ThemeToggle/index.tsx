@@ -9,10 +9,14 @@ const ThemeToggle = () => {
     const [toogle, setToogle] = useState("unchecked");
 
     const ToogleTheme = (event: MouseEvent<HTMLElement>) => {
+        const theme = document.body.dataset.theme;
         // 
-        document.body.classList.toggle("light-mode");
-        // 
-        setToogle(toogle === "unchecked" ? "checked" : "unchecked")
+        if (theme === "light") {
+            document.body.dataset.theme = "dark";
+            setToogle(toogle === "unchecked" ? "checked" : "unchecked")
+        } else {
+            document.body.dataset.theme = "light";
+        }
     }
 
     useEffect(() => {

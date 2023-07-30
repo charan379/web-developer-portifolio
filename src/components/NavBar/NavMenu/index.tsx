@@ -3,6 +3,7 @@ import styles from './NavMenu.module.css'
 import React, { EventHandler, MouseEvent } from 'react'
 import OpenNavBtn from '@/components/Buttons/OpenNavBtn'
 import CloseNavBtn from '@/components/Buttons/CloseNavBtn'
+import { addRemoveBcDropFilter } from '@/lib/utils/addRemoveBcDropFilter'
 
 const NavMenu = () => {
 
@@ -10,12 +11,16 @@ const NavMenu = () => {
   const openNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.add(styles.expanded)
+    document.body.style.overflowY = "hidden"
+    addRemoveBcDropFilter("navigation", "none", false);
   }
 
   // function to close nav menu
   const closeNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
     event.preventDefault();
     document.getElementById("nav-menu")?.classList.remove(styles.expanded)
+    document.body.style.overflowY = "auto"
+    addRemoveBcDropFilter("navigation", "", true);
   }
 
   return (

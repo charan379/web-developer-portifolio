@@ -29,7 +29,7 @@ body {
   background-color: var(--bg-color);
 }
 
-body.light-mode {
+body[data-theme="light"] {
   --secundary-color: rgb(229, 229, 229);
   --third-color: hwb(0 48% 52% / 0.356);
   --bg-color: rgb(241, 241, 241);
@@ -134,8 +134,8 @@ section span {
   transition: 400ms;
 }
 
-body.light-mode .button,
-body.light-mode #intro h4 {
+body[data-theme="light"] .button,
+body[data-theme="light"] #intro h4 {
   filter: brightness(0.8);
 }
 
@@ -146,90 +146,28 @@ body.light-mode #intro h4 {
   cursor: pointer;
 }
 
-body.light-mode .button:hover {
+body[data-theme="light"] .button:hover {
   filter: none;
-}
-
-/* SOCIAL LINKS */
-
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2.5rem;
-}
-
-.social-links li {
-  height: 3rem;
-}
-
-.social-links svg {
-  margin-top: 0.3rem;
-  transition: 300ms;
-}
-
-.social-links li:nth-child(2) svg {
-  width: 2.7rem;
-  height: 2.7rem;
-}
-
-.social-links svg:hover {
-  margin-top: 0;
-  margin-bottom: 0.3rem;
-}
-
-body .social-links li svg path {
-  transition: 200ms;
-}
-
-body nav#navigation .social-links li:nth-child(1) svg:hover path,
-body .social-links li:nth-child(1) svg:hover path {
-  stroke: #ff377a;
-}
-
-body .social-links li:nth-child(2) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(2) svg:hover path:nth-child(2) {
-  fill: #fff;
-}
-
-body.light-mode .social-links li:nth-child(2) svg:hover path:nth-child(2),
-body.light-mode
-  nav#navigation
-  .social-links
-  li:nth-child(2)
-  svg:hover
-  path:nth-child(2) {
-  fill: #000;
-}
-
-body .social-links li:nth-child(3) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(3) svg:hover path:nth-child(2) {
-  fill: #0a66c2;
-}
-
-body .social-links li:nth-child(4) svg:hover path:nth-child(2),
-body nav#navigation .social-links li:nth-child(4) svg:hover path:nth-child(2) {
-  fill: #00abf0;
 }
 
 /* == == */
 
-#projects .card circle {
+/* #projects .card circle {
   fill: var(--secundary-color);
 }
 
 #backToTopButton circle {
   fill: var(--primary-color);
-}
+} */
 
-#contact li path,
+/* #contact li path,
 #navigation button.open-menu path[stroke*="#00856F"] {
   stroke: var(--primary-color);
-}
+} */
 
-#navigation.scroll button.open-menu path[stroke*="#00856F"] {
+/* #navigation.scroll button.open-menu path[stroke*="#00856F"] {
   stroke: var(--paragraph-2);
-}
+} */
 
 /*===== NAVIGATION ===================================*/
 
@@ -256,7 +194,7 @@ nav.scroll {
   -webkit-backdrop-filter: blur(1rem);
 }
 
-body.light-mode nav.scroll {
+body[data-theme="light"] nav.scroll {
   background: rgba(151, 151, 151, 0.5);
 } */
 
@@ -272,15 +210,15 @@ body.light-mode nav.scroll {
   color: var(--primary-color);
 } */
 
-/* body.light-mode nav#navigation a.logo,
-body.light-mode footer a.logo {
+/* body[data-theme="light"] nav#navigation a.logo,
+body[data-theme="light"] footer a.logo {
   font-weight: bold;
 }
 
 footer a.logo,
 nav#navigation.scroll a.logo,
 body.menu-expanded nav#navigation a.logo,
-body.light-mode.menu-expanded nav#navigation.scroll a.logo {
+body[data-theme="light"].menu-expanded nav#navigation.scroll a.logo {
   color: #fff;
 }
 
@@ -288,34 +226,34 @@ body.menu-expanded nav#navigation a.logo {
   opacity: 1;
 }
 
-body.light-mode nav#navigation a.logo {
+body[data-theme="light"] nav#navigation a.logo {
   filter: brightness(0.8);
 }
 
-body.light-mode footer a.logo,
-body.light-mode nav#navigation.scroll a.logo {
+body[data-theme="light"] footer a.logo,
+body[data-theme="light"] nav#navigation.scroll a.logo {
   color: #000;
 } */
 
 /* == == */
 
-nav#navigation .menu ul li a {
+/* nav#navigation .menu ul li a {
   color: #fff;
-}
+} */
 
-nav button {
+/* nav button {
   background: none;
   border: none;
   cursor: pointer;
-}
+} */
 
-nav .menu,
+/* nav .menu,
 nav .close-menu {
   position: fixed;
-}
+} */
 
 /*===== MENU-EXPANDED ==========================================*/
-
+/* 
 body.menu-expanded {
   overflow: hidden;
 }
@@ -380,11 +318,11 @@ body.menu-expanded button {
 
 body.menu-expanded button path {
   stroke: white;
-}
+} */
 
 /*===== HOME ===================================*/
 
-#intro {
+/* #intro {
   height: 100vh;
   min-height: calc(60rem + var(--nav-height));
   padding-block: 0;
@@ -507,8 +445,8 @@ body.menu-expanded button path {
 }
 
 #intro img#notebook-2-white,
-body.light-mode #intro img#notebook-1,
-body.light-mode #intro img#notebook-2 {
+body[data-theme="light"] #intro img#notebook-1,
+body[data-theme="light"] #intro img#notebook-2 {
   visibility: hidden;
   opacity: 0;
   animation: none;
@@ -522,7 +460,7 @@ body.light-mode #intro img#notebook-2 {
   position: absolute;
 }
 
-body.light-mode #intro img#notebook-2-white {
+body[data-theme="light"] #intro img#notebook-2-white {
   position: absolute;
   visibility: visible;
   opacity: 1;
@@ -561,7 +499,7 @@ body.light-mode #intro img#notebook-2-white {
     right: -2rem;
     opacity: 1;
   }
-}
+} */
 
 /*===== ABOUT =================================================*/
 
@@ -889,7 +827,7 @@ body.light-mode #intro img#notebook-2-white {
   border-radius: 100%;
 }
 
-body.light-mode #contact .col-b::after {
+body[data-theme="light"] #contact .col-b::after {
   background-color: grey;
 }
 
@@ -914,11 +852,11 @@ footer .logo {
 }
 
 footer a img:nth-child(2),
-body.light-mode footer a img:nth-child(1) {
+body[data-theme="light"] footer a img:nth-child(1) {
   display: none;
 }
 
-body.light-mode footer a img:nth-child(2) {
+body[data-theme="light"] footer a img:nth-child(2) {
   display: initial;
 }
 
@@ -1077,7 +1015,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     transition: opacity 0.4s;
   }
 
-  body.light-mode nav#navigation .menu ul li a {
+  body[data-theme="light"] nav#navigation .menu ul li a {
     opacity: 1;
   }
 
@@ -1209,7 +1147,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   /*===== HOME ========================================*/
 
-  #intro {
+  /* #intro {
     padding-top: var(--nav-height);
   }
 
@@ -1257,7 +1195,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     to {
       width: 38rem;
     }
-  }
+  } */
 
   /*===== ABOUT =======================================*/
 

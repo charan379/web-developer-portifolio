@@ -1,22 +1,24 @@
 import React from 'react'
 
+import styles from "./Intro.module.css";
+
 const Intro = () => {
     return (
         <>
-            <div id="intro">
-                <div className="wrapper">
-                    <div className="col-a">
+            <div id="intro" className={styles.intro}>
+                <div className={`${styles.wrapper} wrapper`}>
+                    <div className={`${styles.colA} col-a`}>
                         <header>
                             <h4>Hello world 👋🏾</h4>
                             <h1>I'm Charan,</h1>
                         </header>
-                        <div className="content">
-                            <p className="line typing">Front End Web Developer.</p>
+                        <div className={styles.content}>
+                            <p className={`${styles.line} ${styles.typing}`}>Front End Web Developer.</p>
                             <a className="button" href="#contact"> Talk to me </a>
                         </div>
                     </div>
 
-                    <div className="col-b">
+                    <div className={`${styles.colB} col-b`}>
                         <img
                             src="assets/images/notebook.png"
                             alt="Image of a notebook."
