@@ -9,7 +9,7 @@ const Intro = () => {
                     <div className={`${styles.colA} col-a`}>
                         <header>
                             <h4>Hello world 👋🏾</h4>
-                            <h1>I'm Charan,</h1>
+                            <h1>I&apos;m Charan,</h1>
                         </header>
                         <div className={styles.content}>
                             <p className={`${styles.line} ${styles.typing}`}>Front End Web Developer.</p>

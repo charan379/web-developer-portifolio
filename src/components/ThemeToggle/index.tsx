@@ -6,16 +6,16 @@ import React, { MouseEvent, useEffect, useState } from 'react'
 
 const ThemeToggle = () => {
 
-    const [toogle, setToogle] = useState("unchecked");
+    const [toogle, setToogle] = useState("");
 
     const ToogleTheme = (event: MouseEvent<HTMLElement>) => {
         // 
-        if (toogle === "unchecked") {
+        if (toogle === "checked") {
             document.body.dataset.theme = "dark";
-            setToogle("checked")
+            setToogle("unchecked")
         } else {
             document.body.dataset.theme = "light";
-            setToogle("unchecked")
+            setToogle("checked")
         }
     }
 
@@ -23,7 +23,8 @@ const ThemeToggle = () => {
 
         const theme = document.body.dataset.theme;
 
-        if (theme === "light") {
+
+        if (theme === "dark") {
             setToogle("unchecked")
         } else {
             setToogle("checked")
@@ -33,7 +34,7 @@ const ThemeToggle = () => {
         return () => {
 
         }
-    }, [toogle])
+    }, [])
 
     return (
         <>

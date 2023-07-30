@@ -12,7 +12,7 @@ const About = () => {
                         <div className="content">
                             <p>
                                 My name is Charan Teja, graduated in Bsc.(Computer Science). I develop responsive web pages and systems with an attractive layout. I have a trajectory of about 2 years
-                                working with technical support and maintenance of computers, that made me a dedicated and organized professional. Today in the area of ​​live development, continuous learning is focused on JavaScript technologies. I'm looking for opportunities in the market as a dev and, in the near future, I aim to become a Full Stack developer.
+                                working with technical support and maintenance of computers, that made me a dedicated and organized professional. Today in the area of ​​live development, continuous learning is focused on JavaScript technologies. I&apos;m looking for opportunities in the market as a dev and, in the near future, I aim to become a Full Stack developer.
                             </p>
                         </div>
                     </div>
