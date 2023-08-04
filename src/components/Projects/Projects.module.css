@@ -1,0 +1,74 @@
+/*===== PROJECTS ===============================================*/
+
+.projects {
+  background-color: var(--secundary-color);
+}
+
+.projects header {
+  margin-bottom: 6rem;
+}
+
+.projects header h2 {
+  margin-bottom: 1.6rem;
+}
+
+.projects header p {
+  max-width: 60rem;
+  margin: 0 auto 3rem;
+  text-align: center;
+}
+
+.projects header p a {
+  color: var(--paragraph);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.projects header p + a {
+  padding: 0.8rem 2rem;
+  color: var(--paragraph);
+
+  background-color: var(--third-color);
+  border-radius: 0.8rem;
+
+  display: inline-flex;
+  justify-content: center;
+  gap: 1rem;
+
+  transition: 300ms;
+}
+
+.projects header a svg path:nth-child(2) {
+  fill: var(--headline);
+}
+
+.projects header a:hover {
+  filter: brightness(0.7);
+}
+
+.projects .cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3.2rem;
+}
+
+@media (min-width: 1024px) {
+  .projects {
+    background-color: var(--secundary-color);
+  }
+
+  .projects h2 {
+    width: 49.7rem;
+    margin-inline: auto;
+  }
+
+  .projects .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+  }
+
+  .projects h3 {
+    height: 5rem;
+  }
+}

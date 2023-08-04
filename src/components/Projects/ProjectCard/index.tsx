@@ -1,14 +1,15 @@
 import { EyeSvgIcon } from '@/assets/icons/Eye'
 import { GithubSvgIcon } from '@/assets/icons/Github'
 import React from 'react'
+import styles from "./ProjectCard.module.css";
 
 const ProjectCard = (props: Project) => {
     return (
-        <div className="card">
+        <div className={styles.card}>
             <h3>{props.name}</h3>
-            <div className="img-wrapper">
+            <div className={styles.imgWrapper}>
                 <img src={props.image} alt={`Image of ${props.name}`} />
-                <div className="buttons">
+                <div className={styles.buttons}>
                     <a href={props.github} target="_blank" title="Github repository">
                         <GithubSvgIcon />
                     </a>
