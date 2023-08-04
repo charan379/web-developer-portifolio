@@ -4,42 +4,42 @@ import { MoonSvgIcon } from '@/assets/icons/Moon';
 import { SunSvgIcon } from '@/assets/icons/Sun';
 import React, { MouseEvent, useEffect, useState } from 'react'
 
+/**
+ * Theme toggle component that allows switching between light and dark themes.
+ */
 const ThemeToggle = () => {
 
-    const [toogle, setToogle] = useState("");
+    const [theme, setTheme] = useState("");
 
+    /**
+     * Toggle the theme between light and dark.
+     * @param {MouseEvent<HTMLElement>} event - The click event.
+     */
     const ToogleTheme = (event: MouseEvent<HTMLElement>) => {
         // 
-        if (toogle === "checked") {
-            document.body.dataset.theme = "dark";
-            setToogle("unchecked")
-        } else {
+        if (theme === "dark") {
+            setTheme("light");
             document.body.dataset.theme = "light";
-            setToogle("checked")
+        } else {
+            setTheme("dark");
+            document.body.dataset.theme = "dark";
         }
     }
 
     useEffect(() => {
 
-        const theme = document.body.dataset.theme;
+        const dataTheme = document.body?.dataset?.theme;
 
-
-        if (theme === "dark") {
-            setToogle("unchecked")
-        } else {
-            setToogle("checked")
-        }
-
+        if (dataTheme) setTheme(dataTheme)
 
         return () => {
-
         }
     }, [])
 
     return (
         <>
-            <div id="toggle">
-                <input type="checkbox" id="sw-checkbox" value={toogle} onClick={(event) => ToogleTheme(event)} />
+            <div id="toggle" data-theme={theme}>
+                <input type="checkbox" id="sw-checkbox" value={theme} onClick={(event) => ToogleTheme(event)} />
                 <label htmlFor="sw-checkbox" title="Change theme">
                     <MoonSvgIcon />
                     <SunSvgIcon />
