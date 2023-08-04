@@ -154,246 +154,6 @@ body[data-theme="light"] .button:hover {
   margin: 6rem auto 0;
 }
 
-/*===== skills ===============================================*/
-
-#skills header h2 {
-  margin-bottom: 6rem;
-}
-
-#skills .cards {
-  display: flex;
-  flex-direction: column;
-  gap: 3.2rem;
-}
-
-#skills .card {
-  padding: 2.8rem;
-  text-align: left;
-
-  background: var(--secundary-color);
-
-  border-radius: 0.6rem;
-  box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
-
-  transition: 400ms;
-}
-
-#skills .card:hover {
-  background: var(--third-color);
-}
-
-#skills .card h3 {
-  margin-block: 1.6rem;
-}
-
-#skills .card img {
-  width: 10rem;
-}
-
-/*===== CONTACT ===============================================*/
-
-#contact {
-  text-align: left;
-  background-color: var(--secundary-color);
-}
-
-#contact .col-a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  margin-bottom: 2rem;
-}
-
-#contact .col-a .content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#contact header {
-  margin-bottom: 3.2rem;
-}
-
-#contact ul {
-  margin-bottom: 2rem;
-}
-
-#contact ul a {
-  width: fit-content;
-
-  text-decoration: none;
-
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-
-  padding: 1rem;
-  border-radius: 0.8rem;
-
-  transition: 300ms;
-}
-
-#contact ul a {
-  color: var(--paragraph);
-}
-
-#contact ul a:hover {
-  background: var(--third-color);
-}
-
-#contact a path {
-  transition: 400ms;
-}
-
-#contact a.button path {
-  fill: var(--primary-color);
-}
-
-#contact a.button:hover path {
-  fill: #fff;
-}
-
-#contact ul li:nth-child(2) a img {
-  rotate: -15deg;
-}
-
-#contact ul li:nth-child(2) a path {
-  stroke: none;
-}
-
-#contact .col-b {
-  height: 38rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-#contact .col-b img {
-  width: 13rem;
-  animation: flutuar 2.5s infinite backwards;
-  filter: brightness(1.2);
-}
-
-#contact .col-b::after {
-  content: "";
-  display: block;
-
-  width: 13rem;
-  height: 5rem;
-
-  background-color: black;
-  border-radius: 100%;
-}
-
-body[data-theme="light"] #contact .col-b::after {
-  background-color: grey;
-}
-
-/*===== FOOTER ===============================================*/
-
-footer {
-  background-color: var(--secundary-color);
-
-  text-align: left;
-  color: var(--paragraph);
-}
-
-footer .wrapper {
-  padding-block: 6rem;
-  border-top: 0.1rem solid var(--paragraph);
-}
-
-footer .logo {
-  display: inline-block;
-  margin-bottom: 2.4rem;
-  opacity: 0.6;
-}
-
-footer a img:nth-child(2),
-body[data-theme="light"] footer a img:nth-child(1) {
-  display: none;
-}
-
-body[data-theme="light"] footer a img:nth-child(2) {
-  display: initial;
-}
-
-footer p {
-  line-height: 2;
-
-  margin-bottom: 3.2rem;
-}
-
-footer .social-links {
-  justify-content: flex-start;
-}
-
-footer .social-links li:nth-child(1) svg path {
-  stroke: var(--paragraph-2);
-}
-
-footer .social-links li:nth-child(2) svg path:nth-child(2),
-footer .social-links li:nth-child(3) svg path:nth-child(2),
-footer .social-links li:nth-child(4) svg path:nth-child(2) {
-  fill: var(--paragraph-2);
-}
-
-/*===== SWITCH MODE TOGGLE =====================================*/
-
-#toggle {
-  display: flex;
-
-  position: fixed;
-  bottom: 2rem;
-  left: 2.5rem;
-}
-
-#toggle input {
-  position: absolute;
-  visibility: hidden;
-}
-
-#toggle label {
-  width: 8rem;
-  height: 4rem;
-
-  background-color: var(--secundary-color);
-  border: 0.1rem solid var(--primary-color);
-  border-radius: 5rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-#toggle label:hover {
-  cursor: pointer;
-}
-
-#toggle label::before {
-  content: "";
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  background-color: var(--primary-color);
-  border-radius: 50%;
-  position: absolute;
-  bottom: 0.5rem;
-  left: 0.6rem;
-  transition: 500ms;
-}
-
-#toggle[data-theme="light"] + label::before {
-  transform: translateX(0);
-}
-
-#toggle[data-theme="dark"] label::before {
-  transform: translateX(3.8rem);
-}
-
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
 @media (min-width: 1024px) {
@@ -424,72 +184,6 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   .col-b {
     grid-area: B;
   }
-
-  /*===== PROJECTS ====================================*/
-
-  /*===== skills =====================================*/
-
-  #skills h2 {
-    width: 49.7rem;
-    margin-inline: auto;
-  }
-
-  #skills .cards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 4rem;
-  }
-
-  #skills .card {
-    width: 30%;
-    flex-grow: 1;
-  }
-
-  /*===== CONTACT =====================================*/
-
-  #contact .wrapper {
-    grid-template-columns: 1fr 57.5rem;
-    grid-template-areas: "A B";
-  }
-
-  #contact .col-a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-    margin-bottom: 0;
-  }
-
-  #contact .col-a .content {
-    align-items: flex-start;
-  }
-
-  #contact .col-b {
-    text-align: center;
-  }
-
-  /*===== FOOTER ======================================*/
-
-  footer .wrapper {
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "A B";
-  }
-
-  footer .col-a {
-    align-self: center;
-  }
-
-  footer .col-b {
-    align-self: center;
-  }
-
-  footer p {
-    margin-bottom: 0;
-  }
-
-  footer .social-links {
-    justify-content: flex-end;
-  }
 }
 
 @media (max-width: 500px) {
@@ -508,8 +202,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   section p,
-  section span,
-  footer p {
+  section span {
     font-size: 1.3rem;
   }
 
@@ -533,71 +226,14 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     margin: 6rem 0 7rem;
   }
 
-  body.menu-expanded .menu .social-links svg,
-  footer svg {
+  body.menu-expanded .menu .social-links svg {
     width: 2rem;
     height: 2rem;
   }
 
-  body.menu-expanded .menu .social-links li:nth-child(2) svg,
-  footer .social-links li:nth-child(2) svg {
+  body.menu-expanded .menu .social-links li:nth-child(2) svg {
     width: 2.3rem;
     height: 2.3rem;
-  }
-
-  /*===== HOME ==================================*/
-
-  #intro h1 {
-    font-size: 3.8rem;
-  }
-
-  #intro p {
-    font-size: 1.6rem;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 23.5rem;
-    }
-  }
-
-  #intro .wrapper::before {
-    bottom: -2rem;
-  }
-
-  /*===== ABOUT ==================================*/
-
-  #about .content a:nth-child(2) {
-    font-size: 1.4rem;
-  }
-
-  /*===== PROJECTS ==================================*/
-
-  /*===== CONTACT ==================================*/
-
-  #contact ul a {
-    font-size: 1.3rem;
-  }
-
-  #contact .col-b img {
-    width: 10rem;
-  }
-
-  #contact .col-b::after {
-    width: 10rem;
-    height: 3rem;
-  }
-}
-
-@media (max-width: 410px) {
-  #intro .wrapper::before {
-    width: 24rem;
-    height: 24rem;
-
-    bottom: -0.5rem;
   }
 }
 
@@ -606,42 +242,6 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
 
   .wrapper {
     padding-inline: 2rem;
-  }
-
-  /*===== HOME ==================================*/
-
-  #intro .wrapper::before {
-    width: 20rem;
-    height: 20rem;
-
-    bottom: 2rem;
-  }
-
-  #intro h1 {
-    font-size: 3.2rem;
-  }
-
-  #intro p {
-    font-size: 1.4rem;
-  }
-
-  #intro .line {
-    white-space: initial;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 18rem;
-    }
-  }
-
-  /*===== ABOUT ==================================*/
-
-  #about .content a:nth-child(2) {
-    font-size: 1.2rem;
   }
 }
 
@@ -661,8 +261,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   }
 
   section p,
-  section span,
-  footer p {
+  section span {
     font-size: 1.1rem;
   }
 
@@ -676,47 +275,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     gap: 1.5rem;
   }
 
-  nav#navigation a.logo,
-  footer a.logo {
+  nav#navigation a.logo {
     font-size: 2.5rem;
-  }
-
-  /*===== HOME ==================================*/
-
-  #intro h1 {
-    font-size: 2.9rem;
-  }
-
-  #intro p {
-    font-size: 1.2rem;
-  }
-
-  #intro .wrapper::before {
-    width: 15rem;
-    height: 15rem;
-
-    bottom: 3.5rem;
-  }
-
-  /*===== PROJECTS ==================================*/
-
-  /*===== CONTACT ==================================*/
-
-  #contact ul a {
-    font-size: 1.1rem;
-  }
-
-  #contact svg {
-    width: 1.8rem;
-    height: 1.8rem;
-  }
-
-  #contact .col-b img {
-    width: 9rem;
-  }
-
-  #contact .col-b::after {
-    width: 9rem;
-    height: 2rem;
   }
 }

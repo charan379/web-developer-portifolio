@@ -5,7 +5,7 @@ const LinkedInLink = () => {
     return (
         <>
             <a
-                href="https://linkedin.com/in/lucyanovidio"
+                href="https://linkedin.com/in/developer-name"
                 title="LinkedIn"
                 target="_blank"
             >

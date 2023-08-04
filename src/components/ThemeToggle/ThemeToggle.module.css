@@ -1,0 +1,51 @@
+/*===== SWITCH MODE TOGGLE =====================================*/
+
+.toggle {
+  display: flex;
+  position: fixed;
+  bottom: 2rem;
+  left: 2.5rem;
+}
+
+.toggle input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.toggle label {
+  width: 8rem;
+  height: 4rem;
+
+  background-color: var(--secundary-color);
+  border: 0.1rem solid var(--primary-color);
+  border-radius: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.toggle label:hover {
+  cursor: pointer;
+}
+
+.toggle label::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0.6rem;
+  transition: 500ms;
+}
+
+.toggle[data-theme="light"] + label::before {
+  transform: translateX(0);
+}
+
+.toggle[data-theme="dark"] label::before {
+  transform: translateX(3.8rem);
+}

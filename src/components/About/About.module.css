@@ -66,3 +66,15 @@
     scale: 1.07;
   }
 }
+
+@media (max-width: 500px) {
+  .about .content a:nth-child(2) {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .about .content a:nth-child(2) {
+    font-size: 1.2rem;
+  }
+}

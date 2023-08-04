@@ -5,7 +5,7 @@ const TwitterLink = () => {
     return (
         <>
             <a
-                href="https://twitter.com/lucyanovidio"
+                href="https://twitter.com/developer-name"
                 title="Twitter"
                 target="_blank"
             >

@@ -3,7 +3,7 @@ import React from 'react'
 
 const AppLogo = () => {
     return (
-        <a className={`${styles.logo} close`} href="#intro"> lucyanovidio </a>
+        <a className={`${styles.logo} close`} href="#intro"> developer-name </a>
     )
 }
 

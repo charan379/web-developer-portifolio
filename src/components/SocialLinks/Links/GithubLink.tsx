@@ -5,7 +5,7 @@ const GithubLink = () => {
     return (
         <>
             <a
-                href="https://github.com/lucyanovidio"
+                href="https://github.com/developer-name"
                 title="Github"
                 target="_blank"
             >

@@ -5,7 +5,7 @@ const InstragramLink = () => {
     return (
         <>
             <a
-                href="https://instagram.com/lucyanovidio"
+                href="https://instagram.com/developer-name"
                 title="Instagram"
                 target="_blank"
             >

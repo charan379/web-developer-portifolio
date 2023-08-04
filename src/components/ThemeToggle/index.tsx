@@ -3,6 +3,7 @@
 import { MoonSvgIcon } from '@/assets/icons/Moon';
 import { SunSvgIcon } from '@/assets/icons/Sun';
 import React, { MouseEvent, useEffect, useState } from 'react'
+import styles from "./ThemeToggle.module.css"
 
 /**
  * Theme toggle component that allows switching between light and dark themes.
@@ -38,7 +39,7 @@ const ThemeToggle = () => {
 
     return (
         <>
-            <div id="toggle" data-theme={theme}>
+            <div id="toggle" className={styles.toggle} data-theme={theme}>
                 <input type="checkbox" id="sw-checkbox" value={theme} onClick={(event) => ToogleTheme(event)} />
                 <label htmlFor="sw-checkbox" title="Change theme">
                     <MoonSvgIcon />

@@ -1,39 +1,40 @@
 import EmailSvgLogo from '@/assets/logos/Email';
 import WhatsappSvgLogo from '@/assets/logos/Whatsapp';
 import React from 'react'
+import styles from "./Contact.module.css"
 
 const Contact = () => {
     return (
         <>
-            <section id="contact">
-                <div className="wrapper">
-                    <div className="col-a">
+            <section id="contact" className={styles.contact}>
+                <div className={`${styles.wrapper} wrapper`}>
+                    <div className={`${styles.colA} col-a`}>
                         <header>
-                            <h2>Fale comigo!</h2>
+                            <h2>Talk to me!</h2>
                         </header>
-                        <div className="content">
+                        <div className={`${styles.content} content`}>
                             <ul>
                                 <li>
-                                    <a href="mailto: lucyanovidio@gmail.com" title="Enviar e-mail">
+                                    <a href="mailto: developer-name@gmail.com" title="Enviar e-mail">
                                         <EmailSvgLogo />
-                                        lucyanovidio@gmail.com
+                                        developer-name@gmail.com
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="tel:+5521971602369" title="Fazer ligação"
+                                    <a href="tel:+5521971602369" title="Make a call"
                                     ><img
                                             src="./assets/icons/celular.svg"
-                                            alt="Ícone de celular."
+                                            alt="Cellphone icon.                                            "
                                             id="cel"
                                         />
-                                        +55 21 97160-2369</a>
+                                        +91 97160-2369</a>
                                 </li>
                             </ul>
 
                             <a
                                 className="button"
-                                title="Me chama no zap!"
-                                href="https://api.whatsapp.com/send?phone=5521971602369&text=Fala,%20Lucyan!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
+                                title="Call me on zap!                                "
+                                href="https://api.whatsapp.com/send?phone=552197602369&text=Fala,%20Lucyan!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
                                 target="_blank"
                             >
                                 <WhatsappSvgLogo />
@@ -42,8 +43,8 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <div className="col-b">
-                        <img src="./assets/images/celular-2.png" alt="Ícone de celular." />
+                    <div className={`${styles.colB} col-b`}>
+                        <img src="./assets/images/celular-2.png" alt="Cellphone icon." />
                     </div>
                 </div>
             </section>

@@ -1,25 +1,30 @@
 import React from 'react'
 import SocialLinks from '../SocialLinks'
+import styles from "./Footer.module.css"
+import AppLogo from '../AppLogo'
 
 const Footer = () => {
     return (
         <>
-            <footer>
-                <div className="wrapper">
-                    <div className="col-a">
-                        <a className="logo" href="#home"> lucyanovidio </a>
+            <footer className={styles.footer}>
+                <div className={`${styles.wrapper} wrapper`}>
+                    <div className={`${styles.colA} col-a`}>
+
+                        <div id="logo" className={styles.logo}>
+                            <AppLogo />
+                        </div>
 
                         <p>
-                            ©2022 por Lucyan Ovídio. <br />
-                            Todos os direitos reservados.
+                            ©2022 By Developer Name. <br />
+                            All rights reserved.
                         </p>
                     </div>
 
-                    <div className="col-b">
+                    <div className={`${styles.colB} col-b`}>
                         <SocialLinks />
                     </div>
                 </div>
-            </footer>
+            </footer >
         </>
     )
 }
