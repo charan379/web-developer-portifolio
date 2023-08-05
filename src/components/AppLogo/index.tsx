@@ -9,7 +9,7 @@ export interface AppLogoProps {
 }
 const AppLogo = (props: AppLogoProps) => {
 
-    const { height, width }: WindowDimensions = useWindowSize(50);
+    const { height, width }: WindowDimensions = useWindowSize();
 
     return (
         <a className={`${styles.logo} close`} href="#intro">

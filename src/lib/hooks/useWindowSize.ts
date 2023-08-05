@@ -1,17 +1,16 @@
 import { useEffect, useState } from "react";
-import { debounce } from "lodash";
 
 export interface WindowDimensions {
     width: number;
     height: number;
 }
 
-const getWindowDimensions = (): WindowDimensions => {
-    const { innerWidth: width, innerHeight: height } = window;
-    return { width, height };
-};
+const getWindowDimensions = (): WindowDimensions => ({
+    width: typeof window !== "undefined" ? window.innerWidth : 0,
+    height: typeof window !== "undefined" ? window.innerHeight : 0,
+});
 
-export function useWindowSize(delay: number = 0): WindowDimensions {
+export function useWindowSize(): WindowDimensions {
     const [windowDimensions, setWindowDimensions] = useState<WindowDimensions>(
         getWindowDimensions()
     );
@@ -20,15 +19,15 @@ export function useWindowSize(delay: number = 0): WindowDimensions {
         function handleResize() {
             setWindowDimensions(getWindowDimensions());
         }
-        const debouncedHandleResize = debounce(handleResize, delay);
-        // listen to resize events
-        window.addEventListener("resize", debouncedHandleResize);
 
-        // stop listening when component unmounts
-        return () => {
-            window.removeEventListener("resize", debouncedHandleResize);
-        };
-    }, [delay]);
+        if (typeof window !== "undefined") {
+            window.addEventListener("resize", handleResize);
+
+            return () => {
+                window.removeEventListener("resize", handleResize);
+            };
+        }
+    }, []);
 
     return windowDimensions;
 }
