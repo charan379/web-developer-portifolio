@@ -10,7 +10,13 @@ import Footer from '@/components/Footer'
 import ThemeToggle from '@/components/ThemeToggle'
 import BackToTopBtn from '@/components/Buttons/BackToTopBtn'
 
-export default function Home() {
+export default async function Home() {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, { method: 'GET' });
+
+  const data = await response.json();
+
+  console.log(data);
+
   return (
     <>
       <NavBar />
@@ -24,9 +30,9 @@ export default function Home() {
       <Skills />
 
       <Contact />
-      
+
       <BackToTopBtn />
-      
+
       <Footer />
 
       <ThemeToggle />
