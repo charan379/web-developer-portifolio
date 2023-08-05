@@ -1,9 +1,22 @@
+'use client';
+
+import { WindowDimensions, useWindowSize } from '@/lib/hooks/useWindowSize';
 import styles from './AppLogo.module.css';
 import React from 'react'
 
-const AppLogo = () => {
+export interface AppLogoProps {
+    location?: string
+}
+const AppLogo = (props: AppLogoProps) => {
+
+    const { height, width }: WindowDimensions = useWindowSize(50);
+
     return (
-        <a className={`${styles.logo} close`} href="#intro"> developer-name </a>
+        <a className={`${styles.logo} close`} href="#intro">
+            {
+                props?.location === "nav" && width <= 1024 ? "Charan" : "Developer-Name"
+            }
+        </a>
     )
 }
 
