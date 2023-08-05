@@ -32,7 +32,7 @@ const Contact = () => {
                             </ul>
 
                             <a
-                                className="button"
+                                className={`${styles.button} button`}
                                 title="Call me on zap!                                "
                                 href="https://api.whatsapp.com/send?phone=552197602369&text=Fala,%20Lucyan!%20Vim%20do%20teu%20portifólio,%20quero%20trabalhar%20contigo!"
                                 target="_blank"

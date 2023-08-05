@@ -14,13 +14,13 @@
 .nav .wrapper {
   width: min(112rem, 100%);
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   visibility: initial;
   opacity: initial;
-  flex-direction: initial;
+  flex-direction: row;
   position: initial;
   font-size: initial;
   transform: initial;
@@ -29,6 +29,7 @@
   filter: initial;
   margin-inline: auto;
   padding-inline: 2.4rem;
+  flex-wrap: nowrap;
 }
 
 .nav.scroll {
@@ -38,10 +39,7 @@
   -webkit-backdrop-filter: blur(1rem);
 }
 
-
-
 @media (max-width: 1024px) {
-
   .nav.scroll[data-menu-extended="true"] {
     background: none;
     backdrop-filter: none;
@@ -51,5 +49,4 @@
   .nav[data-menu-extended="true"] {
     color: #fff;
   }
-
 }

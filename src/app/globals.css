@@ -6,7 +6,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "DM Sans", sans-serif;
 }
 
@@ -23,9 +22,7 @@ body {
 body {
   font-size: 1.6rem;
   text-align: center;
-
   overflow: overlay;
-
   background-color: var(--bg-color);
 }
 
@@ -33,7 +30,6 @@ body[data-theme="light"] {
   --secundary-color: rgb(229, 229, 229);
   --third-color: hwb(0 48% 52% / 0.356);
   --bg-color: rgb(241, 241, 241);
-
   --headline: hsl(0, 0%, 0%);
   --paragraph: rgb(32, 32, 32);
   --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
@@ -55,7 +51,6 @@ body[data-theme="light"] {
 
 .wrapper {
   width: min(50rem, 100%);
-
   margin-inline: auto;
   padding-inline: 2.4rem;
 }
@@ -112,30 +107,23 @@ section span {
 .button {
   background: none;
   border: 0.2rem solid var(--primary-color);
-
   margin-bottom: 6rem;
   padding: 1.4rem 3rem;
-
   width: fit-content;
-
   color: var(--primary-color);
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1.6rem;
-
   position: relative;
-
   transition: 400ms;
 }
 
-body[data-theme="light"] .button,
-body[data-theme="light"] #intro h4 {
+body[data-theme="light"] .button {
   filter: brightness(0.8);
 }
 
@@ -150,15 +138,13 @@ body[data-theme="light"] .button:hover {
   filter: none;
 }
 
-#projects .button {
+/* .projects .button {
   margin: 6rem auto 0;
-}
+} */
 
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
 @media (min-width: 1024px) {
-  /*===== GERAL =======================================*/
-
   body {
     overflow: auto;
   }
@@ -187,8 +173,6 @@ body[data-theme="light"] .button:hover {
 }
 
 @media (max-width: 500px) {
-  /*===== GERAL ==================================*/
-
   section h4 {
     font-size: 1.2rem;
   }
@@ -209,31 +193,6 @@ body[data-theme="light"] .button:hover {
   .button {
     padding: 1rem 2rem;
     font-size: 1.2rem;
-  }
-
-  /*===== NAVEGATION ==================================*/
-
-  nav#navigation button svg {
-    width: 3rem;
-    height: 3rem;
-  }
-
-  /*===== MENU-EXPANDED ==================================*/
-
-  body.menu-expanded .menu ul:nth-child(1) {
-    font-size: 1.4rem;
-    gap: 2rem;
-    margin: 6rem 0 7rem;
-  }
-
-  body.menu-expanded .menu .social-links svg {
-    width: 2rem;
-    height: 2rem;
-  }
-
-  body.menu-expanded .menu .social-links li:nth-child(2) svg {
-    width: 2.3rem;
-    height: 2.3rem;
   }
 }
 
@@ -270,12 +229,5 @@ body[data-theme="light"] .button:hover {
     font-size: 1rem;
     gap: 0.6rem;
   }
-
-  .social-links {
-    gap: 1.5rem;
-  }
-
-  nav#navigation a.logo {
-    font-size: 2.5rem;
-  }
+  
 }

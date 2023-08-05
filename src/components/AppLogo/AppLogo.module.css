@@ -13,10 +13,6 @@ body[data-theme="light"] .logo {
   font-weight: bold;
 }
 
-body.menu-expanded .logo {
-  opacity: 1;
-}
-
 body[data-theme="light"] .logo {
   filter: brightness(0.8);
 }

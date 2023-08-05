@@ -190,6 +190,10 @@ body[data-theme="light"] .intro img[id="notebook-2"] {
   }
 }
 
+body[data-theme="light"] .intro h4 {
+  filter: brightness(0.8);
+}
+
 /*===== RESPONSIVO (DESKTOP) ====================================*/
 
 @media (min-width: 1024px) {

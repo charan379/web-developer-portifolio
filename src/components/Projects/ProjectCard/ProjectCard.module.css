@@ -3,15 +3,12 @@
 .card {
   padding: 4rem;
   background: var(--bg-color);
-
   border-radius: 0.6rem;
   box-shadow: -1rem 1rem 1rem rgba(0, 0, 0, 0.267);
-
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 2.5rem;
-
   transition: 400ms;
 }
 
@@ -29,7 +26,6 @@
   height: 20rem;
   object-fit: cover;
   border-radius: 0.6rem;
-
   transition: 300ms;
 }
 
@@ -40,17 +36,14 @@
 .card .buttons {
   visibility: hidden;
   opacity: 0;
-
   position: absolute;
   left: 0;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-
   display: flex;
   justify-content: center;
   gap: 1rem;
-
   transition: 400ms;
 }
 
@@ -76,14 +69,11 @@
 .card .buttons a {
   background: #fff;
   border-radius: 50%;
-
   width: 6rem;
   height: 6rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
-
   transition: 500ms;
 }
 

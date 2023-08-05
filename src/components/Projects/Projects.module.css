@@ -27,14 +27,11 @@
 .projects header p + a {
   padding: 0.8rem 2rem;
   color: var(--paragraph);
-
   background-color: var(--third-color);
   border-radius: 0.8rem;
-
   display: inline-flex;
   justify-content: center;
   gap: 1rem;
-
   transition: 300ms;
 }
 
