@@ -7,6 +7,10 @@
   color: inherit;
   font-weight: bold;
   z-index: 102;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 body[data-theme="light"] .logo {

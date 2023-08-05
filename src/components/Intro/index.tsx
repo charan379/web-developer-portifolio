@@ -13,7 +13,7 @@ const Intro = () => {
                         </header>
                         <div className={styles.content}>
                             <p className={`${styles.line} ${styles.typing}`}>Front End Web Developer.</p>
-                            <a className="button" href="#contact"> Talk to me </a>
+                            <a className={`${styles.button} button`} href="#contact"> Talk to me </a>
                         </div>
                     </div>
 

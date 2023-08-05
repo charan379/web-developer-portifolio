@@ -24,7 +24,7 @@ const NavBar = () => {
         <>
             <nav id="navigation" className={styles.nav} data-scrolled="false" data-menu-extended="false">
                 <div className={styles.wrapper}>
-                    <AppLogo />
+                    <AppLogo location='nav' />
                     <NavMenu />
                 </div>
             </nav>
