@@ -18,19 +18,12 @@
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  visibility: initial;
-  opacity: initial;
   flex-direction: row;
-  position: initial;
-  font-size: initial;
-  transform: initial;
-  background-color: initial;
-  font-weight: initial;
-  filter: initial;
   margin-inline: auto;
   padding-inline: 2.4rem;
   flex-wrap: nowrap;
 }
+
 
 .nav.scroll {
   background: var(--nav-bg-scroll);
@@ -48,5 +41,17 @@
 
   .nav[data-menu-extended="true"] {
     color: #fff;
+  }
+}
+
+@media (max-width: 320px) {
+  .wrapper {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  .wrapper {
+    padding-inline: 1rem;
   }
 }

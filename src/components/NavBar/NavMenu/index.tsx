@@ -1,52 +1,71 @@
-import SocialLinks from '@/components/SocialLinks'
-import styles from './NavMenu.module.css'
-import React, { EventHandler, MouseEvent } from 'react'
-import OpenNavBtn from '@/components/Buttons/OpenNavBtn'
-import CloseNavBtn from '@/components/Buttons/CloseNavBtn'
-import { addRemoveBcDropFilter } from '@/lib/utils/addRemoveBcDropFilter'
+import SocialLinks from "@/components/SocialLinks";
+import styles from "./NavMenu.module.css";
+import React, { EventHandler, MouseEvent } from "react";
+import OpenNavBtn from "@/components/Buttons/OpenNavBtn";
+import CloseNavBtn from "@/components/Buttons/CloseNavBtn";
+import { addRemoveBcDropFilter } from "@/lib/utils/addRemoveBcDropFilter";
 
 const NavMenu = () => {
-
   // function to open nav menu
-  const openNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
+  const openNavMenu: EventHandler<any> = (
+    event: MouseEvent<HTMLElement> | TouchEvent
+  ) => {
     event.preventDefault();
-    document.getElementById("nav-menu")?.classList.add(styles.expanded)
-    document.body.style.overflowY = "hidden"
+    document.getElementById("nav-menu")?.classList.add(styles.expanded);
+    document.body.style.overflowY = "hidden";
     addRemoveBcDropFilter("navigation", "none", false);
-  }
+  };
 
   // function to close nav menu
-  const closeNavMenu: EventHandler<any> = (event: MouseEvent<HTMLElement> | TouchEvent) => {
+  const closeNavMenu: EventHandler<any> = (
+    event: MouseEvent<HTMLElement> | TouchEvent
+  ) => {
     event.preventDefault();
-    document.getElementById("nav-menu")?.classList.remove(styles.expanded)
-    document.body.style.overflowY = "auto"
+    document.getElementById("nav-menu")?.classList.remove(styles.expanded);
+    document.body.style.overflowY = "auto";
     addRemoveBcDropFilter("navigation", "", true);
-  }
+  };
 
   return (
     <>
       <div id="nav-menu" className={styles.menu}>
         <ul className={styles.navLinks}>
           <li className={styles.navLink}>
-            <a id="aboutNav" className={`close`} href="#about">About me</a>
+            <a id="aboutNav" className={`close`} href="#about">
+              About me
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a id="projectsNav" className={`close`} href="#projects">Projects</a>
+            <a id="projectsNav" className={`close`} href="#projects">
+              Projects
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a id="skillsNav" className={`close`} href="#skills">Skills / Knowledge</a>
+            <a id="skillsNav" className={`close`} href="#skills">
+              Skills / Knowledge
+            </a>
           </li>
           <li className={styles.navLink}>
-            <a id="contactNav" className={`close`} href="#contact">Talk to me</a>
+            <a id="contactNav" className={`close`} href="#contact">
+              Talk to me
+            </a>
           </li>
         </ul>
         <SocialLinks />
       </div>
       {/* close & open buttons */}
-      <OpenNavBtn className={styles.openMenu} onClick={openNavMenu} name='Open Menu' />
-      <CloseNavBtn className={styles.closeMenu} onClick={closeNavMenu} name='Close Menu' />
+      <OpenNavBtn
+        className={styles.openMenu}
+        onClick={openNavMenu}
+        name="Open Menu"
+      />
+      <CloseNavBtn
+        className={styles.closeMenu}
+        onClick={closeNavMenu}
+        name="Close Menu"
+      />
     </>
-  )
-}
+  );
+};
 
-export default NavMenu
+export default NavMenu;
