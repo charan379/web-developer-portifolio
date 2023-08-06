@@ -15,7 +15,7 @@ const Footer = (props: { profile: Profile }) => {
             </div>
 
             <p>
-              ©2022 By Developer Name. <br />
+              ©2023 By {props.profile.name}. <br />
               All rights reserved.
             </p>
           </div>
