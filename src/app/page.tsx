@@ -36,7 +36,10 @@ export async function generateMetadata() {
       "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover",
     manifest: "/manifest.json",
     icons: [
-      { rel: "apple-touch-icon", url: "/images/apple-touch-icon.png" },
+      {
+        rel: "apple-touch-icon",
+        url: "/assets/images/site/apple-touch-icon.png",
+      },
       { rel: "shortcut icon", url: "/favicon.ico" },
     ],
     keywords: ["web-developer", "portifolio", "projects", "skills"],
@@ -49,17 +52,17 @@ export async function generateMetadata() {
       siteName: data?.profile?.name,
       images: [
         {
-          url: "/images/website-ss-256x256.jpg",
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}${data?.profile?.displayPicture}`,
           width: 185,
           height: 278,
         },
         {
-          url: "/images/website-ss-256x256.jpg",
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}${data?.profile?.displayPicture}`,
           width: 342,
           height: 513,
         },
         {
-          url: "/images/website-ss.jpg",
+          url: `${process.env.NEXT_PUBLIC_BASE_URL}${data?.profile?.displayPicture}`,
           width: 500,
           height: 750,
         },
@@ -72,7 +75,9 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: data?.profile?.name,
       description: data?.profile?.aboutMe,
-      images: ["/images/website-ss-256x256.jpg"],
+      images: [
+        `${process.env.NEXT_PUBLIC_BASE_URL}${data?.profile?.displayPicture}`,
+      ],
     },
   };
 }
