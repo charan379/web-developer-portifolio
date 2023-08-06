@@ -1,32 +1,31 @@
-import React from 'react'
-import SocialLinks from '../SocialLinks'
-import styles from "./Footer.module.css"
-import AppLogo from '../AppLogo'
+import React from "react";
+import SocialLinks from "../SocialLinks";
+import styles from "./Footer.module.css";
+import AppLogo from "../AppLogo";
 
-const Footer = () => {
-    return (
-        <>
-            <footer className={styles.footer}>
-                <div className={`${styles.wrapper} wrapper`}>
-                    <div className={`${styles.colA} col-a`}>
+const Footer = (props: { profile: Profile }) => {
+  return (
+    <>
+      <footer className={styles.footer}>
+        <div className={`${styles.wrapper} wrapper`}>
+          <div className={`${styles.colA} col-a`}>
+            <div id="logo" className={styles.logo}>
+              <AppLogo />
+            </div>
 
-                        <div id="logo" className={styles.logo}>
-                            <AppLogo />
-                        </div>
+            <p>
+              ©2022 By Developer Name. <br />
+              All rights reserved.
+            </p>
+          </div>
 
-                        <p>
-                            ©2022 By Developer Name. <br />
-                            All rights reserved.
-                        </p>
-                    </div>
+          <div className={`${styles.colB} col-b`}>
+            <SocialLinks />
+          </div>
+        </div>
+      </footer>
+    </>
+  );
+};
 
-                    <div className={`${styles.colB} col-b`}>
-                        <SocialLinks />
-                    </div>
-                </div>
-            </footer >
-        </>
-    )
-}
-
-export default Footer
+export default Footer;

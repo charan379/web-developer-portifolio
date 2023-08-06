@@ -3,7 +3,7 @@ import WhatsappSvgLogo from '@/assets/logos/Whatsapp';
 import React from 'react'
 import styles from "./Contact.module.css"
 
-const Contact = () => {
+const Contact = (props: { profile: Profile }) => {
     return (
         <>
             <section id="contact" className={styles.contact}>
