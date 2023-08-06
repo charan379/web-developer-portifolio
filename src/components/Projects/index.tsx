@@ -4,7 +4,7 @@ import MoreProjectsCard from "./MoreProjectsCard";
 import styles from "./Projects.module.css";
 
 const Projects = (props: { projects: Project[] }) => {
-  const demoProjects: Array<Project> = [];
+  const demoProjects: Array<Project> = props.projects;
   return (
     <>
       <section id="projects" className={styles.projects}>

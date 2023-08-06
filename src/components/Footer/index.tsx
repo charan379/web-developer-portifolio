@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import SocialLinks from "../SocialLinks";
 import styles from "./Footer.module.css";
@@ -10,7 +11,7 @@ const Footer = (props: { profile: Profile }) => {
         <div className={`${styles.wrapper} wrapper`}>
           <div className={`${styles.colA} col-a`}>
             <div id="logo" className={styles.logo}>
-              <AppLogo />
+              <AppLogo profile={props.profile} location="footer" />
             </div>
 
             <p>

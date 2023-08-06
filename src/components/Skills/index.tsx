@@ -3,7 +3,7 @@ import SkillCard from "./SkillCard";
 import styles from "./Skills.module.css";
 
 const Skills = (props: { skills: Skill[] }) => {
-  const demoSkills: Skill[] = [];
+  const demoSkills: Skill[] = props.skills;
   return (
     <>
       <section id="skills" className={styles.skills}>

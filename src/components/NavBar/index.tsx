@@ -25,7 +25,7 @@ const NavBar = (props: { profile: Profile }) => {
         data-menu-extended="false"
       >
         <div className={styles.wrapper}>
-          <AppLogo location="nav" />
+          <AppLogo location="nav" profile={props.profile} />
           <NavMenu />
         </div>
       </nav>
