@@ -5,7 +5,7 @@ const ProfileCard = () => {
     return (
         <div className={styles.profileCardPage}>
             <div className={styles.profileCardModal}>
-                sdfdsf
+
             </div>
         </div>
     )
