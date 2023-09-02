@@ -1,77 +1,111 @@
 .profileCardPage {
-    /* flex */
-    display: flex;
+  /* flex */
+  /* display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
-    align-items: center;
-    /* flex */
-    height: 100%;
-    width: 100%;
+    align-items: center; */
+  /* flex */
+  /* height: 100%;
+    width: 100%; */
 }
 
 .profileCardModal {
-    height: 60px;
-    width: 60px;
-    border-radius: 100%;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
-    /* flex */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
-    /* animation */
-    animation: bouncingBall 0.8s ease-in-out 0.5s 2 alternate-reverse, cardMagnify 0.8s ease-in-out 2.1s forwards;
-    /* color */
-    background-color: orange;
-    /* position */
-    position: relative;
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  align-items: center;
 
+  /*  */
+  background: #ffb300;
+  width: 56px;
+  height: 56px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 0;
+  margin-top: 70px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16),
+    0px 3px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
+  /*  */
+  animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
+    moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+    moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+    materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 
-
-@keyframes bouncingBall {
-    0% {
-        bottom: -200px;
-    }
-
-    10% {
-        bottom: -150px;
-    }
-
-    20% {
-        bottom: -100px;
-    }
-
-    25% {
-        bottom: -50px;
-    }
-
-    50% {
-        bottom: 40px;
-    }
-
-    100% {
-        bottom: 0px;
-    }
+@keyframes init {
+  0% {
+    width: 0px;
+    height: 0px;
+  }
+  100% {
+    width: 56px;
+    height: 56px;
+    margin-top: 0px;
+    opacity: 1;
+  }
 }
 
-@keyframes cardMagnify {
+@keyframes moveDown {
+  0% {
+    top: 50%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 100%;
+  }
+}
 
-    0% {
-        height: 60px;
-        width: 60px;
-        border-radius: 5px;
-    }
+@keyframes moveUp {
+  0% {
+    background: #ffb300;
+    top: 100%;
+  }
+  50% {
+    top: 40%;
+  }
+  100% {
+    top: 50%;
+    background: #e0e0e0;
+  }
+}
 
-    100% {
-        height: 80vh;
-        width: 60vw;
-        border-radius: 10px
-    }
+@keyframes materia {
+  0% {
+    background: #e0e0e0;
+  }
+  50% {
+    border-radius: 4px;
+  }
+  100% {
+    width: 440px;
+    height: 280px;
+    background: #ffffff;
+    border-radius: 4px;
+  }
+}
 
-
+@keyframes moveIn {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: -20px;
+  }
 }
