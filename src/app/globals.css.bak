@@ -1,0 +1,274 @@
+@import "./cssroot.css";
+
+/*===== General ===============================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-size: 1.6rem;
+  text-align: center;
+  overflow: overlay;
+  background-color: var(--bg-color);
+  background-image: url("5509862.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body:before {
+  content: "";
+  height: 0px;
+  padding: 0px;
+  border: 110em solid #313440;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  z-index: 2;
+  display: block;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: puff 0.5s 1.8s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
+    borderRadius 0.2s 2.3s linear forwards;
+}
+
+@keyframes puff {
+  0% {
+    top: 100%;
+    width: 0px;
+    padding-bottom: 0px;
+  }
+  100% {
+    top: 50%;
+    width: 100%;
+    padding-bottom: 100%;
+  }
+}
+
+@keyframes borderRadius {
+  0% {
+    -webkit-border-radius: 50%;
+  }
+  100% {
+    border-radius: 0px;
+  }
+}
+
+body[data-theme="light"] {
+  --secundary-color: rgb(229, 229, 229);
+  --third-color: hwb(0 48% 52% / 0.356);
+  --bg-color: rgb(241, 241, 241);
+  --headline: hsl(0, 0%, 0%);
+  --paragraph: rgb(32, 32, 32);
+  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 3%);
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 1rem;
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: var(--paragraph);
+}
+
+.wrapper {
+  width: min(50rem, 100%);
+  margin-inline: auto;
+  padding-inline: 2.4rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  color: var(--paragraph);
+}
+
+section {
+  padding-block: 10rem;
+  padding-inline: 2rem;
+}
+
+section h4 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: 0.08rem;
+  color: var(--primary-color);
+  text-transform: uppercase;
+
+  margin-bottom: 1.6rem;
+}
+
+section header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+
+  color: var(--primary-color);
+}
+
+section h3 {
+  color: var(--headline);
+}
+
+section p,
+section span {
+  font-weight: 400;
+  font-size: 1.7rem;
+  line-height: 130%;
+
+  color: var(--paragraph);
+}
+
+.button {
+  background: none;
+  border: 0.2rem solid var(--primary-color);
+  margin-bottom: 6rem;
+  padding: 1.4rem 3rem;
+  width: fit-content;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.6rem;
+  position: relative;
+  transition: 400ms;
+}
+
+body[data-theme="light"] .button {
+  filter: brightness(0.8);
+}
+
+.button:hover {
+  color: #fff;
+  background-color: var(--primary-hover);
+  border: 0.2rem solid var(--primary-hover);
+  cursor: pointer;
+}
+
+body[data-theme="light"] .button:hover {
+  filter: none;
+}
+
+/* .projects .button {
+  margin: 6rem auto 0;
+} */
+
+/*===== RESPONSIVO (DESKTOP) ====================================*/
+
+@media (min-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+
+  .wrapper {
+    width: min(112rem, 100%);
+    display: grid;
+  }
+
+  section {
+    padding-block: 13rem;
+  }
+
+  body section h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .col-a {
+    grid-area: A;
+  }
+
+  .col-b {
+    grid-area: B;
+  }
+}
+
+@media (max-width: 500px) {
+  section h4 {
+    font-size: 1.2rem;
+  }
+
+  body section h2 {
+    font-size: 2.2rem;
+  }
+
+  section h3 {
+    font-size: 1.4rem;
+  }
+
+  section p,
+  section span {
+    font-size: 1.3rem;
+  }
+
+  .button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  /*===== GERAL ==================================*/
+
+  .wrapper {
+    padding-inline: 2rem;
+  }
+}
+
+@media (max-width: 250px) {
+  /*===== GERAL ==================================*/
+
+  .wrapper {
+    padding-inline: 1rem;
+  }
+
+  body section h2 {
+    font-size: 2rem;
+  }
+
+  section h3 {
+    font-size: 1.2rem;
+  }
+
+  section p,
+  section span {
+    font-size: 1.1rem;
+  }
+
+  .button {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+    gap: 0.6rem;
+  }
+}

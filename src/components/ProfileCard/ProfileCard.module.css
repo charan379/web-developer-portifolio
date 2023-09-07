@@ -21,10 +21,9 @@
   align-items: center;
 
   /*  */
-  background: #ffb300;
-  width: 56px;
-  height: 56px;
   position: absolute;
+  max-width: 720px;
+  max-height: 480px;
   left: 50%;
   top: 50%;
   z-index: 2;
@@ -38,26 +37,30 @@
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16),
     0px 3px 6px rgba(0, 0, 0, 0.23);
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.23);
-  /*  */
+  /* animations */
   animation: init 0.5s 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
     moveDown 1s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
     moveUp 1s 1.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
     materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 
+/* initilize the alien logo  */
 @keyframes init {
   0% {
     width: 0px;
     height: 0px;
   }
   100% {
-    width: 56px;
-    height: 56px;
+    width: 75px;
+    height: 75px;
     margin-top: 0px;
     opacity: 1;
+    background-image: url("/assets/images/site/android-chrome-512x512.png");
+    background-size: cover;
   }
 }
 
+/* move the alien logo to down */
 @keyframes moveDown {
   0% {
     top: 50%;
@@ -70,9 +73,12 @@
   }
 }
 
+/* Remove alien logo and then it looks like a round ball and 
+move it up */
 @keyframes moveUp {
   0% {
-    background: #ffb300;
+    background-image: url("/assets/images/site/android-chrome-512x512.png");
+    background-size: cover;
     top: 100%;
   }
   50% {
@@ -84,21 +90,6 @@
   }
 }
 
-@keyframes materia {
-  0% {
-    background: #e0e0e0;
-  }
-  50% {
-    border-radius: 4px;
-  }
-  100% {
-    width: 440px;
-    height: 280px;
-    background: #ffffff;
-    border-radius: 4px;
-  }
-}
-
 @keyframes moveIn {
   0% {
     margin-top: 50px;
@@ -107,5 +98,77 @@
   100% {
     opacity: 1;
     margin-top: -20px;
+  }
+}
+
+/* This thing pops up the profile card and 
+it needs to be responsive to screen size */
+/* Default animation for larger screens */
+@keyframes materia {
+  0% {
+    background: #e0e0e0;
+  }
+  50% {
+    border-radius: 4px;
+  }
+  100% {
+    width: 80%; /* Set width to 80% of the viewport width */
+    height: 70%; /* Set height to 70% of the viewport height */
+    background: #ffffff;
+    border-radius: 10px;
+  }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  @keyframes materia {
+    0% {
+      background: #e0e0e0;
+    }
+    50% {
+      border-radius: 4px; /* Adjust the border-radius for smaller screens */
+    }
+    100% {
+      width: 80%; /* Set width to 80% of the viewport width */
+      height: 70%; /* Set height to 70% of the viewport height */
+      background: #ffffff;
+      border-radius: 10px; /* Adjust the border-radius for smaller screens */
+    }
+  }
+}
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  @keyframes materia {
+    0% {
+      background: #e0e0e0;
+    }
+    50% {
+      border-radius: 4px; /* Further adjust the border-radius for very small screens */
+    }
+    100% {
+      width: 80%; /* Set width to 80% of the viewport width */
+      height: 70%; /* Set height to 70% of the viewport height */
+      background: #ffffff;
+      border-radius: 10px; /* Further adjust the border-radius for very small screens */
+    }
+  }
+}
+
+/* Media query for screens larger than 1280px */
+@media (min-width: 1280px) {
+  @keyframes materia {
+    0% {
+      background: #e0e0e0;
+    }
+    50% {
+      border-radius: 4px; /* Adjust the border-radius for larger screens */
+    }
+    100% {
+      width: 80%; /* Set width to 80% of the viewport width */
+      height: 70%; /* Set height to 70% of the viewport height */
+      background: #ffffff;
+      border-radius: 10px; /* Adjust the border-radius for larger screens */
+    }
   }
 }
