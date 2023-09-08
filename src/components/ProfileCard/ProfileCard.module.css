@@ -1,25 +1,17 @@
 .profileCardPage {
   /* flex */
-  /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center; */
-  /* flex */
-  /* height: 100%;
-    width: 100%; */
-}
-
-.profileCardModal {
-  /* flex */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-content: space-around;
   justify-content: space-around;
   align-items: center;
+  /*  */
+  height: 100%;
+  width: 100%;
+}
 
+.profileCardModal {
   /*  */
   position: absolute;
   max-width: 720px;
@@ -44,12 +36,110 @@
     materia 0.5s 2.7s cubic-bezier(0.86, 0, 0.07, 1) forwards;
 }
 
+.profile {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 0.8fr;
+  grid-template-areas: 'gridItem1'
+    'gridItem2'
+    'gridItem3'
+    'gridItem4'
+    'gridItem5';
+  /* grid-column-gap: 0px; */
+  grid-row-gap: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.profile>div {
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+
+  /*  */
+  margin-top: 0px;
+  opacity: 0;
+  animation: moveIn 0.8s 3.1s infinite cubic-bezier(0.07, 0.1, 0.96, 0.75) forwards;
+}
+
+@keyframes moveIn {
+  0% {
+    margin-top: 50px;
+    opacity: 0;
+  }
+
+  25% {
+    margin-top: 40px;
+    opacity: 0.25;
+  }
+
+  50% {
+    margin-top: 30px;
+    opacity: 0.5;
+  }
+
+  75% {
+    margin-top: 20px;
+    opacity: 0.75;
+  }
+
+  90% {
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
+}
+
+.gridItem1 {
+  grid-area: gridItem1;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.gridItem2 {
+  grid-area: gridItem2;
+  width: 100%;
+  height: 100%;
+  background-color: green;
+}
+
+.gridItem3 {
+  grid-area: gridItem3;
+  width: 100%;
+  height: 100%;
+  background-color: yellow;
+}
+
+.gridItem4 {
+  grid-area: gridItem4;
+  width: 100%;
+  height: 100%;
+  background-color: blue;
+}
+
+.gridItem5 {
+  grid-area: gridItem5;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
 /* initilize the alien logo  */
 @keyframes init {
   0% {
     width: 0px;
     height: 0px;
   }
+
   100% {
     width: 75px;
     height: 75px;
@@ -65,9 +155,11 @@
   0% {
     top: 50%;
   }
+
   50% {
     top: 40%;
   }
+
   100% {
     top: 100%;
   }
@@ -81,23 +173,14 @@ move it up */
     background-size: cover;
     top: 100%;
   }
+
   50% {
     top: 40%;
   }
+
   100% {
     top: 50%;
     background: #e0e0e0;
-  }
-}
-
-@keyframes moveIn {
-  0% {
-    margin-top: 50px;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    margin-top: -20px;
   }
 }
 
@@ -108,12 +191,16 @@ it needs to be responsive to screen size */
   0% {
     background: #e0e0e0;
   }
+
   50% {
     border-radius: 4px;
   }
+
   100% {
-    width: 80%; /* Set width to 80% of the viewport width */
-    height: 70%; /* Set height to 70% of the viewport height */
+    width: 80%;
+    /* Set width to 80% of the viewport width */
+    height: 70%;
+    /* Set height to 70% of the viewport height */
     background: #ffffff;
     border-radius: 10px;
   }
@@ -125,14 +212,20 @@ it needs to be responsive to screen size */
     0% {
       background: #e0e0e0;
     }
+
     50% {
-      border-radius: 4px; /* Adjust the border-radius for smaller screens */
+      border-radius: 4px;
+      /* Adjust the border-radius for smaller screens */
     }
+
     100% {
-      width: 80%; /* Set width to 80% of the viewport width */
-      height: 70%; /* Set height to 70% of the viewport height */
+      width: 80%;
+      /* Set width to 80% of the viewport width */
+      height: 70%;
+      /* Set height to 70% of the viewport height */
       background: #ffffff;
-      border-radius: 10px; /* Adjust the border-radius for smaller screens */
+      border-radius: 10px;
+      /* Adjust the border-radius for smaller screens */
     }
   }
 }
@@ -143,14 +236,20 @@ it needs to be responsive to screen size */
     0% {
       background: #e0e0e0;
     }
+
     50% {
-      border-radius: 4px; /* Further adjust the border-radius for very small screens */
+      border-radius: 4px;
+      /* Further adjust the border-radius for very small screens */
     }
+
     100% {
-      width: 80%; /* Set width to 80% of the viewport width */
-      height: 70%; /* Set height to 70% of the viewport height */
+      width: 80%;
+      /* Set width to 80% of the viewport width */
+      height: 70%;
+      /* Set height to 70% of the viewport height */
       background: #ffffff;
-      border-radius: 10px; /* Further adjust the border-radius for very small screens */
+      border-radius: 10px;
+      /* Further adjust the border-radius for very small screens */
     }
   }
 }
@@ -161,14 +260,20 @@ it needs to be responsive to screen size */
     0% {
       background: #e0e0e0;
     }
+
     50% {
-      border-radius: 4px; /* Adjust the border-radius for larger screens */
+      border-radius: 4px;
+      /* Adjust the border-radius for larger screens */
     }
+
     100% {
-      width: 80%; /* Set width to 80% of the viewport width */
-      height: 70%; /* Set height to 70% of the viewport height */
+      width: 80%;
+      /* Set width to 80% of the viewport width */
+      height: 70%;
+      /* Set height to 70% of the viewport height */
       background: #ffffff;
-      border-radius: 10px; /* Adjust the border-radius for larger screens */
+      border-radius: 10px;
+      /* Adjust the border-radius for larger screens */
     }
   }
 }
