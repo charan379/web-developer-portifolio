@@ -1,0 +1,13 @@
+.profilePic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* This creates the round shape */
+  overflow: hidden; /* Clips the image to the round shape */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Makes sure the image covers the entire circle */
+}
