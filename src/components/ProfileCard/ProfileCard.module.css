@@ -63,7 +63,7 @@
   /*  */
   margin-top: 0px;
   opacity: 0;
-  animation: moveIn 0.8s 3.1s infinite cubic-bezier(0.07, 0.1, 0.96, 0.75) forwards;
+  animation: moveIn 0.5s 3.1s cubic-bezier(0.07, 0.1, 0.96, 0.75) forwards;
 }
 
 @keyframes moveIn {
