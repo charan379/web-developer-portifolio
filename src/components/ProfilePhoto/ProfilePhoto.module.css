@@ -1,13 +1,25 @@
 .profilePic {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%; /* This creates the round shape */
-  overflow: hidden; /* Clips the image to the round shape */
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Optional: Add a shadow effect */
+  width: 140px;
+  height: 140px;
+  margin: 10px;
+  border-radius: 50%;
+  /* This creates the round shape */
+  overflow: hidden;
+  /* Clips the image to the round shape */
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+  /* Shadow effect */
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.profilePic:hover {
+  /* Expand shadow on hover */
+  box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
 }
 
 .profilePic img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Makes sure the image covers the entire circle */
+  object-fit: cover;
+  /* Makes sure the image covers the entire circle */
 }
