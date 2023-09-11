@@ -8,20 +8,20 @@ import TwitterLink from './Links/TwitterLink'
 
 const SocialLinks = () => {
     return (
-        <ul className={styles.socialLinks}>
-            <li id='instagram' className={styles.socialLink}>
+        <div className={styles.socialLinks}>
+            <div id='instagram' className={styles.socialLink}>
                 <InstragramLink />
-            </li>
-            <li id='github' className={styles.socialLink}>
+            </div>
+            <div id='github' className={styles.socialLink}>
                 <GithubLink />
-            </li>
-            <li id='linkedin' className={styles.socialLink}>
+            </div>
+            <div id='linkedin' className={styles.socialLink}>
                 <LinkedInLink />
-            </li>
-            <li id='twitter' className={styles.socialLink}>
+            </div>
+            <div id='twitter' className={styles.socialLink}>
                 <TwitterLink />
-            </li>
-        </ul>
+            </div>
+        </div>
     )
 }
 

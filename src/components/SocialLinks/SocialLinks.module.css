@@ -5,64 +5,67 @@
   color: inherit;
 }
 
-.socialLinks li.socialLink a {
+.socialLinks .socialLink a {
   opacity: 1;
   color: inherit;
 }
 
-.socialLinks li.socialLink svg {
+.socialLinks .socialLink svg {
+  height: 35px;
+  width: 35px;
+  /*  */
   margin-top: 0.5rem;
   transition: 300ms;
   color: inherit;
   transform: scale(1.1);
 }
 
-.socialLinks li.socialLink svg:hover {
+.socialLinks .socialLink svg:hover {
   transform: scale(1.2);
 }
 
 /* instagram */
-.socialLinks li.socialLink[id="instagram"] svg path {
+.socialLinks .socialLink[id="instagram"] svg path {
   stroke: currentColor;
 }
 
-.socialLinks li.socialLink[id="instagram"] svg:hover path {
+.socialLinks .socialLink[id="instagram"] svg:hover path {
   stroke: #ff377a;
 }
 
 /* github */
-.socialLinks li.socialLink[id="github"] svg path:nth-child(2) {
+.socialLinks .socialLink[id="github"] svg path:nth-child(2) {
   fill: currentColor;
 }
 
-.socialLinks li.socialLink[id="github"] svg:hover path:nth-child(2) {
+.socialLinks .socialLink[id="github"] svg:hover path:nth-child(2) {
   fill: #373e47;
 }
 
 /* linkedin */
-.socialLinks li.socialLink[id="linkedin"] svg path:nth-child(2) {
+.socialLinks .socialLink[id="linkedin"] svg path:nth-child(2) {
   fill: currentColor;
 }
 
-.socialLinks li.socialLink[id="linkedin"] svg:hover path:nth-child(2) {
+.socialLinks .socialLink[id="linkedin"] svg:hover path:nth-child(2) {
   fill: #0a66c2;
 }
 
 /* twitter */
-.socialLinks li.socialLink[id="twitter"] svg path:nth-child(2) {
+.socialLinks .socialLink[id="twitter"] svg path:nth-child(2) {
   fill: currentColor;
 }
 
-.socialLinks li.socialLink[id="twitter"] svg:hover path:nth-child(2) {
+.socialLinks .socialLink[id="twitter"] svg:hover path:nth-child(2) {
   fill: #00abf0;
 }
 
 
-.socialLinks li.socialLink svg:hover {
+.socialLinks .socialLink svg:hover {
   margin-top: 0;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
-.socialLinks li.socialLink svg path {
+.socialLinks .socialLink svg path {
   transition: 200ms;
 }
