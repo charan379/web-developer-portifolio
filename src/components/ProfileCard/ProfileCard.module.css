@@ -75,7 +75,7 @@
   grid-area: gridItem1;
   width: 100%;
   height: 100%;
-  background-color: rebeccapurple;
+  
   /* flex */
   display: flex;
   flex-direction: row;
@@ -120,7 +120,7 @@
   grid-area: gridItem5;
   width: 100%;
   height: 100%;
-  background-color: yellowgreen;
+  
   /* anime */
   animation: moveIn 1s 3.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
