@@ -2,6 +2,8 @@ import React from "react";
 import styles from "./ProfileCard.module.css";
 import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
 import SocialLinks from "../SocialLinks";
+import Name from "../Name/Name";
+import Bio from "../Bio/Bio";
 
 const ProfileCard = () => {
   return (
@@ -10,6 +12,10 @@ const ProfileCard = () => {
         <div className={styles.profile}>
           <div className={styles.gridItem1}>
             <ProfilePhoto />
+            <div className={styles.owner}>
+              <Name />
+              <Bio />
+            </div>
           </div>
           <div className={styles.gridItem2}> Grid 2 </div>
           <div className={styles.gridItem3}> Grid 3 </div>
