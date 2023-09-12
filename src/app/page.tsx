@@ -109,7 +109,7 @@ export default async function Home() {
 
       <Footer profile={data?.profile} /> */}
 
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
     </>
   );
 }
