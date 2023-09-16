@@ -11,8 +11,10 @@ const ProfileCard = () => {
       <div className={styles.profileCardModal}>
         <div className={styles.profile}>
           <div className={styles.gridItem1}>
-            <ProfilePhoto />
-            <div className={styles.owner}>
+            <div className={styles.gridItem1Sec1}>
+              <ProfilePhoto />
+            </div>
+            <div className={styles.gridItem1Sec2}>
               <Name />
               <Bio />
             </div>

@@ -52,7 +52,7 @@
   height: 100%;
 }
 
-.profile>div {
+.profile > div {
   /*  */
   padding: 5px;
   /*  */
@@ -82,14 +82,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  align-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 
   /* anime */
   animation: moveIn 1s 3.1s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
 }
 
-.owner {
+.gridItem1 .gridItem1Sec1 {
+  max-width: 25%;
+}
+
+.gridItem1 .gridItem1Sec2 {
   display: flex;
   margin-left: 10px;
   height: 100%;
@@ -98,6 +101,8 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: center;
+  max-width: 75%;
+  text-align: left;
 }
 
 .gridItem2 {

@@ -5,7 +5,7 @@ const Name = () => {
 
     return (
         <h1>
-            Portfolio Owner
+            John Deo
         </h1>
     )
 }

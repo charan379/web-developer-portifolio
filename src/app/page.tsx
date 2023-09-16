@@ -89,7 +89,7 @@ export default async function Home() {
 
       <BackToTopBtn />
 
-      {/* <ThemeToggle /> */}
+      <ThemeToggle />
     </>
   );
 }
