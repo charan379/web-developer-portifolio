@@ -12,7 +12,8 @@ const ProfileCard = () => {
         <div className={styles.profile}>
           <div className={styles.gridItem1}>
             <div className={styles.gridItem1Sec1}>
-              <ProfilePhoto />
+              {/* Profile Photo Component */}
+              <ProfilePhoto style={{ width: "140px", height: "140px" }} />
             </div>
             <div className={styles.gridItem1Sec2}>
               <Name />
