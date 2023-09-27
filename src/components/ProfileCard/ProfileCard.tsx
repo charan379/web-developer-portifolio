@@ -6,21 +6,21 @@ import Bio from "../Bio/Bio";
 
 const ProfileCard = () => {
   return (
-    <div className="w-4/12 h-3/4 bg-slate-50 rounded-3xl shadow-2xl p-5">
-      <div >
+    <div className="max-w-2xl m-5 bg-slate-50 rounded-3xl shadow-2xl p-5 2xl:max-w-screen-lg">
+      <div>
         <div >
           {/* Profile Photo Component */}
           <ProfilePhoto style={{ width: "140px", height: "140px" }} />
         </div>
-        <div >
+        <div>
           <Name />
           <Bio />
         </div>
       </div>
       <div > Grid 2 </div>
-      <div > Grid 3 </div>
-      <div > Grid 4 </div>
-      <div >
+      <div> Grid 3 </div>
+      <div> Grid 4 </div>
+      <div>
         <SocialLinks />
       </div>
     </div>

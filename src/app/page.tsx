@@ -83,7 +83,7 @@ export default async function Home() {
   // const data = await response.json();
 
   return (
-    <main className="container h-screen w-full flex justify-center items-center">
+    <main className="h-screen w-full flex justify-center items-center">
       <ProfileCard />
 
       {/* <BackToTopBtn /> */}
