@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./ProfileCard.module.css";
 import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
 import SocialLinks from "../SocialLinks";
 import Name from "../Name/Name";
@@ -7,26 +6,22 @@ import Bio from "../Bio/Bio";
 
 const ProfileCard = () => {
   return (
-    <div className={styles.profileCardPage}>
-      <div className={styles.profileCardModal}>
-        <div className={styles.profile}>
-          <div className={styles.gridItem1}>
-            <div className={styles.gridItem1Sec1}>
-              {/* Profile Photo Component */}
-              <ProfilePhoto style={{ width: "140px", height: "140px" }} />
-            </div>
-            <div className={styles.gridItem1Sec2}>
-              <Name />
-              <Bio />
-            </div>
-          </div>
-          <div className={styles.gridItem2}> Grid 2 </div>
-          <div className={styles.gridItem3}> Grid 3 </div>
-          <div className={styles.gridItem4}> Grid 4 </div>
-          <div className={styles.gridItem5}>
-            <SocialLinks />
-          </div>
+    <div className="w-4/12 h-3/4 bg-slate-50 rounded-3xl shadow-2xl p-5">
+      <div >
+        <div >
+          {/* Profile Photo Component */}
+          <ProfilePhoto style={{ width: "140px", height: "140px" }} />
         </div>
+        <div >
+          <Name />
+          <Bio />
+        </div>
+      </div>
+      <div > Grid 2 </div>
+      <div > Grid 3 </div>
+      <div > Grid 4 </div>
+      <div >
+        <SocialLinks />
       </div>
     </div>
   );

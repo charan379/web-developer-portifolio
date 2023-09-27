@@ -1,4 +1,10 @@
-@import "./cssroot.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* custom css old keeping for @keyframes [ remove after storing @keyframes at another place */
+/* @import "./cssroot.css";
 
 * {
   margin: 0;
@@ -93,4 +99,4 @@ body:before {
 }
 
 @media (max-width: 250px) {
-}
+} */

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import styles from "./page.module.css";
 import ThemeToggle from "@/components/ThemeToggle";
 import BackToTopBtn from "@/components/Buttons/BackToTopBtn";
 import ProfileCard from "@/components/ProfileCard/ProfileCard";
@@ -84,12 +83,12 @@ export default async function Home() {
   // const data = await response.json();
 
   return (
-    <>
+    <main className="container h-screen w-full flex justify-center items-center">
       <ProfileCard />
 
-      <BackToTopBtn />
+      {/* <BackToTopBtn /> */}
 
-      <ThemeToggle />
-    </>
+      {/* <ThemeToggle /> */}
+    </main>
   );
 }
