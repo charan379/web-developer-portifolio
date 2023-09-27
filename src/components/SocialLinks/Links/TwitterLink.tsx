@@ -1,4 +1,4 @@
-import TwitterSvgLogo from '@/assets/logos/Twitter'
+import { TwitterSvg } from '@charan379/react-svg-icons'
 import React from 'react'
 
 const TwitterLink = () => {
@@ -9,7 +9,7 @@ const TwitterLink = () => {
                 title="Twitter"
                 target="_blank"
             >
-                <TwitterSvgLogo />
+                <TwitterSvg />
             </a>
         </>
     )

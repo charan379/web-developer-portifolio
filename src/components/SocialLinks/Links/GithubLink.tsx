@@ -1,4 +1,4 @@
-import { GithubSvgLogo } from '@/assets/logos/Github'
+import { GithubSvg } from '@charan379/react-svg-icons'
 import React from 'react'
 
 const GithubLink = () => {
@@ -9,7 +9,7 @@ const GithubLink = () => {
                 title="Github"
                 target="_blank"
             >
-                <GithubSvgLogo />
+                <GithubSvg catOuterLeftColor='red'/>
             </a>
         </>
     )

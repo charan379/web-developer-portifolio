@@ -11,8 +11,8 @@
 }
 
 .socialLinks .socialLink svg {
-  height: 35px;
-  width: 35px;
+  /* height: 35px;
+  width: 35px; */
   /*  */
   margin-top: 0.5rem;
   transition: 300ms;
@@ -25,22 +25,22 @@
 }
 
 /* instagram */
-.socialLinks .socialLink[id="instagram"] svg path {
+/* .socialLinks .socialLink[id="instagram"] svg path {
   stroke: currentColor;
 }
 
 .socialLinks .socialLink[id="instagram"] svg:hover path {
   stroke: #ff377a;
-}
+} */
 
 /* github */
-.socialLinks .socialLink[id="github"] svg path:nth-child(2) {
+/* .socialLinks .socialLink[id="github"] svg path:nth-child(2) {
   fill: currentColor;
 }
 
 .socialLinks .socialLink[id="github"] svg:hover path:nth-child(2) {
   fill: #373e47;
-}
+} */
 
 /* linkedin */
 .socialLinks .socialLink[id="linkedin"] svg path:nth-child(2) {

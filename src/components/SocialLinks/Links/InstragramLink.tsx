@@ -1,4 +1,4 @@
-import InstagramSvgLogo from '@/assets/logos/Instagram'
+import { InstagramSvg } from '@charan379/react-svg-icons'
 import React from 'react'
 
 const InstragramLink = () => {
@@ -9,7 +9,7 @@ const InstragramLink = () => {
                 title="Instagram"
                 target="_blank"
             >
-                <InstagramSvgLogo />
+                <InstagramSvg />
             </a>
         </>
     )

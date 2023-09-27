@@ -1,4 +1,4 @@
-import LinkedInSvgLogo from '@/assets/logos/LinkedIn'
+import { LinkedInSvg } from '@charan379/react-svg-icons'
 import React from 'react'
 
 const LinkedInLink = () => {
@@ -9,7 +9,7 @@ const LinkedInLink = () => {
                 title="LinkedIn"
                 target="_blank"
             >
-                <LinkedInSvgLogo />
+                <LinkedInSvg />
             </a>
         </>
     )
