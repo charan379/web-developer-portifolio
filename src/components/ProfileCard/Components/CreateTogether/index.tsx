@@ -1,14 +1,20 @@
+import RevealOnClick from "@/components/RevealOnClick";
 import { EmailSvg, WhatsappSvg } from "@charan379/react-svg-icons";
 import Link from "next/link";
 import React from "react";
 
-const CreateTogether: React.FC<ComponentProps> = (props) => {
+const CreateTogether: React.FC<ComponentProps> = () => {
   return (
-    <div className={props?.className ?? "w-1/2 mx-auto text-center"}>
-      {/* heading */}
-      <h2 className="text-xl font-semibold mb-3">Lets create together !</h2>
-      <div className="w-full flex flex-row justify-center">
-        {/* divider */}
+    <RevealOnClick
+      className="w-1/2 mx-auto text-center"
+      buttonClassName="w-max min-w-[50%]  bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
+      contentClassName="flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
+      buttonText="Lets create together !"
+      key={`ROC2`}
+    >
+      {/* children */}
+      <>
+        {/* Links */}
         <Link
           className="transition-all duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
           href={"#"}
@@ -22,8 +28,8 @@ const CreateTogether: React.FC<ComponentProps> = (props) => {
         >
           <EmailSvg size={50} />
         </Link>
-      </div>
-    </div>
+      </>
+    </RevealOnClick>
   );
 };
 
