@@ -2,7 +2,81 @@
 @tailwind components;
 @tailwind utilities;
 
+.btn-anime-1 {
+  position: relative;
+}
 
+.btn-anime-1:hover:before,
+.btn-anime-1:hover::after {
+  content: "";
+  position: absolute;
+}
+
+.btn-anime-1:hover::before {
+  left: 0;
+  top: 0;
+  animation: btn-border-animation-tr 0.5s cubic-bezier(0.43, 0.56, 0.34, 1.04)
+    forwards;
+}
+
+.btn-anime-1:hover::after {
+  right: 0;
+  bottom: 0;
+  animation: btn-border-animation-bl 0.5s cubic-bezier(0.43, 0.56, 0.34, 1.04)
+    forwards;
+}
+
+@keyframes btn-border-animation-tr {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-left: 2px solid currentColor;
+    border-top-left-radius: 6px;
+    border-top: 2px solid currentColor;
+  }
+  99% {
+    width: 99%;
+    height: 99%;
+    border-left: 2px solid currentColor;
+    border-top-left-radius: 6px;
+    border-top: 2px solid currentColor;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-left: 2px solid currentColor;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top: 2px solid currentColor;
+  }
+}
+
+@keyframes btn-border-animation-bl {
+  0% {
+    width: 0%;
+    height: 0%;
+    border-right: 2px solid currentColor;
+    border-bottom-right-radius: 6px;
+    border-bottom: 2px solid currentColor;
+  }
+  99% {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid currentColor;
+    border-bottom-right-radius: 6px;
+    border-bottom: 2px solid currentColor;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-right: 2px solid currentColor;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom: 2px solid currentColor;
+  }
+}
 /* custom css old keeping for @keyframes [ remove after storing @keyframes at another place */
 /* @import "./cssroot.css";
 
