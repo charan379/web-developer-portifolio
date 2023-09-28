@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./Bio.module.css";
 
-const Bio = () => {
+const Bio: React.FC<ComponentProps> = (props) => {
   return (
     <>
-      <h4 className={styles.bio}>
+      <h4 className={`${props.className}`}>
         I am John Deo, a passionate and dedicated web developer with a keen eye
         for detail and a strong desire to create exceptional online experiences.
         My journey into the world of web development began with a fascination
