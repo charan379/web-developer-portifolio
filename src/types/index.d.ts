@@ -1,3 +1,8 @@
+interface ComponentProps {
+    style?: React.CSSProperties; // Custom styles for the component
+    className?: string; // Custom CSS class for the component
+}
+
 type Profile = {
     name: string,
     shortName: string
