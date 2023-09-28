@@ -1,7 +1,6 @@
 import React from "react";
-import styles from "./Bio.module.css";
 
-const Bio: React.FC<ComponentProps> = (props) => {
+const About: React.FC<ComponentProps> = (props) => {
   return (
     <>
       <h4 className={`${props.className}`}>
@@ -14,4 +13,4 @@ const Bio: React.FC<ComponentProps> = (props) => {
   );
 };
 
-export default Bio;
+export default About;

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import ThemeToggle from "@/components/ThemeToggle";
 import BackToTopBtn from "@/components/Buttons/BackToTopBtn";
-import ProfileCard from "@/components/ProfileCard/ProfileCard";
+import ProfileCard from "@/components/ProfileCard";
 
 // export async function generateMetadata() {
 //   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
