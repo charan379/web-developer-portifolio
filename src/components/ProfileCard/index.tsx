@@ -12,9 +12,9 @@ import CreateTogether from "./Components/CreateTogether";
 const ProfileCard = () => {
   return (
     // profile card
-    <div className="p-5 flex gap-y-3 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-3xl border-red-600 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+    <div className="pt-5 flex gap-y-3 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-3xl border-red-600 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
       {/* Bio */}
-      <Bio className="flex flex-row items-center" />
+      <Bio className="p-2 flex flex-row items-center" />
       {/* resume, hire me , contact */}
       <div className="p-2 w-full gap-1 flex flex-row flex-nowrap items-center">
         {/* inner div 1 */}
@@ -24,7 +24,7 @@ const ProfileCard = () => {
       </div>
 
       {/* social links */}
-      <div className="w-full flex flex-row flex-wrap items-center justify-center border-t-2">
+      <div className="p-2 w-full bg-slate-200 rounded-b-3xl flex flex-row flex-wrap items-center justify-center border-t-2">
         <SocialLinks />
       </div>
     </div>
