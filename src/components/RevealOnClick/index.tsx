@@ -1,6 +1,7 @@
 "use client";
 
-import React, { PropsWithChildren, useState } from "react";
+import { useOnOutsideClick } from "@charan379/react-hooks";
+import React, { PropsWithChildren, useCallback, useRef, useState } from "react";
 
 interface RevealOnClickProps extends ComponentProps, PropsWithChildren {
   buttonClassName?: string;
@@ -8,13 +9,27 @@ interface RevealOnClickProps extends ComponentProps, PropsWithChildren {
   buttonText?: string;
   contentClassName?: string;
   contentStyle?: React.CSSProperties;
+  id?: string;
 }
 
 const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
+  const thisComponentRef = useRef<HTMLDivElement>(null);
   const [reveal, setReveal] = useState(false);
 
+  useOnOutsideClick(
+    thisComponentRef,
+    useCallback(() => {
+      setReveal(!true);
+    }, [thisComponentRef.current]),
+    false
+  );
+
   return (
-    <div className={props?.className ?? "w-1/2 border-r-2 mx-auto text-center"}>
+    <div
+      ref={thisComponentRef}
+      className={props?.className ?? "w-1/2 border-r-2 mx-auto text-center"}
+      id={props?.id ?? "revealOnClick"}
+    >
       {/* button */}
 
       <button
@@ -26,7 +41,7 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
         // styles
         style={props?.buttonStyle}
         // actions
-        onClick={() => setReveal(!reveal)}
+        onClick={() => setReveal(!false)}
       >
         {props?.buttonText ?? "Click me to reveal"}
       </button>

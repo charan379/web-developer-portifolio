@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@charan379/react-hooks": "^0.0.1",
     "@charan379/react-svg-icons": "^0.0.7",
     "@types/node": "20.3.3",
     "@types/react": "18.2.14",
