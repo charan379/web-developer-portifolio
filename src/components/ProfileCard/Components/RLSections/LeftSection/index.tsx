@@ -9,7 +9,7 @@ const HireMe: React.FC<ComponentProps> = () => {
       className="w-1/2 border-r-2 mx-auto text-center"
       buttonClassName="min-w-[50%] w-max bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
       contentClassName="flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
-      buttonText="Hire Me !"
+      buttonText="Know more about me !"
       key={`ROC1`}
     >
       {/* children */}

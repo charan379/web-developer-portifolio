@@ -1,13 +1,9 @@
 import React from "react";
-import ProfilePhoto from "./Components/ProfilePhoto/ProfilePhoto";
 import SocialLinks from "../SocialLinks";
-import Name from "./Components/Name/Name";
 import AboutMe from "./Components/AboutMe/AboutMe";
-import { EmailSvg, WhatsappSvg } from "@charan379/react-svg-icons";
-import Link from "next/link";
 import Bio from "./Components/Bio";
-import HireMe from "./Components/HireMe";
-import CreateTogether from "./Components/CreateTogether";
+import HireMe from "./Components/RLSections/LeftSection";
+import CreateTogether from "./Components/RLSections/RightSection";
 
 const ProfileCard = () => {
   return (
