@@ -3,6 +3,7 @@
   flex-direction: row;
   gap: 1.5rem;
   color: inherit;
+  flex-wrap: wrap;
 }
 
 .socialLinks .socialLink a {
