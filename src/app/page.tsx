@@ -83,7 +83,7 @@ export default async function Home() {
   // const data = await response.json();
 
   return (
-    <main className="h-[100%] w-full flex justify-center items-center overflow-auto">
+    <main className="min-h-[100dvh] w-full m-0 flex flex-row justify-center items-center overflow-auto">
       <ProfileCard />
     </main>
   );
