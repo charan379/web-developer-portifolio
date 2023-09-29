@@ -23,7 +23,7 @@ const Bio: React.FC<ComponentProps> = (props) => {
           <Skills
             className="w-full flex flex-row gap-2 items-center md:items-start justify-center md:justify-normal flex-wrap pb-2"
             skills={["Java", "React", "Css", "Html", "JS", "NodeJs", "MongoDB"]}
-            skillClassName="w-max bg-slate-500 text-slate-50 text-sm px-2 py-1 rounded-[4.5px] border-r-8 border-slate-700 cursor-pointer "
+            skillClassName="w-max bg-slate-500 hover:bg-red-500 text-slate-50  text-sm px-2 py-1 rounded-[4.5px] border-r-8 border-slate-700 cursor-pointer "
           />
         </div>
       </div>
