@@ -2,23 +2,23 @@ import React from "react";
 import SocialLinks from "../SocialLinks";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Bio from "./Components/Bio";
-import HireMe from "./Components/RLSections/LeftSection";
-import CreateTogether from "./Components/RLSections/RightSection";
+import LeftSection from "./Components/RLSections/LeftSection";
+import RightSection from "./Components/RLSections/RightSection";
 
 const ProfileCard = () => {
   return (
     // profile card
-    <div className="pt-5 flex gap-y-3 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-3xl border-red-600 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+    <div className="w-11/12 pt-2 md:pt-3 flex md:gap-y-3 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-3xl border-red-600 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
       {/* Bio */}
-      <Bio className="p-2 flex flex-row items-center" />
+      <Bio className="p-2 flex flex-col md:flex-row gap-3 md:gap-0 items-center" />
       {/* AboutMe */}
-      <AboutMe className="px-5 text-smx hidden md:block" />
+      <AboutMe className="px-5 text-sm hidden md:block" />
       {/* resume, hire me , contact */}
-      <div className="p-2 w-full gap-1 flex flex-row flex-nowrap items-center">
+      <div className="p-2 w-full gap-1 flex flex-col md:flex-row flex-nowrap items-center justify-center">
         {/* inner div 1 */}
-        <HireMe />
+        <LeftSection />
         {/* inner div 2 */}
-        <CreateTogether />
+        <RightSection />
       </div>
 
       {/* social links */}
