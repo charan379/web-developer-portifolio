@@ -1,7 +1,7 @@
 import React from "react";
 import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
 import Name from "../Name/Name";
-import About from "../About/About";
+import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills";
 
 const Bio: React.FC<ComponentProps> = (props) => {
@@ -21,11 +21,9 @@ const Bio: React.FC<ComponentProps> = (props) => {
         <h3 className="mb-2 text-lg text-slate-400">Skills</h3>
         <Skills
           className="w-full flex flex-row gap-2 items-start justify-normal flex-wrap pb-2"
-          skills={["Java", "React", "Css", "Html", "JS", "NodeJs","MongoDB"]}
+          skills={["Java", "React", "Css", "Html", "JS", "NodeJs", "MongoDB"]}
           skillClassName="w-max bg-slate-500 text-slate-50 text-sm px-2 rounded-[4.5px] border-r-8 border-slate-700 cursor-pointer "
         />
-        {/* About */}
-        <About className="text-smx hidden md:block" />
       </div>
     </div>
   );

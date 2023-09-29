@@ -1,6 +1,6 @@
 import React from "react";
 
-const About: React.FC<ComponentProps> = (props) => {
+const AboutMe: React.FC<ComponentProps> = (props) => {
   return (
     <>
       <h4 className={`${props.className}`}>
@@ -13,4 +13,4 @@ const About: React.FC<ComponentProps> = (props) => {
   );
 };
 
-export default About;
+export default AboutMe;
