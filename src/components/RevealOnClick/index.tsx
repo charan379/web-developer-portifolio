@@ -37,9 +37,7 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
         className={`${
           props.buttonClassName ??
           "w-1/2 bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
-        } ${
-          reveal ? "opacity-0 top-0 left-0 absolute z-[-9999]" : "opacity-100"
-        }`}
+        } ${reveal ? "opacity-0 hidden z-[-9999]" : "opacity-100"}`}
         // styles
         style={props?.buttonStyle}
         // actions

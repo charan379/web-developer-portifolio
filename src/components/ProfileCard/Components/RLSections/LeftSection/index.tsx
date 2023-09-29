@@ -6,7 +6,7 @@ import React from "react";
 const LeftSection: React.FC<ComponentProps> = () => {
   return (
     <RevealOnClick
-      className="w-full md:w-1/2 md:border-r-2 mx-auto text-center"
+      className="w-full min-h-[50px] md:w-1/2 md:border-r-2 mx-auto text-center"
       buttonClassName="min-w-[50%] w-full md:w-max bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px]"
       contentClassName="flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
       buttonText="Know more about me !"
