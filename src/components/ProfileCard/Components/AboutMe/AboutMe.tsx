@@ -4,10 +4,11 @@ const AboutMe: React.FC<ComponentProps> = (props) => {
   return (
     <>
       <h4 className={`${props.className}`}>
-        I am John Deo, a passionate and dedicated web developer with a keen eye
-        for detail and a strong desire to create exceptional online experiences.
-        My journey into the world of web development began with a fascination
-        for technology and a determination to master the art of coding.
+        I am an enthusiastic Learner/Developer dedicated to a journey of
+        continuous growth and progress within the ever-evolving landscape of
+        technology and development. My passion lies in not only creating
+        innovative solutions but also in the process of acquiring new knowledge
+        and skills.
       </h4>
     </>
   );
