@@ -7,12 +7,12 @@
   /* Shadow effect */
   transition: box-shadow 0.3s ease;
   cursor: pointer;
+  animation: radar 01s 0.4s infinite ease-in-out forwards;
 }
 
 .profilePic:hover {
   /* Expand shadow on hover */
   box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
-  animation: radar 01s 0.4s infinite ease-in-out forwards;
 
 }
 
