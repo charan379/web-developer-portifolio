@@ -1,7 +1,7 @@
 import "./globals.css";
-import { Inter } from "next/font/google";
+import { Open_Sans } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const googleFont = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata = {
   title: "Portifolio Website",
@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-[100%] bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400 overflow-y-auto`}
+        className={`${googleFont.className} min-h-[100%] bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400 overflow-y-auto`}
       >
         {children}
       </body>
