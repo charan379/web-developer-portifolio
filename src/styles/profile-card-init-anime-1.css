@@ -152,15 +152,22 @@
 }
 
 @media screen and (max-width: 768px) {
-  .profile-card-init-anime-1 > * {
-    opacity: 0;
-    animation: opacity0to1 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045)
-      forwards;
-  }
-
-  @keyframes opacity0to1 {
+  @keyframes movieLeft {
     0% {
       opacity: 0;
+      margin-left: 10px;
+    }
+
+    100% {
+      opacity: 1;
+      margin-left: 0px;
+    }
+  }
+
+  @keyframes movieRight {
+    0% {
+      opacity: 0;
+      margin-right: 10px;
     }
 
     100% {

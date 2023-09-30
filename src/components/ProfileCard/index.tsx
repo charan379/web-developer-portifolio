@@ -12,7 +12,10 @@ const ProfileCard = () => {
       {/* Bio */}
       <Bio className="p-2 flex flex-col md:flex-row gap-3 md:gap-0 items-center" />
       {/* AboutMe */}
-      <AboutMe className="px-5 text-[0.925rem] text-slate-500 font-semibold hidden md:block" />
+      <AboutMe
+        className="px-2 cursor-pointer select-none"
+        contentClassName="px-4 py-3 pt-2 text-[0.925rem] text-left text-slate-500 font-semibold hidden sm:block border-anime-2"
+      />
       {/* resume, hire me , contact */}
       <div className="p-2 w-full gap-1 flex flex-col md:flex-row flex-nowrap items-center justify-center">
         {/* inner div 1 */}
