@@ -6,7 +6,7 @@
       forwards,
     moveUpBottomToTop 0.7s 1.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
     moveDownTopToCenter 0.5s 2.6s ease-in-out forwards,
-    makeCard 0.5s 3.1s ease-in-out forwards;
+    makeCard 0.5s 3.1s cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(1) {
@@ -148,5 +148,127 @@
   100% {
     opacity: 1;
     margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .profile-card-init-anime-1 > * {
+    opacity: 0;
+    animation: opacity0to1 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+      forwards;
+  }
+
+  @keyframes opacity0to1 {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+/* sm mobiles */
+@media screen and (max-height: 670px) and (max-width: 380px) {
+  /* Make card */
+  @keyframes makeCard {
+    0% {
+      position: relative;
+      border-radius: 0.75rem; /* 12px */
+    }
+
+    50% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      border-radius: 0.75rem; /* 12px */
+      width: 336px;
+      height: 582px;
+      max-height: 90vh;
+    }
+
+    100% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      width: 91.666667%;
+      height: auto;
+      border-radius: 0.75rem; /* 12px */
+    }
+  }
+}
+
+/* mobiles */
+@media screen and (max-height: 916px) and (max-width: 420px) {
+  /* Make card */
+  @keyframes makeCard {
+    0% {
+      position: relative;
+      border-radius: 0.75rem; /* 12px */
+    }
+
+    50% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      border-radius: 0.75rem; /* 12px */
+      width: 375px;
+      height: 582px;
+      max-height: 80vh;
+    }
+
+    100% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      width: 91.666667%;
+      height: auto;
+      border-radius: 0.75rem; /* 12px */
+    }
+  }
+}
+
+/* tablets */
+@media screen and (max-height: 1400px) and (max-width: 950px) {
+  /* Make card */
+  @keyframes makeCard {
+    0% {
+      position: relative;
+      border-radius: 0.75rem; /* 12px */
+    }
+
+    50% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      border-radius: 0.75rem; /* 12px */
+      width: 675px;
+      height: 490px;
+      max-height: 80vh;
+    }
+
+    100% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      width: 91.666667%;
+      height: auto;
+      border-radius: 0.75rem; /* 12px */
+    }
+  }
+}
+
+/* split screen tablets */
+@media screen and (max-height: 730px) and (max-width: 560px) {
+  /* Make card */
+  @keyframes makeCard {
+    0% {
+      position: relative;
+      border-radius: 0.75rem; /* 12px */
+    }
+
+    50% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      border-radius: 0.75rem; /* 12px */
+      width: 450px;
+      height: 550px;
+      max-height: 80vh;
+    }
+
+    100% {
+      background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+      width: 91.666667%;
+      height: auto;
+      border-radius: 0.75rem; /* 12px */
+    }
   }
 }
