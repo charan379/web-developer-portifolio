@@ -3,7 +3,7 @@
   --border-weight: 3px;
   --border-color: currentColor;
   --border-radius: 2px;
-  --border-style: inset;
+  --border-style: outset;
   /* styles */
   position: relative;
 }
@@ -17,16 +17,16 @@
 .btn-border-anime-1:hover::before {
   left: 0;
   top: 0;
-  animation: btn-border-animation-tr 0.5s ease-in forwards;
+  animation: btn-border-anime-1-animation-tr 0.5s ease-in forwards;
 }
 
 .btn-border-anime-1:hover::after {
   right: 0;
   bottom: 0;
-  animation: btn-border-animation-bl 0.5s ease-in forwards;
+  animation: btn-border-anime-1-animation-bl 0.5s ease-in forwards;
 }
 
-@keyframes btn-border-animation-tr {
+@keyframes btn-border-anime-1-animation-tr {
   0% {
     width: 0%;
     height: 0%;
@@ -52,7 +52,7 @@
   }
 }
 
-@keyframes btn-border-animation-bl {
+@keyframes btn-border-anime-1-animation-bl {
   0% {
     width: 0%;
     height: 0%;
