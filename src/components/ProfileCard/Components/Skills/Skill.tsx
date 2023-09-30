@@ -5,9 +5,9 @@ interface SkillProps extends ComponentProps {
 }
 const Skill: React.FC<SkillProps> = (props) => {
   return (
-    <i className={props?.className ?? ""} style={props?.style}>
+    <span className={props?.className ?? ""} style={props?.style}>
       {props.skill}
-    </i>
+    </span>
   );
 };
 
