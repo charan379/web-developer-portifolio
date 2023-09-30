@@ -14,7 +14,7 @@ const Bio: React.FC<ComponentProps> = (props) => {
       {/* name, Profession, bio */}
       <div className="w-auto md:w-3/5 flex flex-col items-center md:items-start justify-center">
         {/* name */}
-        <Name className="text-4xl" />
+        <Name className="py-1 text-transparent bg-clip-text bg-gradient-to-r from-orange-500 via-pink-500 to-red-500 text-3xl font-semibold md:text-4xl text-center sm:text-left" />
         {/* Profession */}
         <h3 className="mb-2 text-xl text-slate-400">Learner / Developer</h3>
         {/* skills */}
