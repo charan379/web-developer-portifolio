@@ -1,4 +1,4 @@
-import ProfileCard from "@/components/ProfileCard";
+import ProfileCardT1 from "@/components/ProfileCardTemplates/ProfileCardT1";
 
 // export async function generateMetadata() {
 //   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
@@ -81,7 +81,7 @@ export default async function Home() {
 
   return (
     <main className="min-h-[100dvh] w-full m-0 flex flex-row justify-center items-center overflow-auto">
-      <ProfileCard />
+      <ProfileCardT1 />
     </main>
   );
 }
