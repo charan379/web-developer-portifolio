@@ -23,8 +23,8 @@
 }
 
 .border-anime-2:hover::before {
-  animation: border-anime-2-animation-bl-h0-w100 0.5s 0.2s ease-in-out forwards,
-    border-anime-2-animation-bl-L0-R0 0.5s 0.7s ease-in-out forwards;
+  animation: border-anime-2-animation-bl-h0-w100 0.5s ease-in-out forwards,
+    border-anime-2-animation-bl-L0-R0 0.5s 0.5s ease-in-out forwards;
 }
 
 .border-anime-2::after {
@@ -35,8 +35,8 @@
 }
 
 .border-anime-2:hover::after {
-  animation: border-anime-2-animation-br-h0-w100 0.5s 0.2s ease-in-out forwards,
-    border-anime-2-animation-br-R0-L0 0.5s 0.7s ease-in-out forwards;
+  animation: border-anime-2-animation-br-h0-w100 0.5s ease-in-out forwards,
+    border-anime-2-animation-br-R0-L0 0.5s 0.5s ease-in-out forwards;
 }
 
 @keyframes border-anime-2-animation-bl {
