@@ -17,7 +17,7 @@ const LeftSection: React.FC<ComponentProps> = () => {
         {/* resume link */}
         <Link
           className="min-w-[40%] bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-500 ease-in-out hover:-translate-y-2"
-          href={"#"}
+          href={"resume"}
         >
           Resume
         </Link>
@@ -25,7 +25,7 @@ const LeftSection: React.FC<ComponentProps> = () => {
         <i className=" border-r-2  m-2 text-xl "></i>
         <Link
           className="min-w-[40%] bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-500 ease-in-out hover:-translate-y-2"
-          href={"#"}
+          href={"projects"}
         >
           Projects
         </Link>
