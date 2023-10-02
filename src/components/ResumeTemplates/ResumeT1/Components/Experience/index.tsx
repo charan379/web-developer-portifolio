@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 
 const Experience = () => {
   return (
-    <section className="pb-2 pb-4 mt-4 border-b-4 border-gray-300 first:mt-0">
+    <section className="pb-4 mt-4 border-b-4 border-gray-300 first:mt-0">
       {/* To keep in the same column */}
       <section className="break-inside-avoid">
         <h2 className="mb-2 text-xl font-bold tracking-widest text-gray-800 print:font-normal">

@@ -5,7 +5,7 @@ const ContactInformation = () => {
   }
   // Contact Information
   return (
-    <section className="pb-2 mb-0 mt-4">
+    <section className="pb-2">
       {/* To keep in the same column */}
       <section className="break-inside-avoid">
         <section className="pb-4 mb-2 border-b-4 border-gray-300 break-inside-avoid">
