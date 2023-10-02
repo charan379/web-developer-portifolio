@@ -8,7 +8,7 @@ const EducationCard = () => {
           College / University Name
         </h3>
         <p className="leading-normal text-md text-gray-500">
-          FYear &ndash; TYear | CourseName
+          FYear - TYear | CourseName
         </p>
       </header>
       <p className="mt-1 leading-normal text-md text-gray-800">
