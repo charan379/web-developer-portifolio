@@ -16,17 +16,17 @@
 
 .profile-card-init-anime-1 > :nth-child(2) {
   opacity: 0;
-  animation: initScale01 0.8s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: initScale01 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(3) {
   opacity: 0;
-  animation: moveLeft 0.7s 3.3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: moveLeft 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(4) {
   opacity: 0;
-  animation: moveRight 0.7s 3.3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: moveRight 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 /* initilize  */
