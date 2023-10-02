@@ -20,7 +20,7 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
     thisComponentRef,
     useCallback(() => {
       setReveal(!true);
-    }, [thisComponentRef.current]),
+    }, []),
     false
   );
 
