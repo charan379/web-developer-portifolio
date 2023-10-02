@@ -8,7 +8,7 @@
 @import url("../styles/border-anime-2.css");
 
 body {
-  animation: overFlowYhiddenToAuto 3s ease 0ms forwards;
+  animation: overFlowYhiddenToAuto 3s 0ms ease forwards;
 }
 
 @keyframes overFlowYhiddenToAuto {
