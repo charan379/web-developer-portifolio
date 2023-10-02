@@ -14,7 +14,7 @@ const ProfileCardT1 = () => {
       {/* AboutMe */}
       <AboutMe
         className="px-2 cursor-pointer select-none"
-        contentClassName="px-4 py-3 pt-2 text-[0.925rem] text-left text-slate-500 font-semibold block border-anime-2"
+        contentClassName="px-4 py-3 pt-2 text-[0.925rem] text-left text-slate-500 font-semibold hidden sm:block border-anime-2"
       />
       {/* resume, hire me , contact */}
       <div className="p-2 w-full gap-1 flex flex-col md:flex-row flex-nowrap items-center justify-center">
