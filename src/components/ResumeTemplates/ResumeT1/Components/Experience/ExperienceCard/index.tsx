@@ -8,13 +8,13 @@ const ExperienceCard = () => {
           Full Stack Web Developer
         </h3>
         <p className="leading-normal text-sm text-gray-500">
-          Jun 2018 &ndash; Present | Freelance
+          Jun 2018 `&ndash;` Present | Freelance
         </p>
       </header>
       <ul className="mt-2 font-normal text-md  text-gray-700 leading-snugish pl-3">
         <li>
           <span className="transform -translate-y-px select-none text-gray-500">
-            &rsaquo;
+            `&rsaquo;`
           </span>
           Developed high-quality web applications from scratch, using a range of
           programming languages, including HTML, CSS, JavaScript, PHP, and
@@ -22,7 +22,7 @@ const ExperienceCard = () => {
         </li>
         <li>
           <span className="transform -translate-y-px select-none text-gray-500">
-            &rsaquo;
+            `&rsaquo;`
           </span>
           Utilized various front-end frameworks, such as React, Angular, and
           Vue.js, and back-end frameworks, such as Node.js, Express, and
@@ -30,7 +30,7 @@ const ExperienceCard = () => {
         </li>
         <li>
           <span className="transform -translate-y-px select-none text-gray-500">
-            &rsaquo;
+            `&rsaquo;`
           </span>
           Designed and implemented databases using SQL and NoSQL technologies,
           such as MySQL, PostgreSQL, MongoDB, and Firebase, to store and manage
