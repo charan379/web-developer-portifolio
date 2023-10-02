@@ -8,7 +8,10 @@ const AboutMe: React.FC<AboutMeProps> = (props) => {
   return (
     <>
       <div className={props?.className}>
-        <h4 className={`${props?.contentClassName}`}>
+        <h4
+          className={`${props?.contentClassName}`}
+          style={props?.contentStyle}
+        >
           I am an enthusiastic Learner/Developer dedicated to a journey of
           continuous growth and progress within the ever-evolving landscape of
           technology and development. My passion lies in not only creating
