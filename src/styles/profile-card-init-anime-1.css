@@ -11,22 +11,22 @@
 
 .profile-card-init-anime-1 > :nth-child(1) {
   opacity: 0;
-  animation: movieLeft 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: initScale01 0.5s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(2) {
   opacity: 0;
-  animation: movieRight 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: initScale01 0.8s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(3) {
   opacity: 0;
-  animation: movieLeft 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: moveLeft 0.7s 3.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profile-card-init-anime-1 > :nth-child(4) {
   opacity: 0;
-  animation: movieRight 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: moveRight 0.7s 3.5s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 /* initilize  */
@@ -127,7 +127,7 @@
   }
 }
 
-@keyframes movieLeft {
+@keyframes moveLeft {
   0% {
     opacity: 0;
     margin-left: 50px;
@@ -139,7 +139,7 @@
   }
 }
 
-@keyframes movieRight {
+@keyframes moveRight {
   0% {
     opacity: 0;
     margin-right: 50px;
@@ -148,6 +148,16 @@
   100% {
     opacity: 1;
     margin-right: 0px;
+  }
+}
+
+@keyframes initScale01 {
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
   }
 }
 

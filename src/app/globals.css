@@ -7,6 +7,19 @@
 @import url("../styles/profile-card-init-anime-1.css");
 @import url("../styles/border-anime-2.css");
 
+body {
+  animation: overFlowYhiddenToAuto 3s ease 0ms forwards;
+}
+
+@keyframes overFlowYhiddenToAuto {
+  0% {
+    overflow-y: hidden;
+  }
+  100% {
+    overflow-y: auto;
+  }
+}
+
 /* custom css old keeping for @keyframes [ remove after storing @keyframes at another place */
 /* @import "./cssroot.css";
 
