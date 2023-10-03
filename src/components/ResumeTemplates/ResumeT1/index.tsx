@@ -9,12 +9,10 @@ import Experience from "./Components/Experience";
 const ResumeT1 = () => {
   return (
     <div className="mx-auto my-5 container max-w-5xl bg-slate-50 grid grid-cols-1 gap-4 p-4 rounded-xl border-stone-700 border-4">
-      {/* Full-width sections */}
+      {/* Full-width 3 sections */}
       <div className="col-span-1 md:col-span-1 lg:col-span-1">
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 1</h2>
-          <p>This is the content for section 1.</p>
-        </div>
+        {/* section 1 */}
+        <Header className="w-full inline-flex items-center justify-between align-top mb-2 border-b-4 border-gray-300" />
 
         <div className="bg-gray-200 p-4 mb-4">
           <h2>Section 2</h2>
