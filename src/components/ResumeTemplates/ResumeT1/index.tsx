@@ -14,10 +14,8 @@ const ResumeT1 = () => {
         {/* section 1 */}
         <Header className="w-full inline-flex items-center justify-between align-top mb-2 border-b-4 border-gray-300" />
 
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 2</h2>
-          <p>This is the content for section 2.</p>
-        </div>
+        {/* section 1 */}
+        <ContactInformation className="bg-gray-200 p-2 mb-2 border-b-4 border-gray-300 " />
 
         <div className="bg-gray-200 p-4 mb-4">
           <h2>Section 3</h2>

@@ -1,61 +1,69 @@
 import React from "react";
+import KeyValuePair from "../KeyValuePair";
 
-const ContactInformation = () => {
-  {
+const ContactInformation: React.FC<ComponentProps> = (props) => {
+  const data = {
+    githubUserName: 'charan379',
+    website: 'charanteja.me',
+    email: 'charanteja@gmail.com',
+    phoneNumber: {
+      countryCOde: '+91',
+      number: '9876543210'
+    },
+    address: "29-3434, Jalganna street, Sinucha, Karihmi, AP - 520833"
   }
   // Contact Information
   return (
-    <section className="pb-2">
+    <div className={props?.className ?? "pb-2"}>
       {/* To keep in the same column */}
-      <section className="break-inside-avoid">
-        <section className="pb-4 mb-2 border-b-4 border-gray-300 break-inside-avoid">
-          <ul className="list-inside pr-7">
-            <li className="mt-1 leading-normal text-black transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700 print:">
-              <a href="#" className="group">
-                <span className="mr-2 text-lg font-semibold text-gray-700 leading-snugish">
-                  Portfolio:
-                </span>
-                charanteja.me
-                <span className="inline-block font-normal text-black transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700 print:">
-                  ↗
-                </span>
+      <section className="w-full h-full mb-2 flex flex-col gap-1 items-start justify-center">
+        <div className="w-full flex flex-col md:flex-row flex-wrap">
+          {/* email */}
+          {
+            data?.email && <KeyValuePair key={1} keyValuePair={{
+              key: "Email",
+              value: <a href={`mailto:${data?.email}`}>
+                {data.email}
               </a>
-            </li>
-            <li className="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700">
-              <a href="https://github.com/charan379" className="group">
-                <span className="mr-5 text-lg font-semibold text-gray-700 leading-snugish">
-                  Github:
-                </span>
-                charan379
-                <span className="inline-block font-normal text-black transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700 print:">
-                  ↗
-                </span>
+            }} />
+          }
+          {/* phone */}
+          {
+            data?.phoneNumber && <KeyValuePair key={""} keyValuePair={{
+              key: "Phone",
+              value: <a href={`tel:${data.phoneNumber?.countryCOde}${data.phoneNumber?.number}`}>
+                {data.phoneNumber?.countryCOde} {data.phoneNumber?.number}
               </a>
-            </li>
+            }} />
+          }
+          {/* website */}
+          {
+            data?.website && <KeyValuePair key={3} keyValuePair={{
+              key: "Website",
+              value: <a href={`https://${data.website}`}>
+                {data.website}
+              </a>
+            }} />
+          }
+          {/* github */}
+          {
+            data?.githubUserName && <KeyValuePair key={3} keyValuePair={{
+              key: "Github",
+              value: <a href={`https://github.com/${data.githubUserName}`}>
+                {data.githubUserName}
+              </a>
+            }} />
+          }
+        </div>
 
-            <li className="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700">
-              <a href="mailto:charanteja@gmail.com" className="group">
-                <span className="mr-8 text-lg font-semibold text-gray-700 leading-snugish">
-                  Email:
-                </span>
-                charanteja@gmail.com
-                <span className="inline-block font-normal transition duration-100 ease-in text-gray-500 print:text-black group-hover:text-gray-700">
-                  ↗
-                </span>
-              </a>
-            </li>
-            <li className="mt-1 leading-normal transition duration-100 ease-in text-gray-500 text-md hover:text-gray-700">
-              <a href="tel:+919876543210">
-                <span className="mr-5 text-lg font-semibold text-gray-700 leading-snugish">
-                  Phone:
-                </span>
-                +91 9876543210
-              </a>
-            </li>
-          </ul>
-        </section>
+        {data?.address && <KeyValuePair key={56} keyValuePair={{
+          key: "Address",
+          value: data.address
+        }}
+          style={{ maxWidth: "100%", width: "100%" }}
+          valueStyle={{ maxWidth: "100%", width: "100%" }} />}
       </section>
-    </section>
+    </div>
   );
 };
 
