@@ -12,15 +12,12 @@ const ResumeT1 = () => {
       {/* Full-width 3 sections */}
       <div className="col-span-1 md:col-span-1 lg:col-span-1">
         {/* section 1 */}
-        <Header className="w-full inline-flex items-center justify-between align-top mb-2 border-b-4 border-gray-300" />
+        <Header className="w-full inline-flex items-center justify-between align-top p-2 mb-2 border-b-4 border-gray-300" />
 
         {/* section 1 */}
-        <ContactInformation className="bg-gray-200 p-2 mb-2 border-b-4 border-gray-300 " />
+        <ContactInformation className="p-2 mb-2 border-b-4 border-gray-300 " />
 
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 3</h2>
-          <p>This is the content for section 3.</p>
-        </div>
+        <Summary className="pb-2 border-b-4 border-gray-300" />
       </div>
 
       <div className="col-span-1 md:col-span-1 lg:col-span-1">
