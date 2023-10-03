@@ -2,7 +2,7 @@ import React from "react";
 
 const EducationCard = () => {
   return (
-    <section className="mt-2  border-b-2 break-inside-avoid">
+    <section className="mt-2 p-2 border-b-2 break-inside-avoid">
       <header>
         <h3 className=" text-lg font-semibold text-gray-700 leading-snugish">
           College / University Name

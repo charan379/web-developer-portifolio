@@ -22,39 +22,15 @@ const ResumeT1 = () => {
 
       <div className="col-span-1 md:col-span-1 lg:col-span-1">
         {/* Full-width section */}
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 4</h2>
-          {/* 1/2 cols */}
-          <div className="max-h-[340px] flex flex-col flex-wrap gap-4 overflow-hidden">
-            <div className="max-w-[50%] min-w-[50%] bg-gray-300 p-4">
-              <h3>Child 1</h3>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-              <p>Child 1 content.</p>
-            </div>
-            <div className="max-w-[50%] min-w-[50%] bg-gray-300 p-4">
-              <h3>Child 2</h3>
-              <p>Child 2 content.</p>
-            </div>
-            <div className="max-w-[50%] min-w-[50%] bg-gray-300 p-4">
-              <h3>Child 3</h3>
-              <p>Child 3 content.</p>
-            </div>
-            <div className="max-w-[50%] min-w-[50%] bg-gray-300 p-4">
-              <h3>Child 4</h3>
-              <p>Child 4 content.</p>
-            </div>
-            <div className="max-w-[50%] min-w-[50%] bg-gray-300  p-4">
-              <h3>Child 5</h3>
-              <p>Child 5 content.</p>
-            </div>
+        {/* 1/2 cols */}
+        <div className="max-h-[540px] flex flex-col flex-wrap gap-4 overflow-scroll">
+          <Education className="md:max-w-[50%] md:min-w-[50%] break-inside-avoid mt-2 border-b-4 border-gray-300 first:mt-0" />
+          <div className="md:max-w-[50%] md:min-w-[50%] bg-gray-300 p-4">
+            <h3>Child 2</h3>
+            <p>Child 2 content.</p>
           </div>
+          <Skills />
+          <Experience />
         </div>
       </div>
 

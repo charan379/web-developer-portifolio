@@ -2,9 +2,11 @@ import React from "react";
 import EducationCard from "./EducationCard";
 import CertificationCard from "./CertificationCard";
 
-const Education = () => {
+const Education: React.FC<ComponentProps> = (props) => {
+  const { className, style } = props;
   return (
-    <section className="pb-0 break-inside-avoid mt-2 border-b-4 border-gray-300 first:mt-0">
+    <section className={className ?? "pb-0 break-inside-avoid mt-2 border-b-4 border-gray-300 first:mt-0"}
+      style={style}>
       {/* To keep in the same column */}
       <section className="break-inside-avoid">
         <h2 className="mb-2 text-lg font-bold tracking-widest text-gray-700 print:font-normal">
