@@ -1,5 +1,8 @@
 import React from "react";
-import KeyValuePair from "../KeyValuePair";
+import AttributeValuePair from "@/components/AttributeValuePair";
+import { PlainMailTo } from "@/components/Email";
+import { PlainCallTo } from "@/components/Phone";
+import { PlainSiteLink } from "@/components/ExternalSite";
 
 const ContactInformation: React.FC<ComponentProps> = (props) => {
   const data = {
@@ -20,44 +23,36 @@ const ContactInformation: React.FC<ComponentProps> = (props) => {
         <div className="w-full flex flex-col md:flex-row flex-wrap">
           {/* email */}
           {
-            data?.email && <KeyValuePair key={1} keyValuePair={{
-              key: "Email",
-              value: <a href={`mailto:${data?.email}`}>
-                {data.email}
-              </a>
+            data?.email && <AttributeValuePair key={1} AttributeAndValue={{
+              attribute: "Email",
+              value: <PlainMailTo email={data.email} />
             }} />
           }
           {/* phone */}
           {
-            data?.phoneNumber && <KeyValuePair key={""} keyValuePair={{
-              key: "Phone",
-              value: <a href={`tel:${data.phoneNumber?.countryCOde}${data.phoneNumber?.number}`}>
-                {data.phoneNumber?.countryCOde} {data.phoneNumber?.number}
-              </a>
+            data?.phoneNumber && <AttributeValuePair key={""} AttributeAndValue={{
+              attribute: "Phone",
+              value: <PlainCallTo countryCode={data.phoneNumber?.countryCOde ?? ""} number={data.phoneNumber.number} />
             }} />
           }
           {/* website */}
           {
-            data?.website && <KeyValuePair key={3} keyValuePair={{
-              key: "Website",
-              value: <a href={`https://${data.website}`}>
-                {data.website}
-              </a>
+            data?.website && <AttributeValuePair key={3} AttributeAndValue={{
+              attribute: "Website",
+              value: <PlainSiteLink siteUrl={`https://${data.website}`} displayText={data.website} />
             }} />
           }
           {/* github */}
           {
-            data?.githubUserName && <KeyValuePair key={3} keyValuePair={{
-              key: "Github",
-              value: <a href={`https://github.com/${data.githubUserName}`}>
-                {data.githubUserName}
-              </a>
+            data?.githubUserName && <AttributeValuePair key={3} AttributeAndValue={{
+              attribute: "Github",
+              value: <PlainSiteLink siteUrl={`https://github.com/${data.githubUserName}`} displayText={data.githubUserName} />
             }} />
           }
         </div>
 
-        {data?.address && <KeyValuePair key={56} keyValuePair={{
-          key: "Address",
+        {data?.address && <AttributeValuePair key={56} AttributeAndValue={{
+          attribute: "Address",
           value: data.address
         }}
           style={{ maxWidth: "100%", width: "100%" }}
