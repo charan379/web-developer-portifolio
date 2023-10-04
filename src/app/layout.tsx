@@ -1,7 +1,21 @@
 import "./globals.css";
-import { Open_Sans } from "next/font/google";
+import { Roboto, Montserrat } from "next/font/google";
 
-const googleFont = Open_Sans({ weight: "400", subsets: ["latin"] });
+const roboto300 = Roboto({
+  weight: "300",
+  subsets: ["latin"],
+  variable: "--font-robot-300",
+});
+const roboto400 = Roboto({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-robot-400",
+});
+const montserrat = Montserrat({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+});
 
 export const metadata = {
   title: "Portifolio Website",
@@ -16,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${googleFont.className} min-h-[100%] bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400 overflow-y-auto`}
+        className={`${roboto300.className}  ${roboto300.variable} ${roboto400.variable} ${montserrat.variable} min-h-[100%] bg-gradient-to-br from-pink-400 via-purple-400 to-indigo-400 overflow-y-auto`}
       >
         {children}
       </body>
