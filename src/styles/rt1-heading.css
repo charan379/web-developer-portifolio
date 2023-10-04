@@ -1,0 +1,12 @@
+.rt1-heading {
+  position: relative;
+}
+
+.rt1-heading::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  border-bottom: 0.15rem solid currentColor;
+  width: 30px;
+}

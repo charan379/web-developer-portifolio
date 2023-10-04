@@ -6,6 +6,7 @@
 @import url("../styles/btn-border-anime-1.css");
 @import url("../styles/profile-card-init-anime-1.css");
 @import url("../styles/border-anime-2.css");
+@import url("../styles/rt1-heading.css");
 
 body {
   animation: overFlowYhiddenToAuto 3s 0ms ease forwards;
