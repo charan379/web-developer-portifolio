@@ -6,6 +6,7 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 import Contect from "./Content";
+import Heading from "./Components/Heading";
 
 const ResumeT1: React.FC = () => {
   return (
@@ -25,11 +26,14 @@ const ResumeT1: React.FC = () => {
         */}
         <Contect className="w-full min-h-full max-w-full flex flex-row border-t-2 border-gray-200">
           {/* left section */}
-          <div className="min-w-[30%] max-h-[30%] min-h-full border-r-0 border-gray-200">
-
+          <div className="min-w-[35%] max-h-[35%] min-h-full border-r-0 border-gray-200">
+            <div>
+              <Heading>Details</Heading>
+              <ContactInformation />
+            </div>
           </div>
           {/* right section */}
-          <div className="min-w-[70%] min-h-full border-l-2 border-gray-200">
+          <div className="min-w-[65%] min-h-full border-l-2 border-gray-200">
 
           </div>
         </Contect>
