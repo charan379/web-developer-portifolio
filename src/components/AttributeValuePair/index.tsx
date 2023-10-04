@@ -1,6 +1,6 @@
 import React from "react";
 
-interface AttributeValuePairCompProps extends ComponentProps {
+export interface AttributeValuePairCompProps extends ComponentProps {
     attributeClassName?: string;
     attributeStyle?: React.CSSProperties;
     valueClassName?: string;
@@ -8,7 +8,7 @@ interface AttributeValuePairCompProps extends ComponentProps {
     AttributeAndValue: {
         attribute: string, value: React.ReactElement | string
     };
-    separator?: string,
+    separator?: React.ReactElement | string,
     separatorClassName?: string,
     separatorStyle?: React.CSSProperties,
     key: string | number;
@@ -25,9 +25,10 @@ const AttributeValuePair: React.FC<AttributeValuePairCompProps> = (props) => {
                 {AttributeAndValue.attribute}
             </span>
             {/* separator */}
-            <span id="separator" className={separatorClassName ?? "mx-1 text-left font-bold"} style={separatorStyle}>
+            {typeof separator !== "string" ? separator : <span id="separator" className={separatorClassName ?? "mx-1 text-left font-bold"} style={separatorStyle}>
                 {separator ?? ":"}
-            </span>
+            </span>}
+
             {/* value */}
             <span id="value" className={valueClassName ?? "max-w-full md:max-w-[50%] text-left break-words"} style={valueStyle}>
                 {AttributeAndValue.value}
