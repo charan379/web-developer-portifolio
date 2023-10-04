@@ -1,14 +1,17 @@
 import React from "react";
 
 const Header: React.FC<ComponentProps> = (props) => {
-
   const { className, style } = props;
   return (
-    <header className={className ?? "inline-flex flex-col items-start justify-between w-full mb-1 align-top border-b-4 border-gray-300"}
+    <header
+      className={
+        className ??
+        "inline-flex flex-col items-start justify-between w-full mb-1 align-top border-b-4 border-gray-300"
+      }
       style={style}
     >
       {/* name */}
-      <h1 className="font-bold text-2xl sm:text-5xl text-gray-700">
+      <h1 className="font-bold text-2xl sm:text-5xl text-gray-700 uppercase font-montserrat tracking-wide">
         Charanteja Yandrapti
       </h1>
       {/* Job Title / profession */}
