@@ -16,7 +16,7 @@ const ResumeT1: React.FC = () => {
             basic classes to be present for styling
             [w-full, p-1, max-h-[20%]]
         */}
-      <Header className="w-full p-1 max-h-[20%] flex flex-col items-start justify-between gap-0 sm:gap-1 mb-1 align-top" />
+      <Header className="w-full p-1 max-h-[20%] flex flex-col items-start justify-between gap-0 sm:gap-1 mb-1 align-top overflow-hidden" />
 
       {/* content
             basic classes to be present for styling
