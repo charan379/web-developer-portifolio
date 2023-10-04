@@ -6,47 +6,30 @@ import Education from "./Components/Education";
 import Skills from "./Components/Skills";
 import Experience from "./Components/Experience";
 
-const ResumeT1 = () => {
+const ResumeT1: React.FC = () => {
   return (
-    <div className="mx-auto my-5 container max-w-5xl bg-slate-50 grid grid-cols-1 gap-4 p-4 rounded-xl border-stone-700 border-4">
-      {/* Full-width 3 sections */}
-      <div className="col-span-1 md:col-span-1 lg:col-span-1">
-        {/* section 1 */}
-        <Header className="w-full inline-flex items-center justify-between align-top p-2 mb-2 border-b-4 border-gray-300" />
+    <>
+      <div className="text-slate-400 mx-auto my-5 max-w-5xl aspect-A4-Portrait p-4 container bg-slate-50 flex flex-col border-4 border-violet-600">
 
-        {/* section 1 */}
-        <ContactInformation className="p-2 mb-2 border-b-4 border-gray-300 " />
+        {/* Header 
+          basic class to be present for styling
+          [w-full, p-1, max-h-[20%], border-violet-600 opt, border-b-2 opt]
+        
+        */}
+        <Header className="w-full p-1 max-h-[20%] border-violet-600 border-b-2 flex flex-col items-start justify-between gap-0 sm:gap-1 mb-1 align-top" />
 
-        <Summary className="pb-2 border-b-4 border-gray-300" />
-      </div>
+        {/* left section */}
+        <div className="w-full min-h-full max-w-full flex flex-row">
+          <div className="min-w-[30%] max-h-[30%] min-h-full bg-slate-200">
 
-      <div className="col-span-1 md:col-span-1 lg:col-span-1">
-        {/* Full-width section */}
-        {/* 1/2 cols */}
-        <div className="max-h-[540px] flex flex-col flex-wrap gap-4 overflow-scroll">
-          <Education className="md:max-w-[50%] md:min-w-[50%] break-inside-avoid mt-2 border-b-4 border-gray-300 first:mt-0" />
-          <div className="md:max-w-[50%] md:min-w-[50%] bg-gray-300 p-4">
-            <h3>Child 2</h3>
-            <p>Child 2 content.</p>
           </div>
-          <Skills />
-          <Experience />
+          <div className="min-h-full min-w-[70%] max-h-[70%] bg-slate-400">
+
+          </div>
         </div>
       </div>
-
-      <div className="col-span-1 md:col-span-1 lg:col-span-1">
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 5</h2>
-          <p>This is the content for section 5.</p>
-        </div>
-
-        <div className="bg-gray-200 p-4 mb-4">
-          <h2>Section 6</h2>
-          <p>This is the content for section 6 .</p>
-        </div>
-      </div>
-    </div>
-  );
+    </>
+  )
 };
 
 export default ResumeT1;
