@@ -1,9 +1,11 @@
 import React from "react";
 
 const Header: React.FC<ComponentProps> = (props) => {
+
+  const { className, style } = props;
   return (
-    <header className={props?.className ?? "inline-flex flex-col items-start justify-between w-full mb-1 align-top border-b-4 border-gray-300"}
-      style={props?.style}
+    <header className={className ?? "inline-flex flex-col items-start justify-between w-full mb-1 align-top border-b-4 border-gray-300"}
+      style={style}
     >
       {/* name */}
       <h1 className="font-bold text-2xl sm:text-5xl text-gray-700">
