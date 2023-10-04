@@ -6,7 +6,11 @@ module.exports = {
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        'A4-Portrait': '1/1.41',
+      },
+    },
   },
   plugins: [],
 }
