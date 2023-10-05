@@ -11,15 +11,15 @@ const Header: React.FC<ComponentProps> = (props) => {
       style={style}
     >
       {/* name */}
-      <h1 className="font-bold text-xl sm:text-5xl text-gray-700 uppercase font-montserrat sm:tracking-wide">
+      <h1 className="font-bold text-xl sm:text-5xl text-gray-900 uppercase">
         Charanteja Yandrapti
       </h1>
       {/* Job Title / profession */}
-      <h2 className="sm:ml-1 font-semibold text-[14px] sm:text-xl text-gray-700 font-montserrat sm:tracking-wide">
+      <h2 className="sm:ml-1 font-semibold text-[14px] sm:text-xl text-gray-700">
         Full Stack Web Development
       </h2>
       {/* location */}
-      <h3 className="sm:ml-1 font-semibold text-sm sm:text-base text-gray-500 font-montserrat sm:tracking-wide">
+      <h3 className="sm:ml-1 font-semibold text-sm sm:text-base text-gray-500">
         Chennai, India &#127760;
       </h3>
     </header>
