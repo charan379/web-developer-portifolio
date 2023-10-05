@@ -1,9 +1,9 @@
 import React from "react";
-import SocialLinks from "../../SocialLinks";
 import AboutMe from "./Components/AboutMe/AboutMe";
 import Bio from "./Components/Bio";
 import LeftSection from "./Components/RLSections/LeftSection";
 import RightSection from "./Components/RLSections/RightSection";
+import SocialLinks from "@/components/SocialLinks";
 
 const ProfileCardT1 = () => {
   return (

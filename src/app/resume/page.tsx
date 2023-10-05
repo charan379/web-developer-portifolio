@@ -1,4 +1,4 @@
-import ResumeT1 from "@/components/ResumeTemplates/ResumeT1";
+import ResumeT1 from "@/templates/resume/ResumeT1";
 
 export default async function ResumePage() {
   return (

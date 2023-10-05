@@ -1,5 +1,4 @@
-import ProfileCardT1 from "@/components/ProfileCardTemplates/ProfileCardT1";
-
+import ProfileCardT1 from "@/templates/profilecard/ProfileCardT1";
 // export async function generateMetadata() {
 //   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
 //     method: "GET",
