@@ -1,7 +1,6 @@
 import React from "react";
 import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
 import Name from "../Name/Name";
-import AboutMe from "../AboutMe/AboutMe";
 import Skills from "../Skills";
 
 const Bio: React.FC<ComponentProps> = (props) => {
@@ -19,11 +18,11 @@ const Bio: React.FC<ComponentProps> = (props) => {
         <h3 className="mb-2 text-xl text-slate-400">Learner / Developer</h3>
         {/* skills */}
         <div className="mb-2 text-lg text-slate-400 mt-2 md:mt-0">
-          <h3 className="mb-2 hidden md:block">Skills</h3>
+          <h3 className="mb-2 hidden md:block font-montserrat">Skills</h3>
           <Skills
             className="w-full flex flex-row gap-2 items-center md:items-start justify-center md:justify-normal flex-wrap pb-2"
             skills={["Java", "React", "Css", "Html", "JS", "NodeJs", "MongoDB"]}
-            skillClassName="w-max bg-slate-500 hover:bg-red-500 text-slate-50  text-sm px-2 py-1 rounded-[4.5px] border-r-8 border-slate-700 hover:border-red-800 cursor-pointer"
+            skillClassName="w-max bg-slate-500 hover:bg-red-500 text-slate-50  text-sm px-2 py-1 rounded-[4.5px] border-r-8 border-slate-700 hover:border-red-800 cursor-pointer font-roboto400"
           />
         </div>
       </div>

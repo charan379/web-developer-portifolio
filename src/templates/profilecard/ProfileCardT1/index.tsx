@@ -10,14 +10,14 @@ const ProfileCardT1 = () => {
     // profile card
     <div className="w-11/12 pt-2 md:pt-3 flex md:gap-y-1 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] profile-card-init-anime-1">
       {/* Bio */}
-      <Bio className="p-2 flex flex-col md:flex-row gap-3 md:gap-0 items-center" />
+      <Bio className="p-2 flex flex-col md:flex-row gap-3 md:gap-0 items-center font-montserrat" />
       {/* AboutMe */}
       <AboutMe
         className="px-2 cursor-pointer select-none"
-        contentClassName="px-4 py-3 pt-2 text-[0.925rem] text-left text-slate-500 font-semibold hidden sm:block border-anime-2"
+        contentClassName="px-4 py-3 pt-2 text-[0.925rem] text-left text-slate-500 font-semibold font-roboto300 hidden sm:block border-anime-2"
       />
       {/* resume, hire me , contact */}
-      <div className="p-2 w-full gap-1 flex flex-col md:flex-row flex-nowrap items-center justify-center">
+      <div className="p-2 w-full gap-1 flex flex-col md:flex-row flex-nowrap items-center justify-center font-roboto400">
         {/* inner div 1 */}
         <LeftSection />
         {/* inner div 2 */}
