@@ -3,6 +3,7 @@ import { PlainMailTo } from "@/components/Email";
 import { PlainCallTo } from "@/components/Phone";
 import { PlainSiteLink } from "@/components/ExternalSite";
 import ContactItem from "./ContactItem";
+import Heading from "../Heading";
 
 const ContactInformation: React.FC<ComponentProps> = (props) => {
   const data = {
@@ -18,6 +19,7 @@ const ContactInformation: React.FC<ComponentProps> = (props) => {
   // Contact Information
   return (
     <div className={props?.className ?? "pb-2"}>
+      <Heading>Details</Heading>
       <div className="w-full flex flex-col md:flex-row flex-wrap gap-2 sm:gap-3">
         {/*  */}
         <ContactItem attribute="Email" key={"c1"}>
