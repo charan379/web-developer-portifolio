@@ -11,7 +11,7 @@ const Header: React.FC<ComponentProps> = (props) => {
       style={style}
     >
       {/* name */}
-      <h1 className="font-bold text-xl sm:text-5xl text-gray-900 uppercase">
+      <h1 className="font-bold text-xl sm:text-4xl text-gray-900 uppercase">
         Charanteja Yandrapti
       </h1>
       {/* Job Title / profession */}
