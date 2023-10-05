@@ -24,9 +24,10 @@ const ResumeT1: React.FC = () => {
       <Contect className="w-full min-h-full max-w-full flex flex-row border-t-2 border-gray-200 font-roboto300">
         {/* left section */}
         <div className="min-w-[35%] max-h-[35%] min-h-full pt-2 sm:pt-4 border-r-0 border-gray-200">
-          <div>
-            <Heading>Details</Heading>
+          <div className="flex flex-col gap-1">
             <ContactInformation />
+            <Skills />
+
           </div>
         </div>
 
