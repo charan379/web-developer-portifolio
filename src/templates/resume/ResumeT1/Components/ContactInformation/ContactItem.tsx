@@ -12,9 +12,9 @@ interface ContactItemProps extends PropsWithChildren {
 const avpStyles: Partial<AttributeValuePairCompProps> = {
   className: "w-full flex flex-col overflow-hidden",
   attributeClassName:
-    "w-full text-[0.5rem] sm:text-sm font-bold text-gray-600 uppercase break-words font-montserrat tracking-wide text-gray-800",
+    "w-full text-[0.5rem] sm:text-[14px] font-bold text-gray-600 uppercase break-words font-roboto400 tracking-wider",
   valueClassName:
-    "w-full text-[0.6rem] sm:text-lg tracking-tight break-words font-roboto300 text-gray-500",
+    "w-full text-[0.6rem] sm:text-lg tracking-tight break-words font-roboto400 text-gray-400",
 };
 
 const ContactItem: React.FC<ContactItemProps> = (props) => {
