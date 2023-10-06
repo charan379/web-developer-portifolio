@@ -27,12 +27,13 @@ const ResumeT1: React.FC = () => {
           <div className="flex flex-col gap-1">
             <ContactInformation />
             <Skills />
-
           </div>
         </div>
 
         {/* right section */}
-        <div className="min-w-[65%] min-h-full pt-2 sm:pt-4 border-l-2 border-gray-200"></div>
+        <div className="min-w-[65%] min-h-full pt-2 sm:pt-4 pl-2 sm:pl-4 border-l-2 border-gray-200">
+          <Summary />
+        </div>
       </Contect>
     </div>
   );
