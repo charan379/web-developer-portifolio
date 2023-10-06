@@ -14,7 +14,7 @@ const avpStyles: Partial<AttributeValuePairCompProps> = {
   attributeClassName:
     "w-full text-[0.5rem] sm:text-[14px] font-bold text-gray-600 uppercase break-words font-roboto400 tracking-wider",
   valueClassName:
-    "w-full text-[0.6rem] sm:text-lg tracking-tight break-words font-roboto400 text-gray-400",
+    "w-full text-[0.6rem] sm:text-base tracking-tight break-words font-roboto400 text-gray-400",
 };
 
 const ContactItem: React.FC<ContactItemProps> = (props) => {
