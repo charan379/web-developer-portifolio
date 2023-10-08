@@ -7,7 +7,6 @@ import Heading from "../Heading";
 
 const ContactInformation: React.FC<ComponentProps> = (props) => {
   const data = {
-    githubUserName: "charan379",
     website: "charanteja.me",
     email: "charanteja@gmail.com",
     phoneNumber: {
@@ -33,16 +32,6 @@ const ContactInformation: React.FC<ComponentProps> = (props) => {
             countryCode={data.phoneNumber.countryCOde}
             number={data.phoneNumber.number}
             key={"pct"}
-          />
-        </ContactItem>
-
-        {/*  */}
-        <ContactItem attribute="Github" key={"c3"}>
-          {/*  */}
-          <PlainSiteLink
-            siteUrl={`https://github.com/${data.githubUserName}`}
-            displayText={data.githubUserName}
-            key={"psl1"}
           />
         </ContactItem>
 

@@ -1,14 +1,15 @@
 import React from "react";
-import AboutMe from "./Components/AboutMe/AboutMe";
-import Bio from "./Components/Bio";
-import LeftSection from "./Components/RLSections/LeftSection";
-import RightSection from "./Components/RLSections/RightSection";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Bio from "./components/Bio";
+import LeftSection from "./components/RLSections/LeftSection";
+import RightSection from "./components/RLSections/RightSection";
 import SocialLinks from "@/components/SocialLinks";
+import styles from "./profilecard.module.css";
 
 const ProfileCardT1 = () => {
   return (
     // profile card
-    <div className="w-11/12 pt-2 md:pt-3 flex md:gap-y-1 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] profile-card-init-anime-1">
+    <div className={`w-11/12 pt-2 md:pt-3 flex md:gap-y-1 flex-col items-center justify-center max-w-2xl 2xl:max-w-screen-lg m-5 bg-slate-50 rounded-xl shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] ${styles.profileCardInitAnime}`}>
       {/* Bio */}
       <Bio className="p-2 flex flex-col md:flex-row gap-3 md:gap-0 items-center font-montserrat" />
       {/* AboutMe */}

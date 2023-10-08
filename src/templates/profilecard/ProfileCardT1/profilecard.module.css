@@ -1,4 +1,4 @@
-.profile-card-init-anime-1 {
+.profileCardInitAnime {
   /* animations */
   animation: init 0.8s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
     moveUpCenterToTop 0.7s 0s ease-in-out forwards,
@@ -9,22 +9,22 @@
     makeCard 0.5s 3.1s cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
 }
 
-.profile-card-init-anime-1 > :nth-child(1) {
+.profileCardInitAnime > :nth-child(1) {
   opacity: 0;
   animation: initScale01 0.5s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profile-card-init-anime-1 > :nth-child(2) {
+.profileCardInitAnime > :nth-child(2) {
   opacity: 0;
   animation: initScale01 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profile-card-init-anime-1 > :nth-child(3) {
+.profileCardInitAnime > :nth-child(3) {
   opacity: 0;
   animation: moveLeft 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profile-card-init-anime-1 > :nth-child(4) {
+.profileCardInitAnime > :nth-child(4) {
   opacity: 0;
   animation: moveRight 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
