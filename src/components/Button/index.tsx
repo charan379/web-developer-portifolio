@@ -44,7 +44,7 @@ const Button: React.FC<ButtonProps> = ({
         // Apply the custom CSS class, if provided.
         className,
         // Apply the default CSS classes.
-        "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+        "bg-blue-500 hover:bg-blue-700 text-white font-normal font-roboto400 py-2 px-4 rounded",
         // Append the additional CSS class, if provided.
         appendDefaultClassName,
       ].join(" ")}
