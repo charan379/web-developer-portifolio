@@ -21,6 +21,7 @@ type ButtonProps = ComponentProps & {
  * @param children The content of the button.
  * @param handleClick A function to be called when the button is clicked.
  * @param type Type of button > "button" | "submit" | "reset"
+ * @returns A React element representing the button.
  */
 const Button: React.FC<ButtonProps> = ({
   className,
@@ -39,16 +40,18 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       type={type}
-      className={
-        className ??
-        [
-          "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
-          appendDefaultClassName,
-        ].join(" ")
-      }
+      className={[
+        // Apply the custom CSS class, if provided.
+        className,
+        // Apply the default CSS classes.
+        "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded",
+        // Append the additional CSS class, if provided.
+        appendDefaultClassName,
+      ].join(" ")}
       style={style}
       onClick={handleClickWithoutDefault}
     >
+      {/* label */}
       {children ?? "Button"}
     </button>
   );
