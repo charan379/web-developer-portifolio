@@ -1,9 +1,9 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 import AttributeValuePair, {
   AttributeValuePairCompProps,
 } from "@/components/AttributeValuePair";
 
-interface ContactItemProps extends PropsWithChildren {
+interface ContactItemProps extends ComponentProps {
   attribute: string;
   value?: React.ReactElement | string;
   key: string | number;

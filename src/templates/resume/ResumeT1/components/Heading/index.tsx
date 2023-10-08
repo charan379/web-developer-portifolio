@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 
-interface HeadingProps extends ComponentProps, PropsWithChildren {}
+interface HeadingProps extends ComponentProps {}
 
 const Heading: React.FC<HeadingProps> = (props) => {
   const { children, className, style } = props;

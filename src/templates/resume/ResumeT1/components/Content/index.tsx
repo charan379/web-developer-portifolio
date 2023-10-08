@@ -1,6 +1,6 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
 
-interface ContentProps extends ComponentProps, PropsWithChildren { };
+interface ContentProps extends ComponentProps {};
 
 
 const Contect: React.FC<ContentProps> = (props) => {
