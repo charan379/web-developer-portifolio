@@ -29,10 +29,10 @@ const Button: React.FC<ButtonProps> = (props) => {
   const {
     className,
     style,
-    appendDefaultClassName,
-    children,
+    appendDefaultClassName = true,
+    children = "Button",
     handleClick,
-    type,
+    type = "button",
   } = props;
 
   // Use the `useMemo` hook to cache the handleClick function. This will improve performance if the handleClick function is expensive to compute.
@@ -54,7 +54,7 @@ const Button: React.FC<ButtonProps> = (props) => {
       onClick={handleClickWithoutDefault}
     >
       {/* label */}
-      {children ?? "Button"}
+      {children}
     </button>
   );
 };

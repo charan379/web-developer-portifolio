@@ -14,9 +14,26 @@ interface RevealOnClickProps extends ComponentProps {
 }
 
 const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
+  // ref of this component
   const thisComponentRef = useRef<HTMLDivElement>(null);
+  // booelan value to indicate whether to show/hide content
   const [reveal, setReveal] = useState(false);
 
+  // Destructure props into individual values
+  const {
+    buttonClassName,
+    buttonStyle,
+    buttonText,
+    contentClassName = "flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out",
+    contentStyle,
+    className,
+    appendDefaultClassName = true,
+    style,
+    children = "Nothing to render",
+    id = "revealOnClick"
+  } = props;
+
+  // logic to hide the content when user click's outside this component
   useOnOutsideClick(
     thisComponentRef,
     useCallback(() => {
@@ -28,38 +45,30 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
   return (
     <div
       ref={thisComponentRef}
-      className={props?.className ?? "w-1/2 border-r-2 mx-auto text-center"}
-      id={props?.id ?? "revealOnClick"}
+      className={appendDefaultClassName ? ["w-1/2 border-r-2 mx-auto text-center", className].join(" ") : className}
+      style={style}
+      id={id}
+      key={id}
     >
-      {/* button */}
-
+      {/* Button when clicked replace with content */}
       <Button
-        //  class
         className={[
-          props.buttonClassName,
+          buttonClassName,
           reveal ? "opacity-0 hidden z-[-9999]" : "opacity-100",
         ].join(" ")}
         appendDefaultClassName={false}
-        // styles
-        style={props?.buttonStyle}
-        // actions
+        style={buttonStyle}
         handleClick={() => setReveal(!false)}
       >
-        {props?.buttonText ?? "Click me to reveal"}
+        {buttonText}
       </Button>
 
-      {/* content */}
+      {/* Content to be diplayed when button is clicked */}
       <div
-        //   class
-        className={`w-full ${reveal
-            ? props?.contentClassName ??
-            "flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
-            : "transition-none  absolute top-0 left-0 opacity-0  translate-y-8 z-[-9999]"
-          }`}
-        // style
-        style={props?.contentStyle}
+        className={["w-full", reveal ? contentClassName : "transition-none  absolute top-0 left-0 opacity-0  translate-y-8 z-[-9999]"].join(" ")}
+        style={contentStyle}
       >
-        {props?.children ?? "Nothing to render"}
+        {children}
       </div>
     </div>
   );
