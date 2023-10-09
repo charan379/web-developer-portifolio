@@ -35,10 +35,11 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
 
       <Button
         //  class
-        appendDefaultClassName={[
+        className={[
           props.buttonClassName,
           reveal ? "opacity-0 hidden z-[-9999]" : "opacity-100",
         ].join(" ")}
+        appendDefaultClassName={false}
         // styles
         style={props?.buttonStyle}
         // actions
@@ -50,12 +51,11 @@ const RevealOnClick: React.FC<RevealOnClickProps> = (props) => {
       {/* content */}
       <div
         //   class
-        className={`w-full ${
-          reveal
+        className={`w-full ${reveal
             ? props?.contentClassName ??
-              "flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
+            "flex flex-row justify-center opacity-100 translate-y-0 transition-all duration-500 ease-in-out"
             : "transition-none  absolute top-0 left-0 opacity-0  translate-y-8 z-[-9999]"
-        }`}
+          }`}
         // style
         style={props?.contentStyle}
       >
