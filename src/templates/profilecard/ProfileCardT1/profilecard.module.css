@@ -16,7 +16,7 @@
 
 .profileCardInitAnime > :nth-child(2) {
   opacity: 0;
-  animation: initScale01 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
+  animation: moveRight 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
 .profileCardInitAnime > :nth-child(3) {
