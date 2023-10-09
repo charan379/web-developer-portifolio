@@ -1,8 +1,8 @@
 import React from "react";
-import AboutMe from "./components/AboutMe/AboutMe";
-import Bio from "./components/Bio";
-import LeftSection from "./components/RLSections/LeftSection";
-import RightSection from "./components/RLSections/RightSection";
+import AboutMe from "./components/aboutMe";
+import Bio from "./components/bio";
+import LeftSection from "./components/RLSections/leftSection";
+import RightSection from "./components/RLSections/rightSection";
 import SocialLinks from "@/components/SocialLinks";
 import styles from "./profilecard.module.css";
 

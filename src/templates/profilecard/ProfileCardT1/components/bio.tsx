@@ -1,7 +1,7 @@
 import React from "react";
-import ProfilePhoto from "../ProfilePhoto/ProfilePhoto";
-import Name from "../Name/Name";
-import Skills from "../Skills";
+import ProfilePhoto from "./ProfilePhoto/profilePhoto";
+import Name from "./name";
+import Skills from "./Skills";
 
 const Bio: React.FC<ComponentProps> = (props) => {
   return (

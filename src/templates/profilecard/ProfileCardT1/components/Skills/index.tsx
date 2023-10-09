@@ -1,5 +1,5 @@
 import React from "react";
-import Skill from "./Skill";
+import Skill from "./skill";
 
 interface SkillsCompProps extends ComponentProps {
   skills: string[];
