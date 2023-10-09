@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../Text";
 
 interface EmailProps extends ComponentProps {
     email: string;
@@ -10,7 +11,9 @@ const PlainMailTo: React.FC<EmailProps> = (props) => {
 
     return (
         <a href={`mailto:${email}`} className={className} style={style}>
-            {email}
+            <Text className="tracking-wide">
+                {email}
+            </Text>
         </a>
     )
 }

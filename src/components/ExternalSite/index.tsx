@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../Text";
 
 
 interface ExternalSiteProps extends ComponentProps {
@@ -11,7 +12,9 @@ const PlainSiteLink: React.FC<ExternalSiteProps> = (props) => {
 
     return (
         <a href={siteUrl} target="_blank" className={className} style={style}>
-            {displayText}
+            <Text className="tracking-wide">
+                {displayText}
+            </Text>
         </a>
     )
 }

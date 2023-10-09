@@ -4,6 +4,7 @@ import { PlainCallTo } from "@/components/Phone";
 import { PlainSiteLink } from "@/components/ExternalSite";
 import ContactItem from "./ContactItem";
 import Heading from "../Heading";
+import Text from "@/components/Text";
 
 const ContactInformation: React.FC<ComponentProps> = (props) => {
   const data = {
@@ -47,7 +48,9 @@ const ContactInformation: React.FC<ComponentProps> = (props) => {
 
         {/*  */}
         <ContactItem attribute="Address" key={"c5"}>
-          {data.address}
+          <Text>
+            {data.address}
+          </Text>
         </ContactItem>
       </div>
     </div>

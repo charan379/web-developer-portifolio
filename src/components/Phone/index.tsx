@@ -1,4 +1,5 @@
 import React from "react";
+import Text from "../Text";
 
 interface PhoneProps extends ComponentProps {
     country?: string;
@@ -11,7 +12,9 @@ const PlainCallTo: React.FC<PhoneProps> = (props) => {
 
     return (
         <a href={`tel:${countryCode}${number}`} className={className} style={style}>
-            {countryCode} {number}
+            <Text>
+                {countryCode} {number}
+            </Text>
         </a>
     )
 }
