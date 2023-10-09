@@ -20,6 +20,34 @@ body {
   }
 }
 
+.circle-left::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  top: 2px;
+  left: -10px;
+  -moz-border-radius: 7.5px;
+  -webkit-border-radius: 7.5px;
+  border-radius: 7.5px;
+  background-color: currentColor;
+}
+
+.left-full-border {
+  position: relative;
+}
+
+.left-full-border::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: -27px;
+
+  border-left: 2px solid currentColor;
+}
+
+
 /* custom css old keeping for @keyframes [ remove after storing @keyframes at another place */
 /* @import "./cssroot.css";
 
