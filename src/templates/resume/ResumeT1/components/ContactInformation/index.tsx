@@ -3,7 +3,7 @@ import { PlainMailTo } from "@/components/Email";
 import { PlainCallTo } from "@/components/Phone";
 import { PlainSiteLink } from "@/components/ExternalSite";
 import ContactItem from "./ContactItem";
-import Heading from "../Heading";
+import Heading from "../heading";
 import Text from "@/components/Text";
 
 const ContactInformation: React.FC<ComponentProps> = (props) => {

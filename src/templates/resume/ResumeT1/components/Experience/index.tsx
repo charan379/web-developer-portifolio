@@ -1,6 +1,6 @@
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
-import Heading from "../Heading";
+import Heading from "../heading";
 
 const Experience: React.FC<ComponentProps> = (props) => {
 

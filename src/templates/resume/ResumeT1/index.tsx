@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "./components/Header";
+import Header from "./components/header";
 import ContactInformation from "./components/ContactInformation";
-import Summary from "./components/Summary";
+import Summary from "./components/summary";
 import Education from "./components/Education";
-import Skills from "./components/Skills";
+import Skills from "./components/skills";
 import Experience from "./components/Experience";
-import Contect from "./components/Content";
-import Heading from "./components/Heading";
+import Contect from "./components/content";
+import Heading from "./components/heading";
 
 const ResumeT1: React.FC = () => {
   return (
