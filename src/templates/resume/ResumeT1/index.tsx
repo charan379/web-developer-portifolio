@@ -10,7 +10,7 @@ import Heading from "./components/heading";
 
 const ResumeT1: React.FC = () => {
   return (
-    <div className="text-slate-400 mx-auto my-5 max-w-5xl aspect-A4-Portrait p-4 sm:p-8 container bg-white rounded-lg shadow-xl flex flex-col ">
+    <div className="text-slate-400 mx-auto my-5 max-w-5xl aspect-A4-Portrait  p-4 sm:p-8 container bg-white rounded-lg shadow-xl flex flex-col ">
       {/* Header 
             basic classes to be present for styling
             [w-full, p-1, max-h-[20%]]

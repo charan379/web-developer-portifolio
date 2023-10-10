@@ -7,7 +7,7 @@ const Experience: React.FC<ComponentProps> = (props) => {
   const data = [{
     companyName: "InfoTech Pvt Ltd.",
     joiningData: new Date("01-01-2019"),
-    relievingDate: new Date("01-05-2020"),
+    relievingDate: new Date("05-01-2020"),
     location: "India",
     type: "Full Time",
     display: true,
@@ -21,7 +21,7 @@ const Experience: React.FC<ComponentProps> = (props) => {
     {
       designation: "Sys Executive",
       startingDate: new Date("01-04-2020"),
-      endingDate: new Date("01-05-2020"),
+      endingDate: new Date("05-05-2020"),
       display: true,
       notes: [{ display: true, priority: 1, text: "Lorem 1 ipsum dolor sit amet, consectetuer adipiscing elit. Aeneancommodo ligula eget dolor. Aenean massa." }, { display: true, priority: 2, text: "Lorem 2 ipsum dolor sit amet, consectetuer adipiscing elit. Aeneancommodo ligula eget dolor. Aenean massa." }]
     }]
