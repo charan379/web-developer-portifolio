@@ -3,22 +3,23 @@ import React from "react";
 import style from './experience.module.css'
 import getNumberOfYearsAndMonthsBetweenDates from "@/lib/utils/getNumberOfYearsAndMonthsBetweenDates";
 import Heading3 from "../Headings/heading3";
+import TimePeriod from "../timePeriod";
+import Duration from "../duration";
 
 const Designation: React.FC<Partial<IDesignation>> = (props) => {
   const { designation, startingDate, endingDate, notes, display } = props;
-  const { years, months } = getNumberOfYearsAndMonthsBetweenDates(startingDate ?? new Date(Date.now()), endingDate ?? new Date(Date.now()));
   return (
-    <div className={`${style.designation} px-2`}>
+    <div className={`${style.designation} px-1`}>
       <div className="flex flex-row items-center gap-10">
         {/* designation */}
         <Heading3>{designation}</Heading3>
         {/* time period */}
-        <span className="text-gray-500 font-roboto400 font-bold text-xs leading-normal">
-          {startingDate?.getFullYear()} - {endingDate?.getFullYear() ?? "Preset"}
-          <span className="ml-1">{`( ${years} ${years > 1 ? "years" : "year"}, ${months} ${months === 1 ? "month" : "months"} )`}</span>
+        <span className="text-[9px] sm:text-xs md:text-sm tracking-wide hidden sm:flex sm:flex-row sm:items-center gap-2 min-w-max">
+          <TimePeriod className="text-gray-500 text-[9px] sm:text-xs md:text-sm" fromYear={startingDate} toYear={endingDate} />
+          <Duration className="text-gray-500 text-[9px] sm:text-xs md:text-sm" fromYear={startingDate} toYear={endingDate} />
         </span>
       </div>
-      <ul className={`ml-6 ${style.leftFullBorder}`}>
+      <ul className={`ml-3 sm:ml-6 ${style.leftFullBorder} before:left-[-20px] sm:before:left-[-28px]`}>
         {notes?.filter((note) => note.display === true)
           .sort((note1, note2) => note1.priority - note2.priority)
           .map((note, index) => {

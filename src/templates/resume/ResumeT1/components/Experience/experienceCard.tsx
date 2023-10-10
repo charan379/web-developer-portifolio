@@ -3,11 +3,12 @@ import Designation from "./designation";
 import Text from "@/components/Text";
 import getNumberOfYearsAndMonthsBetweenDates from "@/lib/utils/getNumberOfYearsAndMonthsBetweenDates";
 import Heading2 from "../Headings/heading2";
+import Duration from "../duration";
+import TimePeriod from "../timePeriod";
 
 
 const ExperienceCard: React.FC<Partial<IExperience>> = (props) => {
   const { companyName, joiningData, relievingDate, location, type, display, designations } = props;
-  const { years, months } = getNumberOfYearsAndMonthsBetweenDates(joiningData ?? new Date(Date.now()), relievingDate ?? new Date(Date.now()))
   return (
     // Card Container
     <div className="px-0 mb-2">
@@ -16,12 +17,10 @@ const ExperienceCard: React.FC<Partial<IExperience>> = (props) => {
         {/* org name */}
         <Heading2>{companyName}</Heading2>
         {/* working years */}
-        <span className="min-w-max font-bold">{joiningData?.getFullYear()} - {relievingDate?.getFullYear() ?? "Present"}</span>
+        <TimePeriod fromYear={joiningData} toYear={relievingDate} />
       </div>
       {/* duration */}
-      <Text className="font-roboto400 tracking-wide ml-1 mb-1" appendDefaultClassName={true}>
-        {`${years} ${years > 1 ? "years" : "year"}, ${months} ${months === 1 ? "month" : "months"}`}
-      </Text>
+      <Duration className="ml-1 mb-1" fromYear={joiningData} toYear={relievingDate} />
       {/* Designation tree */}
       {designations?.sort((des1, des2) => des2.startingDate.getFullYear() - des1.startingDate.getFullYear())
         .filter((des) => des.display === true)

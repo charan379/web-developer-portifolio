@@ -12,7 +12,7 @@ interface ContactItemProps extends ComponentProps {
 const avpStyles: Partial<AttributeValuePairCompProps> = {
   className: "w-full flex flex-col overflow-hidden",
   attributeClassName:
-    "w-full text-[0.5rem] sm:text-[14px] font-bold text-gray-600 uppercase break-words font-roboto400 tracking-wider",
+    "w-full text-[0.45rem] sm:text-[14px] font-bold text-gray-600 uppercase break-words font-roboto400 tracking-wider",
   valueClassName:
     "w-full text-[0.6rem] sm:text-base tracking-tight break-words font-roboto400 text-gray-400",
 };

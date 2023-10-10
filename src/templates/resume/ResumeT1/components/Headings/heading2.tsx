@@ -5,7 +5,7 @@ const Heading2: React.FC<ComponentProps> = (props) => {
   return (
     <h3 className={appendDefaultClassName
       ? // Append to default class
-      ["text-lg font-bold font-roboto400 text-gray-700 tracking-wide rect-left", className].join(" ")
+      ["text-[10px] sm:text-sm md:text-lg font-bold font-roboto400 text-gray-700 tracking-wide rect-left before:h-[15px] sm:before:h-[25px] before:left-[-5px] sm:before:left-[-10px] before:top-[-2px] sm:before:top-[-5px] before:w-[2px] sm:before:w-[4px]", className].join(" ")
       : // Replace the default class
       className
     }
