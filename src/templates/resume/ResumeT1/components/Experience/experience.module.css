@@ -1,0 +1,16 @@
+.designation>.leftFullBorder {
+    position: relative;
+}
+
+
+.designation>.leftFullBorder::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: -28px;
+    border-left: 2px solid currentColor;
+}
+
+.designation:last-child>.leftFullBorder::before {
+    height: 0%;
+}

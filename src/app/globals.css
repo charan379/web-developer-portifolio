@@ -15,6 +15,7 @@ body {
   0% {
     overflow-y: hidden;
   }
+
   100% {
     overflow-y: auto;
   }
@@ -34,19 +35,20 @@ body {
   background-color: currentColor;
 }
 
-.left-full-border {
-  position: relative;
-}
-
-.left-full-border::before {
+.rect-left::before {
   content: "";
-  position: absolute;
-  height: 100%;
-  left: -27px;
-
-  border-left: 2px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  width: 4px;
+  height: 25px;
+  top: -5px;
+  left: -10px;
+  -moz-border-radius: 2.5px;
+  -webkit-border-radius: 2.5px;
+  border-radius: 2.5px;
+  background-color: currentColor;
 }
-
 
 /* custom css old keeping for @keyframes [ remove after storing @keyframes at another place */
 /* @import "./cssroot.css";

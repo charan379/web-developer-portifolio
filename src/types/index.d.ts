@@ -76,6 +76,24 @@ interface ComponentProps {
   children?: ReactNode | undefined;
 }
 
+interface IDesignation {
+  designation: string,
+  startingDate: Date,
+  endingDate: Date | null | undefined,
+  display: boolean,
+  notes: Array<{ display: boolean, priority: number, text: string }>
+}
+
+interface IExperience {
+  companyName: string,
+  joiningData: Date,
+  relievingDate: Date | null | undefined,
+  location: string,
+  type: string,
+  display: boolean,
+  designations: IDesignation[],
+}
+
 type Profile = {
   name: string;
   shortName: string;
