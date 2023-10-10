@@ -2,6 +2,7 @@ import React from "react";
 import Designation from "./designation";
 import Text from "@/components/Text";
 import getNumberOfYearsAndMonthsBetweenDates from "@/lib/utils/getNumberOfYearsAndMonthsBetweenDates";
+import Heading2 from "../Headings/heading2";
 
 
 const ExperienceCard: React.FC<Partial<IExperience>> = (props) => {
@@ -13,9 +14,7 @@ const ExperienceCard: React.FC<Partial<IExperience>> = (props) => {
       {/* Organization and working years */}
       <div className="flex flex-row justify-between">
         {/* org name */}
-        <h3 className="text-lg font-bold font-roboto400 text-gray-700 tracking-wide rect-left">
-          {companyName}
-        </h3>
+        <Heading2>{companyName}</Heading2>
         {/* working years */}
         <span className="min-w-max font-bold">{joiningData?.getFullYear()} - {relievingDate?.getFullYear() ?? "Present"}</span>
       </div>

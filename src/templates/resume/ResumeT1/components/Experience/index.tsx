@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "../heading";
+import Heading1 from "../Headings/heading1";
 import ExperienceCard from "./experienceCard";
 
 const Experience: React.FC<ComponentProps> = (props) => {
@@ -53,7 +53,7 @@ const Experience: React.FC<ComponentProps> = (props) => {
       className={className ?? "py-2 mt-2 border-t-2 border-gray-200"}
       style={style}
     >
-      <Heading>Experience</Heading>
+      <Heading1>Experience</Heading1>
       {data.sort((experience1, experience2) => experience2.joiningData.getFullYear() - experience1.joiningData.getFullYear())
         .filter((experience) => experience.display === true)
         .map((experience, index) => {

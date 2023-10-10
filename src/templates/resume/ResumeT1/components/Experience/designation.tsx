@@ -2,6 +2,7 @@ import Text from "@/components/Text";
 import React from "react";
 import style from './experience.module.css'
 import getNumberOfYearsAndMonthsBetweenDates from "@/lib/utils/getNumberOfYearsAndMonthsBetweenDates";
+import Heading3 from "../Headings/heading3";
 
 const Designation: React.FC<Partial<IDesignation>> = (props) => {
   const { designation, startingDate, endingDate, notes, display } = props;
@@ -10,9 +11,7 @@ const Designation: React.FC<Partial<IDesignation>> = (props) => {
     <div className={`${style.designation} px-2`}>
       <div className="flex flex-row items-center gap-10">
         {/* designation */}
-        <h4 className="text-gray-600 font-roboto400 font-semibold tracking-wide text-base leading-normal circle-left">
-          {designation}
-        </h4>
+        <Heading3>{designation}</Heading3>
         {/* time period */}
         <span className="text-gray-500 font-roboto400 font-bold text-xs leading-normal">
           {startingDate?.getFullYear()} - {endingDate?.getFullYear() ?? "Preset"}

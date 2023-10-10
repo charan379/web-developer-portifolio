@@ -6,7 +6,7 @@ import Education from "./components/Education";
 import Skills from "./components/skills";
 import Experience from "./components/Experience";
 import Contect from "./components/content";
-import Heading from "./components/heading";
+import Heading1 from "./components/Headings/heading1";
 
 const ResumeT1: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import Heading from "./heading";
+import Heading1 from "./Headings/heading1";
 
 const Skills = () => {
   const skills: string[] = [
@@ -25,7 +25,7 @@ const Skills = () => {
     <section className="pb-6 mb-4 mt-0 first:mt-0 ">
       {/* To keep in the same column */}
       <section className="">
-        <Heading>Skills</Heading>
+        <Heading1>Skills</Heading1>
         <section className="mb-0">
           <section className="mt-1 last:pb-1">
             <ul className="flex flex-wrap gap-1 text-md mb-1 font-bold">
