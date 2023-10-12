@@ -8,7 +8,7 @@ interface AboutMeProps extends ComponentProps {
 const AboutMe: React.FC<AboutMeProps> = (props) => {
   return (
     <>
-      <div className="px-2 cursor-pointer select-none">
+      <div className="my-3 px-2 cursor-pointer select-none">
         <h4
           className="px-4 py-3 pt-2 text-base text-left text-orange-600 hidden sm:block border-anime-2"
           style={props?.contentStyle}
