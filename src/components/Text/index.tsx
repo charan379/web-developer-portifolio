@@ -10,7 +10,7 @@ const Text: React.FC<ComponentProps> = (props) => {
     return (
         <p className={appendDefaultClassName
             ? // Append to default class
-            ["text-[9px] sm:text-xs md:text-base leading-normal text-gray-400 font-roboto400", className].join(" ")
+            ["text-xs sm:text-sm leading-normal text-gray-400 font-roboto400", className].join(" ")
             : // Replace the default class
             className}
             style={style}>

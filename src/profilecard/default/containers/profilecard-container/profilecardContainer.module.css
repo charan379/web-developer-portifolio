@@ -2,28 +2,29 @@
   /* animations */
   animation: init 0.8s 0s cubic-bezier(0.55, 0.055, 0.675, 0.19) forwards,
     moveUpCenterToTop 0.7s 0s ease-in-out forwards,
-    moveDownTopToBottom 0.7s 1.2s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
+    moveDownTopToBottom 0.7s 1.2s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+      forwards,
     moveUpBottomToTop 0.7s 1.9s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
     moveDownTopToCenter 0.5s 2.6s ease-in-out forwards,
     makeCard 0.5s 3.1s cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
 }
 
-.profileCardInitAnime> :nth-child(1) {
+.profileCardInitAnime > :nth-child(1) {
   opacity: 0;
   animation: opacity1 0.5s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profileCardInitAnime> :nth-child(2) {
+.profileCardInitAnime > :nth-child(2) {
   opacity: 0;
   animation: opacity1 0.7s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profileCardInitAnime> :nth-child(3) {
+.profileCardInitAnime > :nth-child(3) {
   opacity: 0;
   animation: moveLeft 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
 
-.profileCardInitAnime> :nth-child(4) {
+.profileCardInitAnime > :nth-child(4) {
   opacity: 0;
   animation: moveRight 1s 3s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards;
 }
@@ -204,7 +205,6 @@
 
 /* sm mobiles */
 @media screen and (max-height: 670px) and (max-width: 380px) {
-
   /* Make card */
   @keyframes makeCard {
     0% {
@@ -234,7 +234,6 @@
 
 /* mobiles */
 @media screen and (max-height: 916px) and (max-width: 420px) {
-
   /* Make card */
   @keyframes makeCard {
     0% {
@@ -264,7 +263,6 @@
 
 /* tablets */
 @media screen and (max-height: 1400px) and (max-width: 950px) {
-
   /* Make card */
   @keyframes makeCard {
     0% {
@@ -294,7 +292,6 @@
 
 /* split screen tablets */
 @media screen and (max-height: 730px) and (max-width: 560px) {
-
   /* Make card */
   @keyframes makeCard {
     0% {
