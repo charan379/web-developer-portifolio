@@ -1,6 +1,6 @@
 .border-anime-2 {
   /* vars */
-  --border-weight: 5px;
+  --border-weight: 3px;
   --border-color: currentColor;
   --border-radius: 0px;
   --border-style: solid;
