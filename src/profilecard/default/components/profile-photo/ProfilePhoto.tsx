@@ -2,10 +2,7 @@ import React from "react";
 import styles from "./ProfilePhoto.module.css";
 
 // Define the prop types for the ProfilePhoto component
-interface ProfilePhotoProps {
-  style?: React.CSSProperties; // Custom styles for the component
-  className?: string; // Custom CSS class for the component
-}
+interface ProfilePhotoProps extends ComponentProps {}
 
 // ProfilePhoto component
 const ProfilePhoto: React.FC<ProfilePhotoProps> = (props) => {

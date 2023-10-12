@@ -6,13 +6,42 @@ import ProfilecardContainer from "./containers/profilecard-container";
 import FlexBox from "./containers/FlexBox";
 import Bio from "./components/Bio";
 import AboutMe from "./components/AboutMe";
+import SkillList from "./components/skills/SkillList";
+import Name from "./components/Name";
+import ProfilePhoto from "./components/profile-photo/ProfilePhoto";
 
 const ProfileCard = () => {
   return (
     <ProfilecardContainer>
       {/* Top Section */}
-      <FlexBox className="gap-3 md:gap-0 font-montserrat">
-        <Bio />
+      <FlexBox className="gap-3 pt-2 font-montserrat">
+        <ProfilePhoto style={{ width: "180px", height: "180px" }} />
+        <FlexBox
+          className="w-auto md:w-3/5 flex flex-col items-center md:items-start justify-center"
+          appendDefaultClassName={false}
+        >
+          {/* name */}
+          <Name>Charanteja Yandrapti</Name>
+          {/* Profession */}
+          <h3 className="ml-1 mb-1 text-xl text-slate-400">
+            Learner / Developer
+          </h3>
+          {/* skills */}
+          <div className="ml-1 mb-1 text-lg text-slate-400 mt-2 md:mt-0">
+            <h3 className="mb-1 hidden md:block font-montserrat">Skills</h3>
+            <SkillList
+              skills={[
+                "Java",
+                "React",
+                "Css",
+                "Html",
+                "JS",
+                "NodeJs",
+                "MongoDB",
+              ]}
+            />
+          </div>
+        </FlexBox>
       </FlexBox>
 
       {/* AboutMe */}
