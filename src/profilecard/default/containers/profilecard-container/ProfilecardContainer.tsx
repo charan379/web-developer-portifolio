@@ -1,6 +1,6 @@
 import getClassName from "@/lib/utils/getClassName";
 import React from "react";
-import styles from "./profileCardContainer.module.css";
+import styles from "./profilecardContainer.module.css";
 import { twc } from "@/lib/utils/twc";
 
 /**
@@ -15,6 +15,7 @@ const ProfilecardContainer: React.FC<ComponentProps> = (props) => {
     style, // Additional styles from the parent component
     children, // Child components
   } = props;
+
   // Define the base CSS class
   const baseClass = twc(
     "w-11/12 pt-2 md:pt-3 flex md:gap-y-1 flex-col items-center justify-center",
