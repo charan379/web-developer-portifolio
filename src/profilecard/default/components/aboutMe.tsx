@@ -8,12 +8,12 @@ interface AboutMeProps extends ComponentProps {
 const AboutMe: React.FC<AboutMeProps> = (props) => {
   return (
     <>
-      <div className={props?.className}>
+      <div className="px-2 cursor-pointer select-none">
         <h4
-          className={`${props?.contentClassName}`}
+          className="px-4 py-3 pt-2 text-base text-left text-orange-600 hidden sm:block border-anime-2"
           style={props?.contentStyle}
         >
-          <Text appendDefaultClassName className="text-gray-600">
+          <Text appendDefaultClassName className="sm:text-base text-gray-600">
             I am an enthusiastic Learner/Developer dedicated to a journey of
             continuous growth and progress within the ever-evolving landscape of
             technology and development. My passion lies in not only creating
