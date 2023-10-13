@@ -1,8 +1,10 @@
-import ProfileCard from "@/profilecard/default";
+
 // export async function generateMetadata() {
 //   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
 //     method: "GET",
 //   });
+
+import ProfileCard from "@/profilecard";
 
 //   const data = await response.json();
 
