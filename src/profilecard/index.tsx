@@ -12,7 +12,7 @@ const ProfileCard = () => {
   return (
     <ProfilecardContainer>
       <FlexBox
-        className="px-2 gap-3 flex flex-col items-center justify-center"
+        className="relative px-2 gap-3 flex flex-col items-center justify-center"
         appendDefaultClassName={false}
       >
         <ProfilePhoto style={{ width: "180px", height: "180px" }} />
@@ -25,7 +25,7 @@ const ProfileCard = () => {
       {/* resume, hire me , contact */}
       <FlexBox
         appendDefaultClassName={false}
-        className="mt-2 px-2 w-full flex flex-row flex-wrap md:gap-1 font-roboto400 justify-between"
+        className="relative mt-2 px-2 w-full flex flex-row flex-wrap md:gap-1 font-roboto400 justify-between"
       >
         <LinkComponent href="#">Resume</LinkComponent>
         <LinkComponent href="#">Projects</LinkComponent>
@@ -33,7 +33,7 @@ const ProfileCard = () => {
 
       <ContactMe />
       {/* social links */}
-      <FlexBox className="px-2 w-full bg-slate-200 rounded-b-xl flex-row flex-wrap border-t-2">
+      <FlexBox className="relative px-2 pb-2 w-full bg-slate-200 rounded-b-xl flex-row flex-wrap border-t-2">
         <SocialLinks />
       </FlexBox>
     </ProfilecardContainer>

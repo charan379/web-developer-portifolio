@@ -4,6 +4,8 @@
   gap: 1.5rem;
   color: inherit;
   flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
 }
 
 .socialLinks .socialLink a {
