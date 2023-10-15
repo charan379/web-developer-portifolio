@@ -2,12 +2,13 @@
   max-height: 720px;
   max-width: 460px;
   /* animations */
-  animation: init 0.5s 0.5s linear forwards,
-    moveUpCenterToTop 0.5s 0.5s linear forwards,
-    moveDownTopToBottom 0.5s 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
-    moveUpBottomToTop 0.5s 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
-    moveDownTopToCenter 0.5s 2s ease-in-out forwards,
-    makeCard 0.5s 2.4s ease-in-out forwards;
+  animation: init 0.4s 0.4s linear forwards,
+    moveUpCenterToTop 0.4s 0.4s linear forwards,
+    moveDownTopToBottom 0.3s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045)
+      forwards,
+    moveUpBottomToTop 0.3s 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
+    moveDownTopToCenter 0.3s 1.5s ease-in-out forwards,
+    makeCard 0.3s 1.8s ease-in-out forwards;
 }
 
 .profileCardInitAnime > * {
@@ -15,19 +16,19 @@
 }
 
 .profileCardInitAnime > :nth-child(1) {
-  animation: revealItemsAnime 0.7s 2.5s ease-in-out forwards;
+  animation: revealItemsAnime 0.7s 1.8s ease-in-out forwards;
 }
 
 .profileCardInitAnime > :nth-child(2) {
-  animation: revealItemsAnime 0.5s 2.7s ease-in-out forwards;
+  animation: revealItemsAnime 0.5s 2.0s ease-in-out forwards;
 }
 
 .profileCardInitAnime > :nth-child(3) {
-  animation: revealItemsAnime 0.5s 2.9s ease-in-out forwards;
+  animation: revealItemsAnime 0.5s 2.2s ease-in-out forwards;
 }
 
 .profileCardInitAnime > :nth-child(4) {
-  animation: revealItemsAnime 0.5s 3.1s ease-in-out forwards;
+  animation: revealItemsAnime 0.5s 2.4s ease-in-out forwards;
 }
 
 /* initilize  */
