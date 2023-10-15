@@ -7,7 +7,7 @@
     moveDownTopToBottom 0.5s 1s cubic-bezier(0.6, -0.28, 0.735, 0.045) forwards,
     moveUpBottomToTop 0.5s 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
     moveDownTopToCenter 0.5s 2s ease-in-out forwards,
-    makeCard 0.5s 2.5s cubic-bezier(0.39, 0.58, 0.57, 1) forwards;
+    makeCard 0.5s 2.4s ease-in-out forwards;
 }
 
 .profileCardInitAnime > * {
