@@ -35,7 +35,7 @@ const LinkComponent: React.FC<LinkProps> = (props) => {
         appendDefaultClassName
           ? // Add classNames to default classList if true
             [
-              "min-w-[120px] smmin-w-[180px]: max-w-[40%]  text-center bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-500 ease-in-out hover:-translate-y-2",
+              "min-w-[130px] sm:min-w-[180px] max-w-[20%]  text-center bg-gradient-to-r from-red-500 via-pink-800 to-slate-800 p-2 my-1 rounded-md text-slate-50 btn-border-anime-1 shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] transition-transform duration-500 ease-in-out hover:-translate-y-2",
               className,
             ].join(" ")
           : // Replace default class with new class provided if false

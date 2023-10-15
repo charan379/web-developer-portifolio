@@ -1,0 +1,20 @@
+.rader-anime {
+  animation: radar 1s 0.4s infinite ease-in-out forwards;
+}
+
+@keyframes radar {
+  0% {
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  50% {
+    box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  100% {
+    /* Expand shadow on hover */
+    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  /* animation: radar 01s 0.1s infinite ease-in-out forwards; */
+}

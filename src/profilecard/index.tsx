@@ -25,7 +25,7 @@ const ProfileCard = () => {
       {/* resume, hire me , contact */}
       <FlexBox
         appendDefaultClassName={false}
-        className="relative mt-2 px-2 w-full flex flex-row flex-wrap md:gap-1 font-roboto400 justify-between"
+        className="relative mt-2 px-2 w-full flex flex-row flex-wrap md:gap-1 font-roboto400 justify-around"
       >
         <LinkComponent href="#">Resume</LinkComponent>
         <LinkComponent href="#">Projects</LinkComponent>
