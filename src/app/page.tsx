@@ -4,7 +4,10 @@
 //     method: "GET",
 //   });
 
-import ProfileCard from "@/profilecard";
+import ProfileCard from "@/ui/profilecard";
+
+
+
 
 //   const data = await response.json();
 

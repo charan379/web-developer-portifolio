@@ -1,17 +1,16 @@
 import React from "react";
-import ContactMe from "./components/ContactMe";
-import SocialLinks from "@/components/SocialLinks";
 import ProfilecardContainer from "./containers/profilecard-container";
 import FlexBox from "./containers/FlexBox";
-import Name from "./components/Name";
 import ProfilePhoto from "./components/profile-photo/ProfilePhoto";
-import LinkComponent from "@/components/Link";
-import Text from "@/components/Text";
-import Loading from "@/app/loading";
+import Name from "./components/Name";
+import Text from "../components/Text";
+import LinkComponent from "../components/Link";
+import ContactMe from "./components/ContactMe";
+import SocialLinks from "../components/SocialLinks";
+
 
 const ProfileCard = () => {
 
-  // return <Loading />
   return (
     <ProfilecardContainer>
       {/* bio */}

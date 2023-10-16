@@ -1,4 +1,3 @@
-import Text from "@/components/Text";
 import React, { PropsWithChildren } from "react";
 
 const Name: React.FC<PropsWithChildren> = ({ children }) => {

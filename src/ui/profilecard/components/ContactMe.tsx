@@ -1,4 +1,4 @@
-import RevealOnClick from "@/components/RevealOnClick";
+import RevealOnClick from "@/ui/components/RevealOnClick";
 import { EmailSvg, WhatsappSvg } from "@charan379/react-svg-icons";
 import Link from "next/link";
 import React from "react";
