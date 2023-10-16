@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 /* custom css */
-@import url("../styles/btn-border-anime-1.css");
-@import url("../styles/border-anime-2.css");
-@import url("../styles/rt1-heading.css");
-@import url("../styles/radar-anime.css");
+@import url("../ui/styles/btn-border-anime-1.css");
+@import url("../ui/styles/border-anime-2.css");
+@import url("../ui/styles/rt1-heading.css");
+@import url("../ui/styles/radar-anime.css");
 
 body {
   animation: overFlowYhiddenToAuto 3s 0ms ease forwards;
