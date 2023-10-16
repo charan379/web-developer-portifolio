@@ -11,7 +11,7 @@ export default function Loading() {
         </div>
 
         {/* <!-- Profile Information --> */}
-        <div className="w-full pt-2 gap-3 flex flex-col items-center justify-center">
+        <div className="w-full pt-2 gap-2 flex flex-col items-center justify-center">
           <div className="animate-pulse min-h-[25px] min-w-[60px] sm:min-w-[80px] max-w-[10%] bg-gradient-to-r from-gray-400 to-gray-300 p-2 my-1 rounded-md"></div>
           <div className="animate-pulse min-h-[25px] min-w-[120px] sm:min-w-[180px] max-w-[20%] bg-gradient-to-r from-gray-400 to-gray-300 p-2 my-1 rounded-md"></div>
           <div className="animate-pulse h-[5px] w-[90%] bg-gradient-to-r from-gray-400 to-gray-300 p-2 my-1 rounded-md"></div>
