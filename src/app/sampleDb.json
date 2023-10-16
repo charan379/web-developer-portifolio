@@ -1,0 +1,18 @@
+{
+    "name": "charnteja yandrapti",
+    "aboutMe": "I work as a support engineer and web developer, who also code in my spare time",
+    "pageLinks": [
+        {
+            "priority": 1,
+            "label": "resume",
+            "url": "resume",
+            "display": true
+        },
+        {
+            "priority": 2,
+            "label": "projects",
+            "url": "projects",
+            "display": true
+        }
+    ]
+}
