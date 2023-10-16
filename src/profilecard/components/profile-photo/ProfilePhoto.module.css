@@ -8,7 +8,6 @@
   /* Shadow effect */
   transition: box-shadow 0.3s ease;
   cursor: pointer;
-  animation: radar 1s 0.4s infinite ease-in-out forwards;
 }
 
 @keyframes radar {
