@@ -1,4 +1,4 @@
-import Text from "@/components/Text";
+import Text from "@/ui/components/Text";
 
 
 export default async function ResumePage() {
