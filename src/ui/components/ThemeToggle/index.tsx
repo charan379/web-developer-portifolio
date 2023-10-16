@@ -1,9 +1,8 @@
 'use client';
-
-import { MoonSvgIcon } from '@/assets/icons/Moon';
-import { SunSvgIcon } from '@/assets/icons/Sun';
 import React, { MouseEvent, useEffect, useState } from 'react'
 import styles from "./ThemeToggle.module.css"
+import { MoonSvgIcon } from '@/ui/assets/icons/Moon';
+import { SunSvgIcon } from '@/ui/assets/icons/Sun';
 
 /**
  * Theme toggle component that allows switching between light and dark themes.
