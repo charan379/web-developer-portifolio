@@ -1,35 +1,45 @@
 .profileCardInitAnime {
   max-height: 720px;
-  max-width: 460px;
+  max-width: 480px;
   /* animations */
-  animation: init 0.4s 0.4s linear forwards,
-    moveUpCenterToTop 0.4s 0.4s linear forwards,
-    moveDownTopToBottom 0.3s 0.8s cubic-bezier(0.6, -0.28, 0.735, 0.045)
-      forwards,
-    moveUpBottomToTop 0.3s 1.2s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards,
-    moveDownTopToCenter 0.3s 1.5s ease-in-out forwards,
-    makeCard 0.3s 1.8s ease-in-out forwards;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+  border-radius: 0.75rem;
+  width: 95%;
+  height: 90%;
 }
 
-.profileCardInitAnime > * {
+.profileCardInitAnime>* {
   opacity: 0;
+  animation: initScale01 0.5s 0ms ease-in-out forwards;
 }
 
-.profileCardInitAnime > :nth-child(1) {
-  animation: revealItemsAnime 0.7s 1.8s ease-in-out forwards;
+.profileCardInitAnime> :last-child {
+  opacity: 1;
+  scale: 1;
+  animation: none;
 }
 
-.profileCardInitAnime > :nth-child(2) {
-  animation: revealItemsAnime 0.5s 2s ease-in-out forwards;
+.profileCardInitAnime> :last-child>* {
+  opacity: 0;
+  animation: initScale01 0.5s 0ms ease-in-out forwards;
 }
 
-.profileCardInitAnime > :nth-child(3) {
-  animation: revealItemsAnime 0.5s 2.2s ease-in-out forwards;
+
+/* .profileCardInitAnime> :nth-child(1) {
+  animation: revealItemsAnime 0.7s 0ms ease-in-out forwards;
 }
 
-.profileCardInitAnime > :nth-child(4) {
-  animation: revealItemsAnime 0.5s 2.4s ease-in-out forwards;
+.profileCardInitAnime> :nth-child(2) {
+  animation: revealItemsAnime 0.5s 0ms ease-in-out forwards;
 }
+
+.profileCardInitAnime> :nth-child(3) {
+  animation: revealItemsAnime 0.5s 0ms ease-in-out forwards;
+}
+
+.profileCardInitAnime> :nth-child(4) {
+  animation: revealItemsAnime 0.5s 0ms ease-in-out forwards;
+} */
 
 /* initilize  */
 @keyframes init {
@@ -38,6 +48,7 @@
     width: 0px;
     height: 0px;
   }
+
   100% {
     border-radius: 100%;
     width: 70px;
@@ -113,30 +124,31 @@
   0% {
     position: relative;
     border-radius: 0.75rem;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
     scale: 0;
   }
 
   50% {
     background-color: rgb(248 250 252 / var(--tw-bg-opacity));
     border-radius: 0.75rem;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
   }
 
   100% {
     background-color: rgb(248 250 252 / var(--tw-bg-opacity));
     border-radius: 0.75rem;
-    width: 90%;
-    height: 80%;
+    width: 95%;
+    height: 90%;
     scale: 1;
   }
 }
 
 @keyframes initScale01 {
   0% {
-    scale: 0.5;
+    scale: 0.8;
+    opacity: 0.5;
   }
 
   100% {
@@ -160,9 +172,11 @@
     top: 150px;
     opacity: 0;
   }
+
   50% {
     opacity: 0.4;
   }
+
   100% {
     top: 0px;
     opacity: 1;
