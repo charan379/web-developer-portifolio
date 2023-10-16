@@ -74,11 +74,12 @@ import ProfileCard from "@/profilecard";
 // }
 
 export default async function Home() {
-  // const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
-  //   method: "GET",
-  // });
+  const response: Response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
+    cache: "no-store",
+    method: "GET",
+  });
 
-  // const data = await response.json();
+  const data = await response.json();
 
   return (
     <main className="min-h-[100dvh] w-full m-0 flex flex-row justify-center items-center overflow-auto">
