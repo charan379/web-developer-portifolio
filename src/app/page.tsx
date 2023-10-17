@@ -1,10 +1,7 @@
 import dynamic from "next/dynamic";
 import Loading from "./loading";
 
-const ProfileCard = dynamic(async () => {
-  const [component] = await Promise.all([import('@/ui/profilecard'), new Promise((resolve) => setTimeout(resolve, 3000))]);
-  return component;
-}, {
+const ProfileCard = dynamic(() => import('@/ui/profilecard'), {
   ssr: true,
   loading: () => <Loading />
 });
