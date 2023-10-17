@@ -7,9 +7,10 @@ import Text from "../components/Text";
 import LinkComponent from "../components/Link";
 import ContactMe from "./components/ContactMe";
 import SocialLinks from "../components/SocialLinks";
+import { toProperCase } from "@/lib/utils/toProperCase";
 
 
-const ProfileCard = () => {
+const ProfileCard = (props: any) => {
 
   return (
     <ProfilecardContainer>
@@ -19,10 +20,9 @@ const ProfileCard = () => {
         appendDefaultClassName={false}
       >
         <ProfilePhoto style={{ width: "180px", height: "180px" }} />
-        <Name>Charanteja Yandrapati</Name>
+        <Name>{toProperCase(props?.name)}</Name>
         <Text className="text-center">
-          I work as a system administrator, support engineer and web developer,
-          who also code in my spare time.
+          {props?.aboutMe}
         </Text>
       </FlexBox>
       {/* resume, projects */}
@@ -30,8 +30,12 @@ const ProfileCard = () => {
         appendDefaultClassName={false}
         className="relative mt-2 px-2 w-full flex flex-row flex-wrap md:gap-1 font-roboto400 justify-around"
       >
-        <LinkComponent href="#">Resume</LinkComponent>
-        <LinkComponent href="#">Projects</LinkComponent>
+
+        {props?.pageLinks?.filter((link: any) => link.display === true)
+          ?.sort((a: any, b: any) => a?.priority - b?.priority)
+          ?.map((link: any, index: number) => {
+            return <LinkComponent key={index} href={link?.url}>{toProperCase(link?.label)}</LinkComponent>
+          })}
       </FlexBox>
       {/* contact */}
       <ContactMe />
