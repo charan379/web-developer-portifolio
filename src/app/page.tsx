@@ -5,7 +5,7 @@ const ProfileCard = dynamic(async () => {
   const [component] = await Promise.all([import('@/ui/profilecard'), new Promise((resolve) => setTimeout(resolve, 3000))]);
   return component;
 }, {
-  ssr: false,
+  ssr: true,
   loading: () => <Loading />
 });
 
