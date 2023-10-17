@@ -9,7 +9,7 @@ export async function GET(request: Request) {
             resolve((res: any) => {
                 res
             })
-        }, 2000);
+        }, 100);
     })
 
     const res = await data;

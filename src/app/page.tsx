@@ -1,13 +1,18 @@
+import dynamic from "next/dynamic";
+import Loading from "./loading";
+
+const ProfileCard = dynamic(async () => {
+  const [component] = await Promise.all([import('@/ui/profilecard'), new Promise((resolve) => setTimeout(resolve, 3000))]);
+  return component;
+}, {
+  ssr: true,
+  loading: () => <Loading />
+});
 
 // export async function generateMetadata() {
 //   const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
 //     method: "GET",
 //   });
-
-import ProfileCard from "@/ui/profilecard";
-
-
-
 
 //   const data = await response.json();
 
@@ -78,7 +83,8 @@ import ProfileCard from "@/ui/profilecard";
 
 export default async function Home() {
   const response: Response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
-    cache: "no-store",
+    cache: "force-cache",
+    next: { revalidate: 3600 },
     method: "GET",
   });
 
