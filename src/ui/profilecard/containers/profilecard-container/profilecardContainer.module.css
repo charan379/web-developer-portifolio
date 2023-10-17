@@ -1,6 +1,7 @@
 .profileCardInitAnime {
   max-height: 720px;
   max-width: 480px;
+  overflow: hidden;
   /* animations */
   background-color: rgb(248 250 252 / var(--tw-bg-opacity));
   border-radius: 0.75rem;
@@ -147,11 +148,13 @@
 
 @keyframes initScale01 {
   0% {
+    top: 500px;
     scale: 0.8;
     opacity: 0.5;
   }
 
   100% {
+    top: 0px;
     opacity: 1;
     scale: 1;
   }
