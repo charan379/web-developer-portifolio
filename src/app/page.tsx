@@ -18,6 +18,7 @@ async function fetchData() {
     throw new Error(`${response?.status} : ${response?.statusText}`);
   }
 }
+
 export async function generateMetadata() {
 
   const data = await fetchData();
