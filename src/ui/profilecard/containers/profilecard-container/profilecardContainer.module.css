@@ -11,7 +11,7 @@
 
 .profileCardInitAnime>* {
   opacity: 0;
-  animation: initScale01 0.7s 0ms ease-in-out forwards;
+  animation: initScale01 0.7s 0ms cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
 }
 
 .profileCardInitAnime> :last-child {
@@ -22,7 +22,7 @@
 
 .profileCardInitAnime> :last-child>* {
   opacity: 0;
-  animation: initScale01 0.7s 0ms ease-in-out forwards;
+  animation: initScale01 0.7s 0ms cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
 }
 
 
@@ -148,15 +148,13 @@
 
 @keyframes initScale01 {
   0% {
-    top: 500px;
-    scale: 0.8;
+    top: 450px;
     opacity: 0.5;
   }
 
   100% {
     top: 0px;
     opacity: 1;
-    scale: 1;
   }
 }
 
