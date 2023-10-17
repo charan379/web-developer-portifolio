@@ -5,7 +5,7 @@ const ProfileCard = dynamic(async () => {
   const [component] = await Promise.all([import('@/ui/profilecard'), new Promise((resolve) => setTimeout(resolve, 3000))]);
   return component;
 }, {
-  ssr: true,
+  ssr: false,
   loading: () => <Loading />
 });
 
@@ -83,7 +83,6 @@ const ProfileCard = dynamic(async () => {
 
 export default async function Home() {
   const response: Response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
-    cache: "force-cache",
     next: { revalidate: 3600 },
     method: "GET",
   });
