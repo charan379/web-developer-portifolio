@@ -11,7 +11,7 @@
 
 .profileCardInitAnime>* {
   opacity: 0;
-  animation: initScale01 0.5s 0ms ease-in-out forwards;
+  animation: initScale01 0.7s 0ms ease-in-out forwards;
 }
 
 .profileCardInitAnime> :last-child {
@@ -22,7 +22,7 @@
 
 .profileCardInitAnime> :last-child>* {
   opacity: 0;
-  animation: initScale01 0.5s 0ms ease-in-out forwards;
+  animation: initScale01 0.7s 0ms ease-in-out forwards;
 }
 
 
