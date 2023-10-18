@@ -1,16 +1,19 @@
 import dynamic from "next/dynamic";
 import Loading from "./loading";
 
-const ProfileCard = dynamic(() => import('@/ui/profilecard'), {
+const ProfileCard = dynamic(() => import("@/ui/profilecard"), {
   ssr: true,
-  loading: () => <Loading />
+  loading: () => <Loading />,
 });
 
 async function fetchData() {
-  const response: Response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
-    next: { revalidate: 3600 },
-    method: "GET",
-  });
+  const response: Response = await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/api/data`,
+    {
+      next: { revalidate: 3600 },
+      method: "GET",
+    }
+  );
 
   if (response?.status === 200) {
     return await response.json();
@@ -20,9 +23,12 @@ async function fetchData() {
 }
 
 export async function generateMetadata() {
+  let data: any;
 
-  const data = await fetchData();
-
+  fetchData().then((res) => {
+    data = { ...res };
+  });
+  
   return {
     // meta tags
     title: data?.name,
@@ -81,15 +87,12 @@ export async function generateMetadata() {
       card: "summary_large_image",
       title: data?.name,
       description: data?.aboutMe,
-      images: [
-        `${process.env.NEXT_PUBLIC_BASE_URL}/assets/images/dp.jpg`,
-      ],
+      images: [`${process.env.NEXT_PUBLIC_BASE_URL}/assets/images/dp.jpg`],
     },
   };
 }
 
 export default async function Home() {
-
   const data = await fetchData();
 
   return (
