@@ -11,7 +11,7 @@ import ThemeToggle from "@/components/ThemeToggle";
 import BackToTopBtn from "@/components/Buttons/BackToTopBtn";
 
 export async function generateMetadata() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}`, {
     method: "GET",
   });
 
@@ -83,7 +83,7 @@ export async function generateMetadata() {
 }
 
 export default async function Home() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/data`, {
+  const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}`, {
     method: "GET",
   });
 
